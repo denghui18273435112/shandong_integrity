@@ -1,0 +1,49 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: 'bool' object is not iterable",
+      "children" : [ {
+        "name" : "test_ParameterlessAdjustment[Data2]",
+        "uid" : "408f7030ad4c20a4",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637833456912,
+          "stop" : 1637833465431,
+          "duration" : 8519
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_GetCreditLogMessage', 'case_model': '03-诚信记录查询', 'case_name': '01-查询', 'priority': '', 'title': '', 'url': '/manageapi/creditlog/GetCreditLogMessage', 'pre_exec': '', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"created_time\",\\n \"company_id\": \"8637000000\",\\n \"date\": true,\\n \"date_begin\": \"2021-01-01\",\\n \"date_end\": \"2021-11-26\",\\n \"moreState\": false,\\n \"summary\": true,\\n \"kw\": \"\",\\n \"state\": \"0\",\\n \"auth_type\": \"S\",\\n \"id_number\": \"\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"time\": [\"2021-01-01\", \"2021-11-26\"],\\n \"asOfTime\": \"2021-11-26\",\\n \"losser\": \"\",\\n \"type\": \"\",\\n \"is_losses\": 0,\\n \"reason_type\": \"0\",\\n \"reason_judgment\": \"0\",\\n \"credit_level\": \"\",\\n \"district_code\": \"*\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': ''}" ]
+      }, {
+        "name" : "test_ParameterlessAdjustment[Data27]",
+        "uid" : "6e7e9ad0a683ca58",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637833570103,
+          "stop" : 1637833570233,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_GetCreditlogOnRepetitionLevel', 'case_model': '多次获评同一级别人员', 'case_name': '01-查询', 'priority': '', 'title': '', 'url': '/manageapi/creditlog/GetCreditlogOnRepetitionLevel', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"date\":false,\"date_begin\":\"\",\"date_end\":\"\",\"moreState\":false,\"is_total_bad\":1,\"kw\":\"\",\"state\":\"0\",\"auth_type\":\"S\",\"id_number\":\"\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"time\":[],\"credit_level\":\"\",\"district_code\":\"*\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': ''}" ]
+      }, {
+        "name" : "test_ParameterlessAdjustment[Data28]",
+        "uid" : "e8d06fd4ce8de057",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637833570243,
+          "stop" : 1637833570382,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_SpecialCreditList', 'case_model': '连续12个月诚信行为', 'case_name': '01-查询', 'priority': '', 'title': '', 'url': '/manageapi/creditlog/SpecialCreditList', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"date\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-25\",\"moreState\":false,\"name\":\"\",\"state\":\"0\",\"auth_type\":\"\",\"id_number\":\"\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"time\":[\"2021-01-01\",\"2021-11-25\"],\"asOfTime\":\"2021-11-25\",\"losser\":\"\",\"type\":1,\"reason_type\":0,\"credit_level\":\"\",\"district_code\":\"*\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': ''}" ]
+      } ],
+      "uid" : "8b66e95a55762d87a7753a42cdec624d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

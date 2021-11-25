@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "https://platform.giiatop.com/sc/pt/#/PracticeCMS/Login" ],
+  "name" : "web_url"
+}, {
+  "values" : [ "3.6" ],
+  "name" : "python_version"
+}, {
+  "values" : [ "sichuan_classifySystem" ],
+  "name" : "project"
+} ]

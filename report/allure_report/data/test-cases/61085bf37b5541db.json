@@ -1,0 +1,99 @@
+{
+  "uid" : "61085bf37b5541db",
+  "name" : "test_ParameterlessAdjustment[Data31]",
+  "fullName" : "test_case.test_all.Test_all#test_ParameterlessAdjustment",
+  "historyId" : "8e4f472b8af71f1bb0f772f95189a29a",
+  "time" : {
+    "start" : 1637833570710,
+    "stop" : 1637833571402,
+    "duration" : 692
+  },
+  "description" : "<font color='red'>当前执行时间: </font> 2021-11-25 17:46:11<Br/><font  color='red'>用例编号: </font> case_StatisticsRecord_01<Br/><font color='red'>模块: </font>电子执业证使用次数<Br/><font color='red'>接口名称: </font>01-查询<Br/><font color='red'>优先级: </font><Br/><font color='red'>标题: </font><Br/><font color='red'>URL: </font>http://employee.sdbx.org:10252/manageapi/electroniclicense/StatisticsRecord<Br/><font color='red'>前置条件: </font><Br/><font color='red'>请求方式: </font><Br/><font color='red'>请求参数: </font>{'areatype': '1',\n 'companyOrDistrict': '',\n 'date': [],\n 'pageNum': 1,\n 'pageSize': 20}<Br/><font color='red'>预期结果的状态: </font><Br/><font color='red'>表格-响应预期结果: </font>{'$.code': 0, '$.msg': '请求成功'}<Br/><font color='red'>备注信息: </font><Br/><font color='red'>请求头: </font>{'Cookie': 'sd-siccms-token=CfDJ8PSa_0Whd0dAsf33VremHQD0T-8ogQ1upPxx6A7Fs24lGmOSINg8_uzt4rf8Oxa88qrR2lCTnMbDKY4tzgUCKvac7obiZSPl1DUl0Loz5e6FwIH6LCtreBBSEnsaX6WnFd3kRCSLqJ6CHJ0yFzbtA_XQH5vhIssN-ap92FleTTB7ZOWjUYrI9ovuF0HHIsIxNRAi_rFUfNjrK3yN7HRr3yAdiU7D33YX5szJCVyzpF7rHp4Dh4aTNHvFl4pUgdnM9H4e4Ox2hS3g2fL8oz0-ztwynhLkMGJc5b4Aj-chzDo4T24SjEaisBRORVtkjKoMsyQef81RcotIzX8OoKAPgu4kwUMSPQon2UmYGG1vsD6iWBskrHF0XawxIPoAja0pai_PDuQPo5MT9nlII49MmyKcIB4OEbVFmelqbtrAkr5I3_jDhD-0BA3RsuzJGkYNWQSxFNvVbhDQstUg7mFEqEH7wjBT0CyInZJhWMSW0CR_U7t0xyvqwIo5kUQjvfRIjT6MuieI1EUziuopZvI_oN8KpXqioIxA9_NVyNzTIRzcVfCxvozrqeKBEcFRtnxA2PsHlnVY1beVC8jNXt1XMO_iUV9XXK0zDZR--Fc8qcHEhGIj5ppZycsGc7dujRS-vMoSBCewuyOi8qfbAXBERs8;vcode=a07de6dcb56692dee9df2dcb89343742d120b5eb5d2ebe94dd660344ebffbff0t1637862208'}<Br/><font color='red'>接口请求-实际结果: </font>{'code': 0,\n 'data': {'count': 469,\n          'list': [{'code': '8637000100',\n                    'companyAbbreviation': '中国人寿',\n                    'name': '中国人寿保险股份有限公司山东省分公司',\n                    'times': 5706},\n                   {'code': '8637000200',\n                    'companyAbbreviation': '太平洋人寿',\n                    'name': '中国太平洋人寿保险股份有限公司山东分公司',\n                    'times': 1356},\n                   {'code': '8637000300',\n                    'companyAbbreviation': '平安人寿',\n                    'name': '中国平安人寿保险股份有限公司山东分公司',\n                    'times': 1686},\n                   {'code': '8637000302',\n                    'companyAbbreviation': '平安电销',\n                    'name': '中国平安人寿保险股份有限公司济南电话销售中心',\n                    'times': 64},\n                   {'code': '8637000500',\n                    'companyAbbreviation': '泰康人寿',\n                    'name': '泰康人寿保险有限责任公司山东分公司',\n                    'times': 357},\n                   {'code': '8637000600',\n                    'companyAbbreviation': '中信保诚',\n                    'name': '中信保诚人寿保险有限公司山东省分公司',\n                    'times': 7},\n                   {'code': '8637000700',\n                    'companyAbbreviation': '新华人寿',\n                    'name': '新华人寿保险股份有限公司山东分公司',\n                    'times': 9370},\n                   {'code': '8637000800',\n                    'companyAbbreviation': '中意人寿',\n                    'name': '中意人寿保险有限公司山东省分公司',\n                    'times': 42},\n                   {'code': '8637000900',\n                    'companyAbbreviation': '太平人寿',\n                    'name': '太平人寿保险有限公司山东分公司',\n                    'times': 4474},\n                   {'code': '8637001000',\n                    'companyAbbreviation': '中宏人寿',\n                    'name': '中宏人寿保险有限公司山东分公司',\n                    'times': 10},\n                   {'code': '8637001100',\n                    'companyAbbreviation': '中英人寿',\n                    'name': '中英人寿保险有限公司山东分公司',\n                    'times': 101},\n                   {'code': '8637001200',\n                    'companyAbbreviation': '工银安盛',\n                    'name': '工银安盛人寿保险有限公司山东分公司',\n                    'times': 33},\n                   {'code': '8637001300',\n                    'companyAbbreviation': '建信人寿',\n                    'name': '建信人寿保险股份有限公司山东分公司',\n                    'times': 83},\n                   {'code': '8637001400',\n                    'companyAbbreviation': '中德安联',\n                    'name': '中德安联人寿保险有限公司山东分公司',\n                    'times': 87},\n                   {'code': '8637001600',\n                    'companyAbbreviation': '合众人寿',\n                    'name': '合众人寿保险股份有限公司山东分公司',\n                    'times': 35},\n                   {'code': '8637001700',\n                    'companyAbbreviation': '人保健康',\n                    'name': '中国人民健康保险股份有限公司山东分公司',\n                    'times': 7},\n                   {'code': '8637001800',\n                    'companyAbbreviation': '平安养老',\n                    'name': '平安养老保险股份有限公司山东分公司',\n                    'times': 5},\n                   {'code': '8637001900',\n                    'companyAbbreviation': '人保寿险',\n                    'name': '中国人民人寿保险股份有限公司山东省分公司',\n                    'times': 1400},\n                   {'code': '8637002100',\n                    'companyAbbreviation': '同方全球',\n                    'name': '同方全球人寿保险有限公司山东分公司',\n                    'times': 5},\n                   {'code': '8637002200',\n                    'companyAbbreviation': '阳光人寿',\n                    'name': '阳光人寿保险股份有限公司山东分公司',\n                    'times': 174}],\n          'result': True,\n          'resultMsg': None,\n          'statistics': {'code': None,\n                         'companyAbbreviation': '合计统计：469个公司机构',\n                         'name': '合计统计：469个公司机构',\n                         'times': 32594},\n          'summary': None},\n 'msg': '请求成功'}<Br/>",
+  "descriptionHtml" : "<p><font color='red'>当前执行时间: </font> 2021-11-25 17:46:11<Br/><font  color='red'>用例编号: </font> case_StatisticsRecord_01<Br/><font color='red'>模块: </font>电子执业证使用次数<Br/><font color='red'>接口名称: </font>01-查询<Br/><font color='red'>优先级: </font><Br/><font color='red'>标题: </font><Br/><font color='red'>URL: </font>http://employee.sdbx.org:10252/manageapi/electroniclicense/StatisticsRecord<Br/><font color='red'>前置条件: </font><Br/><font color='red'>请求方式: </font><Br/><font color='red'>请求参数: </font>{'areatype': '1',\n'companyOrDistrict': '',\n'date': [],\n'pageNum': 1,\n'pageSize': 20}<Br/><font color='red'>预期结果的状态: </font><Br/><font color='red'>表格-响应预期结果: </font>{'$.code': 0, '$.msg': '请求成功'}<Br/><font color='red'>备注信息: </font><Br/><font color='red'>请求头: </font>{'Cookie': 'sd-siccms-token=CfDJ8PSa_0Whd0dAsf33VremHQD0T-8ogQ1upPxx6A7Fs24lGmOSINg8_uzt4rf8Oxa88qrR2lCTnMbDKY4tzgUCKvac7obiZSPl1DUl0Loz5e6FwIH6LCtreBBSEnsaX6WnFd3kRCSLqJ6CHJ0yFzbtA_XQH5vhIssN-ap92FleTTB7ZOWjUYrI9ovuF0HHIsIxNRAi_rFUfNjrK3yN7HRr3yAdiU7D33YX5szJCVyzpF7rHp4Dh4aTNHvFl4pUgdnM9H4e4Ox2hS3g2fL8oz0-ztwynhLkMGJc5b4Aj-chzDo4T24SjEaisBRORVtkjKoMsyQef81RcotIzX8OoKAPgu4kwUMSPQon2UmYGG1vsD6iWBskrHF0XawxIPoAja0pai_PDuQPo5MT9nlII49MmyKcIB4OEbVFmelqbtrAkr5I3_jDhD-0BA3RsuzJGkYNWQSxFNvVbhDQstUg7mFEqEH7wjBT0CyInZJhWMSW0CR_U7t0xyvqwIo5kUQjvfRIjT6MuieI1EUziuopZvI_oN8KpXqioIxA9_NVyNzTIRzcVfCxvozrqeKBEcFRtnxA2PsHlnVY1beVC8jNXt1XMO_iUV9XXK0zDZR--Fc8qcHEhGIj5ppZycsGc7dujRS-vMoSBCewuyOi8qfbAXBERs8;vcode=a07de6dcb56692dee9df2dcb89343742d120b5eb5d2ebe94dd660344ebffbff0t1637862208'}<Br/><font color='red'>接口请求-实际结果: </font>{'code': 0,\n'data': {'count': 469,\n'list': [{'code': '8637000100',\n'companyAbbreviation': '中国人寿',\n'name': '中国人寿保险股份有限公司山东省分公司',\n'times': 5706},\n{'code': '8637000200',\n'companyAbbreviation': '太平洋人寿',\n'name': '中国太平洋人寿保险股份有限公司山东分公司',\n'times': 1356},\n{'code': '8637000300',\n'companyAbbreviation': '平安人寿',\n'name': '中国平安人寿保险股份有限公司山东分公司',\n'times': 1686},\n{'code': '8637000302',\n'companyAbbreviation': '平安电销',\n'name': '中国平安人寿保险股份有限公司济南电话销售中心',\n'times': 64},\n{'code': '8637000500',\n'companyAbbreviation': '泰康人寿',\n'name': '泰康人寿保险有限责任公司山东分公司',\n'times': 357},\n{'code': '8637000600',\n'companyAbbreviation': '中信保诚',\n'name': '中信保诚人寿保险有限公司山东省分公司',\n'times': 7},\n{'code': '8637000700',\n'companyAbbreviation': '新华人寿',\n'name': '新华人寿保险股份有限公司山东分公司',\n'times': 9370},\n{'code': '8637000800',\n'companyAbbreviation': '中意人寿',\n'name': '中意人寿保险有限公司山东省分公司',\n'times': 42},\n{'code': '8637000900',\n'companyAbbreviation': '太平人寿',\n'name': '太平人寿保险有限公司山东分公司',\n'times': 4474},\n{'code': '8637001000',\n'companyAbbreviation': '中宏人寿',\n'name': '中宏人寿保险有限公司山东分公司',\n'times': 10},\n{'code': '8637001100',\n'companyAbbreviation': '中英人寿',\n'name': '中英人寿保险有限公司山东分公司',\n'times': 101},\n{'code': '8637001200',\n'companyAbbreviation': '工银安盛',\n'name': '工银安盛人寿保险有限公司山东分公司',\n'times': 33},\n{'code': '8637001300',\n'companyAbbreviation': '建信人寿',\n'name': '建信人寿保险股份有限公司山东分公司',\n'times': 83},\n{'code': '8637001400',\n'companyAbbreviation': '中德安联',\n'name': '中德安联人寿保险有限公司山东分公司',\n'times': 87},\n{'code': '8637001600',\n'companyAbbreviation': '合众人寿',\n'name': '合众人寿保险股份有限公司山东分公司',\n'times': 35},\n{'code': '8637001700',\n'companyAbbreviation': '人保健康',\n'name': '中国人民健康保险股份有限公司山东分公司',\n'times': 7},\n{'code': '8637001800',\n'companyAbbreviation': '平安养老',\n'name': '平安养老保险股份有限公司山东分公司',\n'times': 5},\n{'code': '8637001900',\n'companyAbbreviation': '人保寿险',\n'name': '中国人民人寿保险股份有限公司山东省分公司',\n'times': 1400},\n{'code': '8637002100',\n'companyAbbreviation': '同方全球',\n'name': '同方全球人寿保险有限公司山东分公司',\n'times': 5},\n{'code': '8637002200',\n'companyAbbreviation': '阳光人寿',\n'name': '阳光人寿保险股份有限公司山东分公司',\n'times': 174}],\n'result': True,\n'resultMsg': None,\n'statistics': {'code': None,\n'companyAbbreviation': '合计统计：469个公司机构',\n'name': '合计统计：469个公司机构',\n'times': 32594},\n'summary': None},\n'msg': '请求成功'}<Br/></p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "empty_report_file",
+    "time" : {
+      "start" : 1637833455987,
+      "stop" : 1637833456020,
+      "duration" : 33
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1637833456020,
+      "stop" : 1637833456545,
+      "duration" : 525
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "电子执业证使用次数"
+  }, {
+    "name" : "story",
+    "value" : "01-查询-\n-"
+  }, {
+    "name" : "epic",
+    "value" : "山东分类系统"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_all"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "SZPC065"
+  }, {
+    "name" : "thread",
+    "value" : "38740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_all"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Data",
+    "value" : "{'case_id': 'case_StatisticsRecord_01', 'case_model': '电子执业证使用次数', 'case_name': '01-查询', 'priority': '', 'title': '', 'url': '/manageapi/electroniclicense/StatisticsRecord', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"areatype\":\"1\",\"date\":[],\"companyOrDistrict\":\"\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '', 'remark': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "61085bf37b5541db.json",
+  "parameterValues" : [ "{'case_id': 'case_StatisticsRecord_01', 'case_model': '电子执业证使用次数', 'case_name': '01-查询', 'priority': '', 'title': '', 'url': '/manageapi/electroniclicense/StatisticsRecord', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"areatype\":\"1\",\"date\":[],\"companyOrDistrict\":\"\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '', 'remark': ''}" ]
+}

@@ -1,0 +1,99 @@
+{
+  "uid" : "bbf207c6b618bd49",
+  "name" : "test_ParameterlessAdjustment[Data18]",
+  "fullName" : "test_case.test_all.Test_all#test_ParameterlessAdjustment",
+  "historyId" : "64509abd68bc906125b55e0e0657bafc",
+  "time" : {
+    "start" : 1637833522072,
+    "stop" : 1637833528077,
+    "duration" : 6005
+  },
+  "description" : "<font color='red'>当前执行时间: </font> 2021-11-25 17:45:28<Br/><font  color='red'>用例编号: </font> case_getsourcewhereaboutsgatherlist<Br/><font color='red'>模块: </font>17-人员流动汇总统计-离入职人员对比汇总统计<Br/><font color='red'>接口名称: </font>01-查询<Br/><font color='red'>优先级: </font><Br/><font color='red'>标题: </font><Br/><font color='red'>URL: </font>http://employee.sdbx.org:10252/manageapi/membercompanystats/getsourcewhereaboutsgatherlist<Br/><font color='red'>前置条件: </font><Br/><font color='red'>请求方式: </font><Br/><font color='red'>请求参数: </font>{'areatype': '1',\n 'by': 1,\n 'company_id': '8637000000',\n 'company_or_district': '',\n 'date_begin': '2021-01-01',\n 'date_end': '2021-11-26',\n 'has_honor_time': True,\n 'order': 'created_time',\n 'pageNum': 1,\n 'pageSize': 20,\n 'sales_channel_type': '',\n 'total': True}<Br/><font color='red'>预期结果的状态: </font>time: [\"2021-01-01\", \"2021-11-25\"],<Br/><font color='red'>表格-响应预期结果: </font>{'$.code': 0, '$.msg': '成功'}<Br/><font color='red'>备注信息: </font><Br/><font color='red'>请求头: </font>{'Cookie': 'sd-siccms-token=CfDJ8PSa_0Whd0dAsf33VremHQD0T-8ogQ1upPxx6A7Fs24lGmOSINg8_uzt4rf8Oxa88qrR2lCTnMbDKY4tzgUCKvac7obiZSPl1DUl0Loz5e6FwIH6LCtreBBSEnsaX6WnFd3kRCSLqJ6CHJ0yFzbtA_XQH5vhIssN-ap92FleTTB7ZOWjUYrI9ovuF0HHIsIxNRAi_rFUfNjrK3yN7HRr3yAdiU7D33YX5szJCVyzpF7rHp4Dh4aTNHvFl4pUgdnM9H4e4Ox2hS3g2fL8oz0-ztwynhLkMGJc5b4Aj-chzDo4T24SjEaisBRORVtkjKoMsyQef81RcotIzX8OoKAPgu4kwUMSPQon2UmYGG1vsD6iWBskrHF0XawxIPoAja0pai_PDuQPo5MT9nlII49MmyKcIB4OEbVFmelqbtrAkr5I3_jDhD-0BA3RsuzJGkYNWQSxFNvVbhDQstUg7mFEqEH7wjBT0CyInZJhWMSW0CR_U7t0xyvqwIo5kUQjvfRIjT6MuieI1EUziuopZvI_oN8KpXqioIxA9_NVyNzTIRzcVfCxvozrqeKBEcFRtnxA2PsHlnVY1beVC8jNXt1XMO_iUV9XXK0zDZR--Fc8qcHEhGIj5ppZycsGc7dujRS-vMoSBCewuyOi8qfbAXBERs8;vcode=a07de6dcb56692dee9df2dcb89343742d120b5eb5d2ebe94dd660344ebffbff0t1637862208'}<Br/><font color='red'>接口请求-实际结果: </font>{'code': 0,\n 'data': {'count': 469,\n          'list': [{'company_abbreviation': '合计统计：469个公司机构',\n                    'departure_total': 127660,\n                    'entry_total': 290767,\n                    'name': '合计统计：469个公司机构',\n                    'proportion': '43.90'},\n                   {'company_abbreviation': '最会保保险',\n                    'departure_total': 65,\n                    'entry_total': 7,\n                    'name': '最会保保险经纪有限公司山东分公司',\n                    'proportion': '928.57'},\n                   {'company_abbreviation': '国泰财产',\n                    'departure_total': 23,\n                    'entry_total': 28,\n                    'name': '国泰财产保险有限责任公司山东分公司',\n                    'proportion': '82.14'},\n                   {'company_abbreviation': '山东四方华邦',\n                    'departure_total': 201,\n                    'entry_total': 35,\n                    'name': '山东四方华邦保险代理有限公司',\n                    'proportion': '574.29'},\n                   {'company_abbreviation': '山东金伞',\n                    'departure_total': 21,\n                    'entry_total': 3,\n                    'name': '山东金伞保险代理股份有限公司',\n                    'proportion': '700.00'},\n                   {'company_abbreviation': '泰盛保险',\n                    'departure_total': 1408,\n                    'entry_total': 300,\n                    'name': '泰盛保险销售服务有限公司',\n                    'proportion': '469.33'},\n                   {'company_abbreviation': '大地财产',\n                    'departure_total': 432,\n                    'entry_total': 894,\n                    'name': '中国大地财产保险股份有限公司山东分公司',\n                    'proportion': '48.32'},\n                   {'company_abbreviation': '中升天津',\n                    'departure_total': 27,\n                    'entry_total': 25,\n                    'name': '中升（天津）保险销售有限公司山东分公司',\n                    'proportion': '108.00'},\n                   {'company_abbreviation': '渤海财产',\n                    'departure_total': 116,\n                    'entry_total': 128,\n                    'name': '渤海财产保险股份有限公司山东分公司',\n                    'proportion': '90.63'},\n                   {'company_abbreviation': '山东昌宏',\n                    'departure_total': 22,\n                    'entry_total': 23,\n                    'name': '山东昌宏保险代理股份有限公司',\n                    'proportion': '95.65'},\n                   {'company_abbreviation': '华夏在线',\n                    'departure_total': 725,\n                    'entry_total': 238,\n                    'name': '华夏在线保险代理服务有限公司山东分公司',\n                    'proportion': '304.62'},\n                   {'company_abbreviation': '人保汽车',\n                    'departure_total': 1028,\n                    'entry_total': 4724,\n                    'name': '人保汽车保险销售服务有限公司山东省分公司',\n                    'proportion': '21.76'},\n                   {'company_abbreviation': '合众人寿',\n                    'departure_total': 315,\n                    'entry_total': 925,\n                    'name': '合众人寿保险股份有限公司山东分公司',\n                    'proportion': '34.05'},\n                   {'company_abbreviation': '山东车好多',\n                    'departure_total': 217,\n                    'entry_total': 106,\n                    'name': '山东车好多保险经纪有限公司山东分公司',\n                    'proportion': '204.72'},\n                   {'company_abbreviation': '天安人寿',\n                    'departure_total': 4143,\n                    'entry_total': 5345,\n                    'name': '天安人寿保险股份有限公司山东分公司',\n                    'proportion': '77.51'},\n                   {'company_abbreviation': '中煤财产',\n                    'departure_total': 2,\n                    'entry_total': 1,\n                    'name': '中煤财产保险股份有限公司山东分公司',\n                    'proportion': '200.00'},\n                   {'company_abbreviation': '山东国康',\n                    'departure_total': 28,\n                    'entry_total': 7,\n                    'name': '山东国康保险代理有限公司',\n                    'proportion': '400.00'},\n                   {'company_abbreviation': '安盛天平财产',\n                    'departure_total': 224,\n                    'entry_total': 137,\n                    'name': '安盛天平财产保险有限公司山东分公司',\n                    'proportion': '163.50'},\n                   {'company_abbreviation': '山东通兴公估',\n                    'departure_total': 47,\n                    'entry_total': 25,\n                    'name': '山东通兴保险公估有限公司',\n                    'proportion': '188.00'},\n                   {'company_abbreviation': '华泰人寿',\n                    'departure_total': 1252,\n                    'entry_total': 1182,\n                    'name': '华泰人寿保险股份有限公司山东分公司',\n                    'proportion': '105.92'},\n                   {'company_abbreviation': '利宝保险',\n                    'departure_total': 163,\n                    'entry_total': 235,\n                    'name': '利宝保险有限公司山东分公司',\n                    'proportion': '69.36'}]},\n 'msg': '成功'}<Br/>",
+  "descriptionHtml" : "<p><font color='red'>当前执行时间: </font> 2021-11-25 17:45:28<Br/><font  color='red'>用例编号: </font> case_getsourcewhereaboutsgatherlist<Br/><font color='red'>模块: </font>17-人员流动汇总统计-离入职人员对比汇总统计<Br/><font color='red'>接口名称: </font>01-查询<Br/><font color='red'>优先级: </font><Br/><font color='red'>标题: </font><Br/><font color='red'>URL: </font>http://employee.sdbx.org:10252/manageapi/membercompanystats/getsourcewhereaboutsgatherlist<Br/><font color='red'>前置条件: </font><Br/><font color='red'>请求方式: </font><Br/><font color='red'>请求参数: </font>{'areatype': '1',\n'by': 1,\n'company_id': '8637000000',\n'company_or_district': '',\n'date_begin': '2021-01-01',\n'date_end': '2021-11-26',\n'has_honor_time': True,\n'order': 'created_time',\n'pageNum': 1,\n'pageSize': 20,\n'sales_channel_type': '',\n'total': True}<Br/><font color='red'>预期结果的状态: </font>time: [&quot;2021-01-01&quot;, &quot;2021-11-25&quot;],<Br/><font color='red'>表格-响应预期结果: </font>{'$.code': 0, '$.msg': '成功'}<Br/><font color='red'>备注信息: </font><Br/><font color='red'>请求头: </font>{'Cookie': 'sd-siccms-token=CfDJ8PSa_0Whd0dAsf33VremHQD0T-8ogQ1upPxx6A7Fs24lGmOSINg8_uzt4rf8Oxa88qrR2lCTnMbDKY4tzgUCKvac7obiZSPl1DUl0Loz5e6FwIH6LCtreBBSEnsaX6WnFd3kRCSLqJ6CHJ0yFzbtA_XQH5vhIssN-ap92FleTTB7ZOWjUYrI9ovuF0HHIsIxNRAi_rFUfNjrK3yN7HRr3yAdiU7D33YX5szJCVyzpF7rHp4Dh4aTNHvFl4pUgdnM9H4e4Ox2hS3g2fL8oz0-ztwynhLkMGJc5b4Aj-chzDo4T24SjEaisBRORVtkjKoMsyQef81RcotIzX8OoKAPgu4kwUMSPQon2UmYGG1vsD6iWBskrHF0XawxIPoAja0pai_PDuQPo5MT9nlII49MmyKcIB4OEbVFmelqbtrAkr5I3_jDhD-0BA3RsuzJGkYNWQSxFNvVbhDQstUg7mFEqEH7wjBT0CyInZJhWMSW0CR_U7t0xyvqwIo5kUQjvfRIjT6MuieI1EUziuopZvI_oN8KpXqioIxA9_NVyNzTIRzcVfCxvozrqeKBEcFRtnxA2PsHlnVY1beVC8jNXt1XMO_iUV9XXK0zDZR--Fc8qcHEhGIj5ppZycsGc7dujRS-vMoSBCewuyOi8qfbAXBERs8;vcode=a07de6dcb56692dee9df2dcb89343742d120b5eb5d2ebe94dd660344ebffbff0t1637862208'}<Br/><font color='red'>接口请求-实际结果: </font>{'code': 0,\n'data': {'count': 469,\n'list': [{'company_abbreviation': '合计统计：469个公司机构',\n'departure_total': 127660,\n'entry_total': 290767,\n'name': '合计统计：469个公司机构',\n'proportion': '43.90'},\n{'company_abbreviation': '最会保保险',\n'departure_total': 65,\n'entry_total': 7,\n'name': '最会保保险经纪有限公司山东分公司',\n'proportion': '928.57'},\n{'company_abbreviation': '国泰财产',\n'departure_total': 23,\n'entry_total': 28,\n'name': '国泰财产保险有限责任公司山东分公司',\n'proportion': '82.14'},\n{'company_abbreviation': '山东四方华邦',\n'departure_total': 201,\n'entry_total': 35,\n'name': '山东四方华邦保险代理有限公司',\n'proportion': '574.29'},\n{'company_abbreviation': '山东金伞',\n'departure_total': 21,\n'entry_total': 3,\n'name': '山东金伞保险代理股份有限公司',\n'proportion': '700.00'},\n{'company_abbreviation': '泰盛保险',\n'departure_total': 1408,\n'entry_total': 300,\n'name': '泰盛保险销售服务有限公司',\n'proportion': '469.33'},\n{'company_abbreviation': '大地财产',\n'departure_total': 432,\n'entry_total': 894,\n'name': '中国大地财产保险股份有限公司山东分公司',\n'proportion': '48.32'},\n{'company_abbreviation': '中升天津',\n'departure_total': 27,\n'entry_total': 25,\n'name': '中升（天津）保险销售有限公司山东分公司',\n'proportion': '108.00'},\n{'company_abbreviation': '渤海财产',\n'departure_total': 116,\n'entry_total': 128,\n'name': '渤海财产保险股份有限公司山东分公司',\n'proportion': '90.63'},\n{'company_abbreviation': '山东昌宏',\n'departure_total': 22,\n'entry_total': 23,\n'name': '山东昌宏保险代理股份有限公司',\n'proportion': '95.65'},\n{'company_abbreviation': '华夏在线',\n'departure_total': 725,\n'entry_total': 238,\n'name': '华夏在线保险代理服务有限公司山东分公司',\n'proportion': '304.62'},\n{'company_abbreviation': '人保汽车',\n'departure_total': 1028,\n'entry_total': 4724,\n'name': '人保汽车保险销售服务有限公司山东省分公司',\n'proportion': '21.76'},\n{'company_abbreviation': '合众人寿',\n'departure_total': 315,\n'entry_total': 925,\n'name': '合众人寿保险股份有限公司山东分公司',\n'proportion': '34.05'},\n{'company_abbreviation': '山东车好多',\n'departure_total': 217,\n'entry_total': 106,\n'name': '山东车好多保险经纪有限公司山东分公司',\n'proportion': '204.72'},\n{'company_abbreviation': '天安人寿',\n'departure_total': 4143,\n'entry_total': 5345,\n'name': '天安人寿保险股份有限公司山东分公司',\n'proportion': '77.51'},\n{'company_abbreviation': '中煤财产',\n'departure_total': 2,\n'entry_total': 1,\n'name': '中煤财产保险股份有限公司山东分公司',\n'proportion': '200.00'},\n{'company_abbreviation': '山东国康',\n'departure_total': 28,\n'entry_total': 7,\n'name': '山东国康保险代理有限公司',\n'proportion': '400.00'},\n{'company_abbreviation': '安盛天平财产',\n'departure_total': 224,\n'entry_total': 137,\n'name': '安盛天平财产保险有限公司山东分公司',\n'proportion': '163.50'},\n{'company_abbreviation': '山东通兴公估',\n'departure_total': 47,\n'entry_total': 25,\n'name': '山东通兴保险公估有限公司',\n'proportion': '188.00'},\n{'company_abbreviation': '华泰人寿',\n'departure_total': 1252,\n'entry_total': 1182,\n'name': '华泰人寿保险股份有限公司山东分公司',\n'proportion': '105.92'},\n{'company_abbreviation': '利宝保险',\n'departure_total': 163,\n'entry_total': 235,\n'name': '利宝保险有限公司山东分公司',\n'proportion': '69.36'}]},\n'msg': '成功'}<Br/></p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "empty_report_file",
+    "time" : {
+      "start" : 1637833455987,
+      "stop" : 1637833456020,
+      "duration" : 33
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "token",
+    "time" : {
+      "start" : 1637833456020,
+      "stop" : 1637833456545,
+      "duration" : 525
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "17-人员流动汇总统计-离入职人员对比汇总统计"
+  }, {
+    "name" : "story",
+    "value" : "01-查询-\n-"
+  }, {
+    "name" : "epic",
+    "value" : "山东分类系统"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_all"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "SZPC065"
+  }, {
+    "name" : "thread",
+    "value" : "38740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_all"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Data",
+    "value" : "{'case_id': 'case_getsourcewhereaboutsgatherlist', 'case_model': '17-人员流动汇总统计-离入职人员对比汇总统计', 'case_name': '01-查询', 'priority': '', 'title': '', 'url': '/manageapi/membercompanystats/getsourcewhereaboutsgatherlist', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"total\":true,\"areatype\":\"1\",\"company_id\":\"8637000000\",\"company_or_district\":\"\",\"sales_channel_type\":\"\",\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\"}', 'expect_result': 'time: [\"2021-01-01\", \"2021-11-25\"],', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '', 'remark': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bbf207c6b618bd49.json",
+  "parameterValues" : [ "{'case_id': 'case_getsourcewhereaboutsgatherlist', 'case_model': '17-人员流动汇总统计-离入职人员对比汇总统计', 'case_name': '01-查询', 'priority': '', 'title': '', 'url': '/manageapi/membercompanystats/getsourcewhereaboutsgatherlist', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"total\":true,\"areatype\":\"1\",\"company_id\":\"8637000000\",\"company_or_district\":\"\",\"sales_channel_type\":\"\",\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\"}', 'expect_result': 'time: [\"2021-01-01\", \"2021-11-25\"],', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '', 'remark': ''}" ]
+}
