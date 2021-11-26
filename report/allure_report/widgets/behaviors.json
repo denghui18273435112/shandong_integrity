@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "aa9a9e4b3ef4c042058baea069d5e95b",
-    "name" : "山东分类系统",
+    "uid" : "ce77fdca055b2d37d75e39c96ad6ef4b",
+    "name" : "山东诚信系统",
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 36,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 39
+      "total" : 1
     }
   } ]
 }

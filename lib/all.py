@@ -40,11 +40,13 @@ class all:
         """所有测试用例集合"""
         body = requests.post(url=self.new_url,headers=self.header,json=self.data)
         print(self.inData["case_id"]+"-"+self.inData["case_name"])
+        print(self.inData)
+        print(self.data)
         print(self.new_url)
         print(self.header)
-        print(self.data)
         print(body.json())
-        print("\n")
+        print(self.inData)
+        print(json.loads(self.inData["response_expect_result"]))
+        print(self.conftest)
         inData = update_data(self.inData,self.data,self.new_url,self.header,body.json(),json.loads(self.inData["response_expect_result"]),self.conftest)
-        print(inData)
         return inData,body
