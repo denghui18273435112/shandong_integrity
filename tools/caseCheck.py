@@ -15,7 +15,7 @@ class caseCheck:
             for key in response_expect_result:
                 for values in jsonpath.jsonpath(actual_result,key):
                      if values==response_expect_result[key]:
-                        print("{0}=={1};两参数相等".format(values,response_expect_result[key]))
+                        print("{0}=={1}".format(values,response_expect_result[key]))
                      else:
                        assert  True==state,"此用例校验失败.....;实际和预期结果未存在包含"
             #之前的

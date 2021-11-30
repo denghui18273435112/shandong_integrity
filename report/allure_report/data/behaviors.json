@@ -4,17 +4,1201 @@
   "children" : [ {
     "name" : "山东诚信系统",
     "children" : [ {
-      "name" : "test_ParameterlessAdjustment[Data0]",
-      "uid" : "a523301e0c6ee31e",
-      "parentUid" : "ce77fdca055b2d37d75e39c96ad6ef4b",
-      "status" : "broken",
-      "time" : {
-        "start" : 1637918013960,
-        "stop" : 1637918014136,
-        "duration" : 176
-      },
-      "flaky" : false,
-      "parameters" : [ "{'case_id': 'case_ImportPhotos', 'case_model': '05-在职人员管管理  ', 'case_name': '07-批量上传图片', 'priority': '高', 'title': '', 'url': '/manageapi/membercompany/ImportPhotos', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"photo_array\":[{\"authType\":\"S\",\"idNumber\":\"431225199212061818\",\"size\":20025,\"photo\":\"http://employee.sdbx.org:10252/upload/file/46643330c3894b7d820b2d4aec384507.jpg\",\"originalName\":\"111_431225199212061818.jpg\"}]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.successCount\":1\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+      "name" : "01-登录成功-默认请求",
+      "children" : [ {
+        "name" : "01-消息通知-\n-消息通知",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data0]",
+          "uid" : "ed940ec473bc7439",
+          "parentUid" : "d23cdcec1328a5e3aa447648b921eb62",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239820928,
+            "stop" : 1638239821065,
+            "duration" : 137
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_Personal_01', 'case_model': '01-登录成功-默认请求', 'case_name': '01-消息通知', 'priority': '低', 'title': '消息通知', 'url': '/manageapi/sicinitdata/Personal', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"type\":\"N\",\"pageSize\":10,\"pageNum\":1}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.n[*].url\": \"javascript:;\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "d23cdcec1328a5e3aa447648b921eb62"
+      }, {
+        "name" : "02-系统更新-\n-系统更新",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data1]",
+          "uid" : "aabb06b694a5f3b8",
+          "parentUid" : "a7352cea2df0f57bca0b00f0bef72978",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239821068,
+            "stop" : 1638239821198,
+            "duration" : 130
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_Personal_02', 'case_model': '01-登录成功-默认请求', 'case_name': '02-系统更新', 'priority': '低', 'title': '系统更新', 'url': '/manageapi/sicinitdata/Personal', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"type\":\"U\",\"pageSize\":10,\"pageNum\":1}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "a7352cea2df0f57bca0b00f0bef72978"
+      }, {
+        "name" : "03-Index-\n-Index",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data2]",
+          "uid" : "b78713336cbb79f8",
+          "parentUid" : "3b25dd5f40974af80b3f33f462c88d01",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239821202,
+            "stop" : 1638239821606,
+            "duration" : 404
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_Index', 'case_model': '01-登录成功-默认请求', 'case_name': '03-Index', 'priority': '高', 'title': 'Index', 'url': '/base/home/Index', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\"$.data.title\":\"山东省保险销售从业人员综合管理系统\",\"$.data.userInfo.nickName\":\"SDSXH009\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "3b25dd5f40974af80b3f33f462c88d01"
+      }, {
+        "name" : "04-BeProcessed-\n-BeProcessed",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data3]",
+          "uid" : "2b24e75ad2ea662b",
+          "parentUid" : "6cfa9dc5d86fffbc13343da1cede9413",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239821612,
+            "stop" : 1638239821776,
+            "duration" : 164
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_BeProcessed', 'case_model': '01-登录成功-默认请求', 'case_name': '04-BeProcessed', 'priority': '低', 'title': 'BeProcessed', 'url': '/manageapi/sicinitdata/BeProcessed', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "6cfa9dc5d86fffbc13343da1cede9413"
+      }, {
+        "name" : "05-获取省及地级市-\n-getall",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data4]",
+          "uid" : "a9dcc1eb1175fd31",
+          "parentUid" : "ba75e40e7311da146734ca084162f9c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239821781,
+            "stop" : 1638239821919,
+            "duration" : 138
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getall', 'case_model': '01-登录成功-默认请求', 'case_name': '05-获取省及地级市', 'priority': '高', 'title': 'getall', 'url': '/manageapi/initdata/getall', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"code\":8637,\"level\":1,\"includecode\":true}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\"$.data[0].code\":\"8637\",\"$.data[0].full_location\":\"山东省\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "ba75e40e7311da146734ca084162f9c7"
+      }, {
+        "name" : "06-当前账号所属公司-\n-",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data5]",
+          "uid" : "10c68be476314153",
+          "parentUid" : "b5426545c5840ebf9e0ae0eb143a816a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239821923,
+            "stop" : 1638239829846,
+            "duration" : 7923
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCurrentAllCompany', 'case_model': '01-登录成功-默认请求', 'case_name': '06-当前账号所属公司', 'priority': '高', 'title': '', 'url': '/manageapi/initdata/GetCurrentAllCompany', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\"$.data[0].district_code\":\"8637\",\"$.data[0].full_name\":\"山东省保险行业机构\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "b5426545c5840ebf9e0ae0eb143a816a"
+      } ],
+      "uid" : "6757bea0e36a3c0105b1f351ac122dc9"
+    }, {
+      "name" : "02-进入个人档案",
+      "children" : [ {
+        "name" : "01-个人档案列表字段-\n-",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data6]",
+          "uid" : "ae8b0ff859a24231",
+          "parentUid" : "48b7dd88d701242ea3607845f83b286c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239829903,
+            "stop" : 1638239831179,
+            "duration" : 1276
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_ListALL_01', 'case_model': '02-进入个人档案', 'case_name': '01-个人档案列表字段', 'priority': '高', 'title': '', 'url': '/manageapi/sicinitdata/ListALL', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"codes\":[\"BasicInfo\",\"PracticeCert\",\"WorkingTrajectory\",\"BusinessIndicators\",\"IntegrityRecord\",\"Qualification\",\"Complaint\",\"TrainingRecord\",\"TerminationInfo\"]}', 'expect_result': 'ture', 'response_expect_result': '{\"$.code\": 0, \"$.data.count\": 7, \"$.data.list[0].id\": 627, \"$.msg\": \"请求成功\"}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "48b7dd88d701242ea3607845f83b286c"
+      }, {
+        "name" : "02-个人档案-各栏信息-\n-",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data7]",
+          "uid" : "4e2d9e8c07201c1e",
+          "parentUid" : "61ec7a9ef5817edd6cab493d18af4eb5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239831185,
+            "stop" : 1638239831342,
+            "duration" : 157
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getarchives', 'case_model': '02-进入个人档案', 'case_name': '02-个人档案-各栏信息', 'priority': '高', 'title': '', 'url': '/manageapi/member/getarchives', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"id\":\"10483281\",\"isValid\":true}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.basic_info.id\": 10483281,\\n \"$.data.business_indicators[0].id\": 192544,\\n \"$.data.business_indicators[1].id\": 192543,\\n \"$.data.complaint[0].id_number\": \"431225199212061818\",\\n \"$.data.practice_cert[0].id\": 1263281,\\n \"$.data.qualification[0].id_number\": \"431225199212061818\",\\n \"$.data.working_trajectory[0].practice_number\": \"00008644000000002314983714\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "61ec7a9ef5817edd6cab493d18af4eb5"
+      } ],
+      "uid" : "72f7ffaf392130b7e8fc131e03beae11"
+    }, {
+      "name" : "03-个人信息查询",
+      "children" : [ {
+        "name" : "03-个人信息查询-\n-01-列表字段返回",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data8]",
+          "uid" : "bd78ad4aec3d892e",
+          "parentUid" : "1453db42a264db2e476018803f42f7df",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239831346,
+            "stop" : 1638239831551,
+            "duration" : 205
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_ListALL_02', 'case_model': '03-个人信息查询', 'case_name': '03-个人信息查询', 'priority': '高', 'title': '01-列表字段返回', 'url': '/manageapi/sicinitdata/ListALL', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"code\":\"InfoInquiryList\",\"name\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\"$.data.count\":1,\"$.data.list[0].id\":381,\"$.data.list[0].code\":\"InfoInquiryList\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "1453db42a264db2e476018803f42f7df"
+      }, {
+        "name" : "03-个人信息查询-\n-02-单个查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data9]",
+          "uid" : "bf785cd0e5f68af8",
+          "parentUid" : "5fd02894f10da716b428b6f26c39cd87",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239831556,
+            "stop" : 1638239831804,
+            "duration" : 248
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_List_01', 'case_model': '03-个人信息查询', 'case_name': '03-个人信息查询', 'priority': '高', 'title': '02-单个查询', 'url': '/manageapi/membercompany/List', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"total\":0,\"export\":false,\"by\":1,\"order\":\"entry_date\",\"kw\":\"邓辉\",\"auth_type\":\"S\",\"id_number\":\"431225199212061818\",\"id_number_array\":[]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[0].id\": 1788934,\\n \"$.data.list[0].member_id\": 10483281\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "5fd02894f10da716b428b6f26c39cd87"
+      }, {
+        "name" : "03-个人信息查询-\n-03-入职前批量查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data10]",
+          "uid" : "cd8b20f5d288d579",
+          "parentUid" : "8159a958f200d8542cbb7337edf231b8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239831808,
+            "stop" : 1638239832058,
+            "duration" : 250
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_List_02', 'case_model': '03-个人信息查询', 'case_name': '03-个人信息查询', 'priority': '高', 'title': '03-入职前批量查询', 'url': '/manageapi/membercompany/List', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"total\":0,\"export\":false,\"by\":1,\"order\":\"entry_date\",\"kw\":\"\",\"auth_type\":\"\",\"id_number\":\"\",\"id_number_array\":[[\"431225199212061818\",\"邓辉\"]]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[0].id\": 1788934,\\n \"$.data.list[0].member_id\": 10483281\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "8159a958f200d8542cbb7337edf231b8"
+      }, {
+        "name" : "04-个人信息修正-\n-01-列表字段返回",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data11]",
+          "uid" : "f3448885fa9e0cc",
+          "parentUid" : "18e359336a72a9cc71903e1c1f7ffd14",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239832063,
+            "stop" : 1638239832300,
+            "duration" : 237
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_ListALL_03', 'case_model': '03-个人信息查询', 'case_name': '04-个人信息修正', 'priority': '高', 'title': '01-列表字段返回', 'url': '/manageapi/sicinitdata/ListALL', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"code\":\"InfoCorrectionList\",\"name\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\"$.data.count\":1,\"$.data.list[0].id\":399,\"$.data.list[0].code\":\"InfoCorrectionList\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "18e359336a72a9cc71903e1c1f7ffd14"
+      }, {
+        "name" : "04-个人信息修正-\n-02-单个查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data12]",
+          "uid" : "668b5e4084fd43cf",
+          "parentUid" : "f633350e5a43bf258e28223045527b9e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239832305,
+            "stop" : 1638239832462,
+            "duration" : 157
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_AccurateGet_01', 'case_model': '03-个人信息查询', 'case_name': '04-个人信息修正', 'priority': '高', 'title': '02-单个查询', 'url': '/manageapi/membercompany/AccurateGet', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"\",\"name\":\"邓辉\",\"auth_type\":\"S\",\"id_number\":\"431225199212061818\",\"id_number_array\":[]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.list[*].member_id\":10483281}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "f633350e5a43bf258e28223045527b9e"
+      }, {
+        "name" : "04-个人信息修正-\n-03-入职前批量查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data13]",
+          "uid" : "6be17a6bdb69917d",
+          "parentUid" : "94d397be5ed0eba4d14d31f31d0149e0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239832466,
+            "stop" : 1638239832600,
+            "duration" : 134
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_AccurateGet_02', 'case_model': '03-个人信息查询', 'case_name': '04-个人信息修正', 'priority': '高', 'title': '03-入职前批量查询', 'url': '/manageapi/membercompany/AccurateGet', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"\",\"name\":\"\",\"auth_type\":\"\",\"id_number\":\"\",\"id_number_array\":[\"431225199212061818\"]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.list[*].member_id\":10483281}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "94d397be5ed0eba4d14d31f31d0149e0"
+      }, {
+        "name" : "04-个人信息修正-\n-04-个人信息修改-身份证修改",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data14]",
+          "uid" : "cecc45f732d63860",
+          "parentUid" : "18a66d16620d6f52f2c4284d95ed4fd0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239832604,
+            "stop" : 1638239833049,
+            "duration" : 445
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_UpdateAll', 'case_model': '03-个人信息查询', 'case_name': '04-个人信息修正', 'priority': '高', 'title': '04-个人信息修改-身份证修改', 'url': '/manageapi/membercompany/UpdateAll', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"id\":1788789,\"member_id\":10483281,\"member_name\":\"邓辉\",\"credit_real_score\":65,\"auth_type\":\"S\",\"id_number\":\"431225199212061818\",\"photo\":\"http://employee.sdbx.org:10252/upload/file/12091833de01413396f8a7fd514d2a5f.jpg\",\"sex\":\"M\",\"real_age\":29,\"birthday\":\"1992-12-06\",\"native_place\":\"湖南\",\"education\":\"本科\",\"practice_area\":\"山东省\",\"company_id\":\"86370402200100\",\"company_name\":\"中国人民财产保险股份有限公司枣庄市市中支公司\",\"abbreviation\":\"人民财产\",\"company_abbreviation\":\"中国人民财产枣庄市市中支公司\",\"company_parents\":[\"8637200100\",\"863704200100\",\"86370402200100\"],\"full_location\":\"山东省枣庄市市中区\",\"state\":2,\"work_number\":\"440085140\",\"contract_type\":\"3\",\"sales_channel_type\":\"1\",\"entry_date\":\"2011-01-07\",\"departure_date\":\"2018-03-14\",\"created_user\":\"37531\",\"created_name\":\"SDSXH009\",\"created_time\":\"2021-11-26\",\"business_scope\":[],\"position\":\"测试数据\",\"practice_code\":\"CSZS\",\"practice_number\":\"00008644000000002314983713\",\"name\":\"邓辉\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "18a66d16620d6f52f2c4284d95ed4fd0"
+      } ],
+      "uid" : "86f1b1fa74e84b62ef12d130af1f6e4a"
+    }, {
+      "name" : "04-执业证管理",
+      "children" : [ {
+        "name" : "05-在职人员管管理  -\n-01-默认查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data15]",
+          "uid" : "fe460fe3e700b78b",
+          "parentUid" : "6d993f7a5bea3fe89f708d3383f30066",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239833054,
+            "stop" : 1638239833275,
+            "duration" : 221
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListOnJobCurrent_01', 'case_model': '04-执业证管理', 'case_name': '05-在职人员管管理  ', 'priority': '高', 'title': '01-默认查询', 'url': '/manageapi/membercompany/GetListOnJobCurrent', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"direction\": \"desc\",\\n \"total\": false,\\n \"order\": \"entry_date\",\\n \"current\": true,\\n \"state\": 1,\\n \"status\": \"\",\\n \"company_id\": \"8637000000\",\\n \"date_begin\": \"1970-01-01 08:00:00\",\\n \"date_end\": \"2021-11-26\",\\n \"date\": true,\\n \"effective_time\": false,\\n \"effective_time_begin\": \"\",\\n \"effective_time_end\": \"\",\\n \"print_time\": false,\\n \"print_time_begin\": \"\",\\n \"print_time_end\": \"\",\\n \"kw\": \"\",\\n \"auth_type\": \"\",\\n \"id_number\": \"\",\\n \"practice_number\": \"\",\\n \"district_code\": \"*\",\\n \"contract_type\": \"\",\\n \"business_scope\": \"\",\\n \"sales_channel_type\": \"\",\\n \"effective_date\": [],\\n \"expiration_date\": [],\\n \"print_date\": [],\\n \"sex\": \"\",\\n \"print_status\": \"\",\\n \"company\": [\"8637000000\"],\\n \"credit_level\": \"\",\\n \"digitgd\": \"\",\\n \"user\": false,\\n \"photo\": \"\",\\n \"practice_code\": \"\",\\n \"signed\": \"\",\\n \"isOnlyCount\": false\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "6d993f7a5bea3fe89f708d3383f30066"
+      }, {
+        "name" : "05-在职人员管管理  -\n-02-所有条件同时查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data16]",
+          "uid" : "c8303d4968eefe24",
+          "parentUid" : "2c763033cf23b5932f3619503ea6ee22",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239833279,
+            "stop" : 1638239833425,
+            "duration" : 146
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListOnJobCurrent_02', 'case_model': '04-执业证管理', 'case_name': '05-在职人员管管理  ', 'priority': '高', 'title': '02-所有条件同时查询', 'url': '/manageapi/membercompany/GetListOnJobCurrent', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"direction\":\"desc\",\"total\":false,\"order\":\"entry_date\",\"current\":true,\"state\":1,\"status\":\"\",\"company_id\":\"8637000000\",\"date_begin\":\"1970-01-01 08:00:00\",\"date_end\":\"2021-11-24T16:00:00.000Z\",\"date\":true,\"effective_time\":true,\"effective_time_begin\":\"2011-11-02\",\"effective_time_end\":\"2024-12-19\",\"print_time\":false,\"print_time_begin\":\"\",\"print_time_end\":\"\",\"kw\":\"邓辉\",\"auth_type\":\"\",\"id_number\":\"431225199212061818\",\"practice_number\":\"00008644000000002314983714\",\"district_code\":\"863704\",\"contract_type\":\"3\",\"business_scope\":\"\",\"sales_channel_type\":\"1\",\"effective_date\":[\"2011-11-02\",\"2024-12-19\"],\"expiration_date\":[],\"print_date\":[],\"sex\":\"M\",\"print_status\":\"1\",\"company\":[\"8637000000\"],\"credit_level\":3,\"digitgd\":\"\",\"user\":false,\"photo\":\"1\",\"practice_code\":\"\",\"signed\":\"\",\"isOnlyCount\":false}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[0].id\": 1788934\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "2c763033cf23b5932f3619503ea6ee22"
+      }, {
+        "name" : "05-在职人员管管理  -\n-03-批量查询诚信级别",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data17]",
+          "uid" : "af1ed3eb133cacf7",
+          "parentUid" : "1a7b30ddea2cbed15546a766bd6f0287",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239833429,
+            "stop" : 1638239833580,
+            "duration" : 151
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_AddRecord', 'case_model': '04-执业证管理', 'case_name': '05-在职人员管管理  ', 'priority': '高', 'title': '03-批量查询诚信级别', 'url': '/manageapi/queryrecord/AddRecord', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"source\":1,\"times\":1}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "1a7b30ddea2cbed15546a766bd6f0287"
+      }, {
+        "name" : "05-在职人员管管理  -\n-04-打印执业证-01",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data18]",
+          "uid" : "7808fb5184bfdc8c",
+          "parentUid" : "59a22e8ab8bcaff158a090fca7f2fa2a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239833585,
+            "stop" : 1638239834120,
+            "duration" : 535
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_BatchPdf', 'case_model': '04-执业证管理', 'case_name': '05-在职人员管管理  ', 'priority': '高', 'title': '04-打印执业证-01', 'url': '/manageapi/memberpracticecert/BatchPdf', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"member_ids\":[10483281]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "59a22e8ab8bcaff158a090fca7f2fa2a"
+      }, {
+        "name" : "05-在职人员管管理  -\n-05-打印执业证-02",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data19]",
+          "uid" : "27682108b47c0efb",
+          "parentUid" : "ba3e3b616032961ba437d7153fa0557f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239834124,
+            "stop" : 1638239834236,
+            "duration" : 112
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_Print', 'case_model': '04-执业证管理', 'case_name': '05-在职人员管管理  ', 'priority': '高', 'title': '05-打印执业证-02', 'url': '/manageapi/memberpracticecert/Print', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"member_ids\":[10483281]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "ba3e3b616032961ba437d7153fa0557f"
+      }, {
+        "name" : "05-在职人员管管理  -\n-06-二维码扫码-结果页面",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data20]",
+          "uid" : "6e08e3e599c3ce5",
+          "parentUid" : "435fde6954f34f40a51eb6279406d7f5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239834240,
+            "stop" : 1638239834410,
+            "duration" : 170
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_MemberPracticeCertInfoQrcode', 'case_model': '04-执业证管理', 'case_name': '05-在职人员管管理  ', 'priority': '高', 'title': '06-二维码扫码-结果页面', 'url': '/manageapi/openapi/MemberPracticeCertInfoQrcode', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"p\":\"VVQweitlWWpldDNTS1Q3TWw2UFV0QmNCTkNxYWlvcllieVhtSlZhREJUOD0=\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.idNumber\":\"431225199212061818\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "435fde6954f34f40a51eb6279406d7f5"
+      }, {
+        "name" : "05-在职人员管管理  -\n-07-批量上传图片",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data21]",
+          "uid" : "79940e6fee360c5a",
+          "parentUid" : "2963fe43c3897703ff587cf23753aeb0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239834416,
+            "stop" : 1638239834681,
+            "duration" : 265
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_ImportPhotos', 'case_model': '04-执业证管理', 'case_name': '05-在职人员管管理  ', 'priority': '高', 'title': '07-批量上传图片', 'url': '/manageapi/membercompany/ImportPhotos', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"photo_array\":[{\"authType\":\"S\",\"idNumber\":\"431225199212061818\",\"size\":20025,\"photo\":\"http://employee.sdbx.org:10252/upload/file/46643330c3894b7d820b2d4aec384507.jpg\",\"originalName\":\"111_431225199212061818.jpg\"}]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.successCount\":1\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "2963fe43c3897703ff587cf23753aeb0"
+      }, {
+        "name" : "06-离职人员管管理  -\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data22]",
+          "uid" : "90629ad42debe20e",
+          "parentUid" : "b5fd7e83870ac8e8c3cb715a7eb94340",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239834685,
+            "stop" : 1638239834925,
+            "duration" : 240
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListDepartureCurrent_01', 'case_model': '04-执业证管理', 'case_name': '06-离职人员管管理  ', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/membercompany/GetListDepartureCurrent', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"total\": false,\\n \"order\": \"departure_date\",\\n \"current\": true,\\n \"state\": 2,\\n \"company_id\": \"8637000000\",\\n \"date_begin\": \"2021-01-01\",\\n \"date_end\": \"2021-11-26\",\\n \"date\": true,\\n \"kw\": \"\",\\n \"id_number\": \"\",\\n \"auth_type\": \"S\",\\n \"district_code\": \"*\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"contract_type\": \"\",\\n \"dateRange\": [\"2021-01-01\", \"2021-11-26\"],\\n \"practice_code\": \"\",\\n \"signed\": \"\",\\n \"isOnlyCount\": false\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "b5fd7e83870ac8e8c3cb715a7eb94340"
+      }, {
+        "name" : "06-离职人员管管理  -\n-02-全条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data23]",
+          "uid" : "b46401f94780619e",
+          "parentUid" : "4f51fa3aca1e83d1bc77f292a273221d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239834930,
+            "stop" : 1638239835059,
+            "duration" : 129
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListDepartureCurrent_02', 'case_model': '04-执业证管理', 'case_name': '06-离职人员管管理  ', 'priority': '高', 'title': '02-全条件查询', 'url': '/manageapi/membercompany/GetListDepartureCurrent', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"total\":false,\"order\":\"departure_date\",\"current\":true,\"state\":2,\"company_id\":\"86370402200100\",\"date_begin\":\"2007-10-10\",\"date_end\":\"2023-11-16\",\"date\":true,\"kw\":\"邓辉\",\"id_number\":\"431225199212061817\",\"auth_type\":\"O\",\"district_code\":\"863704\",\"company\":[\"8637000000\",\"8637200100\",\"863704200100\",\"86370402200100\"],\"sales_channel_type\":\"1\",\"contract_type\":\"3\",\"dateRange\":[\"2007-10-10\",\"2023-11-16\"],\"practice_code\":\"\",\"signed\":\"\",\"isOnlyCount\":false}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n\"$.data.list[0].id\": 1790048\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "4f51fa3aca1e83d1bc77f292a273221d"
+      }, {
+        "name" : "06-离职人员管管理  -\n-03-修改离职时间->当前时间",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data24]",
+          "uid" : "9114d68eb4b1ba1",
+          "parentUid" : "e68bd8d5cf82600919037c86ea30061b",
+          "status" : "failed",
+          "time" : {
+            "start" : 1638239835063,
+            "stop" : 1638239835208,
+            "duration" : 145
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_UpdateDepartureDate_01', 'case_model': '04-执业证管理', 'case_name': '06-离职人员管管理  ', 'priority': '高', 'title': '03-修改离职时间->当前时间', 'url': '/manageapi/membercompany/UpdateDepartureDate', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"id\":1790048,\"departure_date\":\"2099-03-07\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"失败\",\\n\"$.data\": 0\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "e68bd8d5cf82600919037c86ea30061b"
+      }, {
+        "name" : "06-离职人员管管理  -\n-03-修改离职时间-<入职时间",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data25]",
+          "uid" : "f03187068332b0ca",
+          "parentUid" : "b742898bef6e3abec3a5026360e656a2",
+          "status" : "failed",
+          "time" : {
+            "start" : 1638239835291,
+            "stop" : 1638239835410,
+            "duration" : 119
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_UpdateDepartureDate_02', 'case_model': '04-执业证管理', 'case_name': '06-离职人员管管理  ', 'priority': '高', 'title': '03-修改离职时间-<入职时间', 'url': '/manageapi/membercompany/UpdateDepartureDate', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"id\":1790048,\"departure_date\":\"1020-03-07\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"失败\",\\n\"$.data\": 0\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "b742898bef6e3abec3a5026360e656a2"
+      }, {
+        "name" : "06-离职人员管管理  -\n-03-修改离职时间-离职时间为空",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data26]",
+          "uid" : "ce6d51fbcaf84d51",
+          "parentUid" : "6a8c64df6f1d3c5626f79a5ddfd956ed",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239835419,
+            "stop" : 1638239835527,
+            "duration" : 108
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_UpdateDepartureDate_03', 'case_model': '04-执业证管理', 'case_name': '06-离职人员管管理  ', 'priority': '高', 'title': '03-修改离职时间-离职时间为空', 'url': '/manageapi/membercompany/UpdateDepartureDate', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"id\":1790048,\"departure_date\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 1,\\n \"$.msg\": \"departure_date参数错误\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "6a8c64df6f1d3c5626f79a5ddfd956ed"
+      }, {
+        "name" : "06-离职人员管管理  -\n-03-修改离职时间-大于入职时间且小于等于当前时间",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data27]",
+          "uid" : "a66c7e7faa6f925c",
+          "parentUid" : "826ed28140ea43afbeb4376e23801794",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239835532,
+            "stop" : 1638239835665,
+            "duration" : 133
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_UpdateDepartureDate_04', 'case_model': '04-执业证管理', 'case_name': '06-离职人员管管理  ', 'priority': '高', 'title': '03-修改离职时间-大于入职时间且小于等于当前时间', 'url': '/manageapi/membercompany/UpdateDepartureDate', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"id\":1790048,\"departure_date\":\"2019-05-07\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n\"$.data\": 0\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "826ed28140ea43afbeb4376e23801794"
+      }, {
+        "name" : "07-执业证导入追踪-\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data28]",
+          "uid" : "32659b14ede12f49",
+          "parentUid" : "6930e1db096376cf155ae402821f5711",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239835669,
+            "stop" : 1638239838588,
+            "duration" : 2919
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCardImportList_01', 'case_model': '04-执业证管理', 'case_name': '07-执业证导入追踪', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/memberpracticecert/GetCardImportList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":1000,\"by\":1,\"order\":\"entry_date\",\"date\":true,\"bdate\":\"2021-01-01\",\"edate\":\"2021-12-29\",\"importType\":\"\",\"areatype\":1}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "6930e1db096376cf155ae402821f5711"
+      }, {
+        "name" : "07-执业证导入追踪-\n-02-状态查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data29]",
+          "uid" : "f060c98993494f51",
+          "parentUid" : "806adaea99ea6ac760d1ab8bb23c682f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239838594,
+            "stop" : 1638239844804,
+            "duration" : 6210
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCardImportList_02', 'case_model': '04-执业证管理', 'case_name': '07-执业证导入追踪', 'priority': '高', 'title': '02-状态查询', 'url': '/manageapi/memberpracticecert/GetCardImportList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"entry_date\",\"date\":true,\"bdate\":\"2021-01-01\",\"edate\":\"2021-12-29\",\"importType\":\"Y\",\"areatype\":1}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.list[*].isImport\":\"Y\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "806adaea99ea6ac760d1ab8bb23c682f"
+      }, {
+        "name" : "08-导入数据统计-\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data30]",
+          "uid" : "b596c70a7be3203e",
+          "parentUid" : "d7f33d00f520b6b041b97820a2d32901",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239844808,
+            "stop" : 1638239847532,
+            "duration" : 2724
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCardImportStatistics_01', 'case_model': '04-执业证管理', 'case_name': '08-导入数据统计', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/memberpracticecert/GetCardImportStatistics', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"entry_date\",\"date\":true,\"bdate\":\"2021-01-01\",\"edate\":\"2021-11-29\",\"total\":true,\"importType\":\"\",\"state\":\"0\",\"areatype\":\"1\",\"company_id\":\"\",\"company_or_district\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "d7f33d00f520b6b041b97820a2d32901"
+      } ],
+      "uid" : "e0abd8ffb5de6360eac8622beeba1005"
+    }, {
+      "name" : "05-诚信信息管理",
+      "children" : [ {
+        "name" : "01-诚信记录状态-\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data31]",
+          "uid" : "305d89462d1d7293",
+          "parentUid" : "9e5f5c63af02992e15a340670e72fa25",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239847536,
+            "stop" : 1638239847787,
+            "duration" : 251
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetAuditList_01', 'case_model': '05-诚信信息管理', 'case_name': '01-诚信记录状态', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/creditlog/GetAuditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"by\":1,\"order\":\"created_time\",\"total\":964,\"pageNum\":1,\"pageSize\":20,\"state\":\"0\",\"auth_type\":\"\",\"company_type\":\"\",\"kw\":\"\",\"id_number\":\"\",\"audit\":0,\"district_code\":\"*\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"has_honor_date\":\"\",\"audit_date\":\"\",\"reason_type\":\"0\",\"reason_judgment\":\"0\",\"is_losses\":\"\",\"reward_company_type\":\"0\",\"company_id\":\"8637000000\",\"has_honor_time\":false,\"honor_time_start\":\"\",\"honor_time_end\":\"\",\"audit_time\":false,\"audit_time_begin\":\"\",\"audit_time_end\":\"\",\"history_id\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "9e5f5c63af02992e15a340670e72fa25"
+      }, {
+        "name" : "01-诚信记录状态-\n-02-全条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data32]",
+          "uid" : "9a11e42b4c5a440e",
+          "parentUid" : "363be2307b778593fc5c8e9b2dec38c4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239847793,
+            "stop" : 1638239847948,
+            "duration" : 155
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetAuditList_02', 'case_model': '05-诚信信息管理', 'case_name': '01-诚信记录状态', 'priority': '高', 'title': '02-全条件查询', 'url': '/manageapi/creditlog/GetAuditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"by\":1,\"order\":\"created_time\",\"total\":1,\"pageNum\":1,\"pageSize\":20,\"state\":\"2\",\"auth_type\":\"S\",\"company_type\":\"\",\"kw\":\"邓辉\",\"id_number\":\"431225199212061818\",\"audit\":1,\"district_code\":\"*\",\"company\":[\"8637000000\",\"8637200100\",\"863704200100\",\"86370402200100\"],\"sales_channel_type\":\"1\",\"has_honor_date\":[\"2019-11-05\",\"2019-11-05\"],\"audit_date\":[\"2021-11-26\",\"2021-11-26\"],\"reason_type\":\"1\",\"reason_judgment\":\"1\",\"is_losses\":\"N\",\"reward_company_type\":\"1\",\"company_id\":\"86370402200100\",\"has_honor_time\":true,\"honor_time_start\":\"2019-11-05\",\"honor_time_end\":\"2019-11-05\",\"audit_time\":true,\"audit_time_begin\":\"2021-11-26\",\"audit_time_end\":\"2021-11-26\",\"history_id\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "363be2307b778593fc5c8e9b2dec38c4"
+      }, {
+        "name" : "02-导入记录-\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data33]",
+          "uid" : "fdafa91195552a5a",
+          "parentUid" : "e43d7db0be14141ba4695e59ed2f8889",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239847952,
+            "stop" : 1638239848089,
+            "duration" : 137
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCreditHistoryLogList_01', 'case_model': '05-诚信信息管理', 'case_name': '02-导入记录', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/creditlog/GetCreditHistoryLogList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"account\":\"\",\"date\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-12-30\",\"summary\":true}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "e43d7db0be14141ba4695e59ed2f8889"
+      }, {
+        "name" : "02-导入记录-\n-02-全条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data34]",
+          "uid" : "f0b4fd434649bd59",
+          "parentUid" : "50e0cc6209d361f19409ab5347afd424",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239848094,
+            "stop" : 1638239848240,
+            "duration" : 146
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCreditHistoryLogList_02', 'case_model': '05-诚信信息管理', 'case_name': '02-导入记录', 'priority': '高', 'title': '02-全条件查询', 'url': '/manageapi/creditlog/GetCreditHistoryLogList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"account\":\"DSGS-ZJ-012\",\"date\":true,\"date_begin\":\"2021-11-24\",\"date_end\":\"2021-11-24\",\"summary\":true}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.list[*].createdUserName\":\"DSGS-ZJ-012\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "50e0cc6209d361f19409ab5347afd424"
+      }, {
+        "name" : "03-我的待处理件-\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data35]",
+          "uid" : "bdf1c492bf61139f",
+          "parentUid" : "86a75a310625f7023b6f38d789718a37",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239848245,
+            "stop" : 1638239848435,
+            "duration" : 190
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetAuditList_03', 'case_model': '05-诚信信息管理', 'case_name': '03-我的待处理件', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/creditlog/GetAuditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_type\":\"\",\"kw\":\"\",\"id_number\":\"\",\"audit\":0,\"reward_company_type\":\"0\",\"company_id\":\"8637000000\",\"has_honor_time\":false,\"honor_time_start\":\"\",\"honor_time_end\":\"\",\"reason_type\":\"0\",\"reason_judgment\":\"0\",\"is_losses\":\"\",\"auth_type\":\"\",\"history_id\":\"\",\"page_type\":2,\"district_code\":\"*\",\"state\":\"0\",\"credit_log_id\":null}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.result\":true\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "86a75a310625f7023b6f38d789718a37"
+      }, {
+        "name" : "04-我的已处理未生效件-\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data36]",
+          "uid" : "2fdf5ae34dafb98f",
+          "parentUid" : "570c52cb78cbaa9c6fe8a8bf9bd32fa0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239848439,
+            "stop" : 1638239848832,
+            "duration" : 393
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetAuditList_04', 'case_model': '05-诚信信息管理', 'case_name': '04-我的已处理未生效件', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/creditlog/GetAuditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_type\":\"\",\"kw\":\"\",\"auth_type\":\"\",\"id_number\":\"\",\"audit\":0,\"reward_company_type\":\"0\",\"company_id\":\"8637000000\",\"has_honor_time\":false,\"honor_time_start\":\"\",\"honor_time_end\":\"\",\"reason_type\":\"0\",\"reason_judgment\":\"0\",\"is_losses\":\"\",\"district_code\":\"*\",\"history_id\":\"\",\"page_type\":3,\"state\":\"0\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.result\":true\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "570c52cb78cbaa9c6fe8a8bf9bd32fa0"
+      }, {
+        "name" : "05-我的已生效件-\n-01-默认条件查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data37]",
+          "uid" : "95592514a9ab030b",
+          "parentUid" : "1fc3962b5e794e8adb6d214b2806c766",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239848836,
+            "stop" : 1638239849532,
+            "duration" : 696
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetAuditList_05', 'case_model': '05-诚信信息管理', 'case_name': '05-我的已生效件', 'priority': '高', 'title': '01-默认条件查询', 'url': '/manageapi/creditlog/GetAuditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_type\":\"\",\"kw\":\"\",\"id_number\":\"\",\"reward_company_type\":\"0\",\"sales_channel_type\":\"\",\"audit\":\"\",\"district_code\":\"*\",\"company_id\":\"8637000000\",\"auth_type\":\"\",\"has_honor_time\":false,\"honor_time_start\":\"\",\"honor_time_end\":\"\",\"audit_time_begin\":\"\",\"audit_time_end\":\"\",\"audit_time\":false,\"reason_type\":\"0\",\"reason_judgment\":\"0\",\"is_losses\":\"\",\"history_id\":\"\",\"page_type\":4,\"state\":\"0\",\"user\":true}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\"$.data.result\":true\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "1fc3962b5e794e8adb6d214b2806c766"
+      } ],
+      "uid" : "48035d46b7f20a6105b47e84fff82c09"
+    }, {
+      "name" : "06-人员信息综合查询",
+      "children" : [ {
+        "name" : "12-人员流动统计-人员流动统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data38]",
+          "uid" : "8d3e3a1c5df9e643",
+          "parentUid" : "a3695ea416afd1c54e0e31fc5d342c5b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239849537,
+            "stop" : 1638239853290,
+            "duration" : 3753
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_personnelflow', 'case_model': '06-人员信息综合查询', 'case_name': '12-人员流动统计-人员流动统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/personnelflow', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"year\":2021,\"company_id\":\"8637000000\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "a3695ea416afd1c54e0e31fc5d342c5b"
+      }, {
+        "name" : "13-人员流动统计-入职人员来源统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data39]",
+          "uid" : "7e42c4790d85b54b",
+          "parentUid" : "b7470ca7a4013585ef9a768c5d76dd84",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239853307,
+            "stop" : 1638239856527,
+            "duration" : 3220
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getsourcelist', 'case_model': '06-人员信息综合查询', 'case_name': '13-人员流动统计-入职人员来源统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/getsourcelist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"total\":true,\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\",\"areatype\":1,\"summary\":true,\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"source_type\":0,\"time\":[\"2021-01-01\",\"2021-11-26\"],\"district_code\":\"8637*\",\"source_company\":[]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].full_location\": \"山东省\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "b7470ca7a4013585ef9a768c5d76dd84"
+      }, {
+        "name" : "14-人员流动统计-离职人员去向统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data40]",
+          "uid" : "8bc23ff42352ad02",
+          "parentUid" : "11b1eb5fbc1a7bf9aa8baf28b548462e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239856531,
+            "stop" : 1638239858559,
+            "duration" : 2028
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getwhereaboutslist', 'case_model': '06-人员信息综合查询', 'case_name': '14-人员流动统计-离职人员去向统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/getwhereaboutslist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"total\":true,\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\",\"areatype\":1,\"summary\":true,\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"whereabouts_type\":0,\"time\":[\"2021-01-01\",\"2021-11-26\"],\"district_code\":\"8637*\",\"whereabouts_company\":[]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].full_location\": \"山东省\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "11b1eb5fbc1a7bf9aa8baf28b548462e"
+      }, {
+        "name" : "15-人员流动统计-离入职人员对比统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data41]",
+          "uid" : "b1ddf90d5f5f5d03",
+          "parentUid" : "9b5b13f53218058db060c502b0aa9b0d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239858565,
+            "stop" : 1638239864557,
+            "duration" : 5992
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getsourcewhereaboutslist', 'case_model': '06-人员信息综合查询', 'case_name': '15-人员流动统计-离入职人员对比统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/getsourcewhereaboutslist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"total\":true,\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\",\"areatype\":1,\"summary\":true,\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"proportion\":\"\",\"time\":[\"2021-01-01\",\"2021-11-26\"],\"district_code\":\"8637*\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].full_location\": \"山东省\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "9b5b13f53218058db060c502b0aa9b0d"
+      }, {
+        "name" : "16-入职人员查询-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data42]",
+          "uid" : "f28bfc9bd0ae7012",
+          "parentUid" : "4dae66cad2788440d3eff9ce77698d88",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239864563,
+            "stop" : 1638239864759,
+            "duration" : 196
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListEntry', 'case_model': '06-人员信息综合查询', 'case_name': '16-入职人员查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompany/GetListEntry', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"entry_date\",\"state\":\"0\",\"current\":false,\"company_id\":\"8637000000\",\"total\":false,\"summary\":false,\"id_number_array\":[],\"date_begin\":\"\",\"date_end\":\"\",\"date\":false,\"kw\":\"\",\"district_code\":\"*\",\"company\":[\"8637000000\"],\"time\":[],\"auth_type\":\"S\",\"id_number\":\"\",\"sales_channel_type\":\"\",\"contract_type\":\"\",\"working_time\":\"\",\"main_working_time\":\"\",\"all_working_time\":\"\",\"working_count\":\"\",\"signed\":\"\",\"isOnlyCount\":false}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "4dae66cad2788440d3eff9ce77698d88"
+      }, {
+        "name" : "17-在职人员查询-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data43]",
+          "uid" : "8d7002aa9362d223",
+          "parentUid" : "b91f72b81603644295f9883bf9d5f518",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239864764,
+            "stop" : 1638239864965,
+            "duration" : 201
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListOnJobNotCurrent', 'case_model': '06-人员信息综合查询', 'case_name': '17-在职人员查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompany/GetListOnJobNotCurrent', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"entry_date\",\"state\":\"1\",\"current\":false,\"company_id\":\"8637000000\",\"total\":false,\"summary\":false,\"id_number_array\":[],\"date_begin\":\"1970-01-01 08:00:00\",\"date_end\":\"2021-11-26\",\"date\":true,\"kw\":\"\",\"district_code\":\"*\",\"company\":[\"8637000000\"],\"statistical_date\":\"2021-11-26\",\"sales_channel_type\":\"\",\"contract_type\":\"\",\"id_number\":\"\",\"auth_type\":\"S\",\"credit_level\":\"\",\"working_time\":\"\",\"main_working_time\":\"\",\"all_working_time\":\"\",\"working_count\":\"\",\"signed\":\"\",\"isOnlyCount\":false}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "b91f72b81603644295f9883bf9d5f518"
+      }, {
+        "name" : "18-离职人员查询-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data44]",
+          "uid" : "b33f06f16511aaaf",
+          "parentUid" : "2b4162101d996ac5e5b5873c1905defb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239864971,
+            "stop" : 1638239865210,
+            "duration" : 239
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListDepartureNotCurrent', 'case_model': '06-人员信息综合查询', 'case_name': '18-离职人员查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompany/GetListDepartureNotCurrent', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"departure_date\",\"state\":\"2\",\"current\":false,\"company_id\":\"8637000000\",\"total\":false,\"summary\":false,\"id_number_array\":[],\"date_begin\":\"\",\"date_end\":\"\",\"date\":false,\"kw\":\"\",\"id_number\":\"\",\"auth_type\":\"S\",\"district_code\":\"*\",\"company\":[\"8637000000\"],\"time\":null,\"sales_channel_type\":\"\",\"contract_type\":\"\",\"working_time\":\"\",\"main_working_time\":\"\",\"all_working_time\":\"\",\"working_count\":\"\",\"signed\":\"\",\"isOnlyCount\":false}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "2b4162101d996ac5e5b5873c1905defb"
+      }, {
+        "name" : "19-在职/离职执业证查询-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data45]",
+          "uid" : "ec4f6defb1005b11",
+          "parentUid" : "2863fef1af5c4a3af5c6844a9a32286a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239865215,
+            "stop" : 1638239865434,
+            "duration" : 219
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetListPracticeCert', 'case_model': '06-人员信息综合查询', 'case_name': '19-在职/离职执业证查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompany/GetListPracticeCert', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"state\":0,\"order\":\"entry_date\",\"total\":false,\"kw\":\"\",\"company_id\":\"8637000000\",\"effective_time\":false,\"effective_time_begin\":\"\",\"effective_time_end\":\"\",\"print_time\":false,\"print_time_begin\":\"\",\"print_time_end\":\"\",\"logout_date\":false,\"logout_date_begin\":\"\",\"logout_date_end\":\"\",\"id_number\":\"\",\"auth_type\":\"S\",\"district_code\":\"*\",\"contract_type\":\"\",\"business_scope\":\"\",\"companytype\":\"\",\"sales_channel_type\":\"\",\"practice_number\":\"\",\"company\":[\"8637000000\"],\"effectiveList\":null,\"printList\":null,\"expirationList\":null,\"status\":\"\",\"sex\":\"\",\"print_count\":\"\",\"print_status\":\"\",\"id_number_array\":[],\"current\":false,\"isOnlyCount\":false}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "2863fef1af5c4a3af5c6844a9a32286a"
+      }, {
+        "name" : "20-各类人数汇总统计-人员属性汇总统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data46]",
+          "uid" : "9899abe1e43d63af",
+          "parentUid" : "076f4efbd6ba1cf29219d5c3d7b5fa52",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239865439,
+            "stop" : 1638239869087,
+            "duration" : 3648
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_personnelattributelist_01', 'case_model': '06-人员信息综合查询', 'case_name': '20-各类人数汇总统计-人员属性汇总统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/personnelattributelist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"inst_id\":\"8637000000\",\"year\":2021,\"total\":true,\"areatype\":\"1\",\"company_id\":\"\",\"district_code\":\"\",\"state\":\"0\",\"date\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "076f4efbd6ba1cf29219d5c3d7b5fa52"
+      }, {
+        "name" : "21-各类人数汇总统计-人员属性统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data47]",
+          "uid" : "50149aca6194e5cb",
+          "parentUid" : "645f9856004b49dec60330cd30658ca2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239869092,
+            "stop" : 1638239872522,
+            "duration" : 3430
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_personnelattributelist_02', 'case_model': '06-人员信息综合查询', 'case_name': '21-各类人数汇总统计-人员属性统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/personnelattributelist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"inst_id\":\"8637000000\",\"year\":2021,\"total\":true,\"areatype\":\"1\",\"company_id\":\"\",\"district_code\":\"\",\"state\":\"0\",\"date\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "645f9856004b49dec60330cd30658ca2"
+      }, {
+        "name" : "22-从业时长汇总统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data48]",
+          "uid" : "1f0f363e625dcacd",
+          "parentUid" : "a8a2b8d745deefdd5709c98d3f77e226",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239872527,
+            "stop" : 1638239877026,
+            "duration" : 4499
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getmemberworkingmonth', 'case_model': '06-人员信息综合查询', 'case_name': '22-从业时长汇总统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/getmemberworkingmonth', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"FilterType\":1,\"CompanyId\":\"\",\"DistrictCode\":\"\",\"Status\":-1,\"Date\":[\"2021-01-01\",\"2021-11-26\"]}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "a8a2b8d745deefdd5709c98d3f77e226"
+      }, {
+        "name" : "23-人员流动汇总统计-离职人员去向汇总统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data49]",
+          "uid" : "8254a361a4f7298a",
+          "parentUid" : "26f1008f6f0afee2a9ca515de5b99d01",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239877030,
+            "stop" : 1638239879792,
+            "duration" : 2762
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getwhereaboutsgatherlist', 'case_model': '06-人员信息综合查询', 'case_name': '23-人员流动汇总统计-离职人员去向汇总统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/getwhereaboutsgatherlist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"total\":true,\"areatype\":\"1\",\"company_id\":\"8637000000\",\"company_or_district\":\"\",\"sales_channel_type\":\"\",\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "26f1008f6f0afee2a9ca515de5b99d01"
+      }, {
+        "name" : "24-人员流动汇总统计-入职人员来源汇总统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data50]",
+          "uid" : "54daf8ba32f0ce97",
+          "parentUid" : "775ee5fb07972dceccf01fbc522a62df",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239879796,
+            "stop" : 1638239886642,
+            "duration" : 6846
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getsourcegatherlist', 'case_model': '06-人员信息综合查询', 'case_name': '24-人员流动汇总统计-入职人员来源汇总统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/getsourcegatherlist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"total\":true,\"areatype\":\"1\",\"company_id\":\"8637000000\",\"company_or_district\":\"\",\"sales_channel_type\":\"\",\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "775ee5fb07972dceccf01fbc522a62df"
+      }, {
+        "name" : "25-人员流动汇总统计-离入职人员对比汇总统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data51]",
+          "uid" : "741286db4b7d678f",
+          "parentUid" : "71325547898a3c27d0ff1636d4c6c7fd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239886647,
+            "stop" : 1638239892061,
+            "duration" : 5414
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_getsourcewhereaboutsgatherlist', 'case_model': '06-人员信息综合查询', 'case_name': '25-人员流动汇总统计-离入职人员对比汇总统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/membercompanystats/getsourcewhereaboutsgatherlist', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"total\":true,\"areatype\":\"1\",\"company_id\":\"8637000000\",\"company_or_district\":\"\",\"sales_channel_type\":\"\",\"has_honor_time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-26\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "71325547898a3c27d0ff1636d4c6c7fd"
+      }, {
+        "name" : "26-人员留存率统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data52]",
+          "uid" : "1ad6f9c1dd1d5158",
+          "parentUid" : "ad09fec8db543e3589751c53de96b2dc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239892065,
+            "stop" : 1638239910762,
+            "duration" : 18697
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_RetentionList', 'case_model': '06-人员信息综合查询', 'case_name': '26-人员留存率统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/statistics/RetentionList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"time\":true,\"areatype\":\"1\",\"companyOrDistrict\":\"\",\"dateBegin\":\"2021-01-01\",\"dateEnd\":\"2021-11-26\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "ad09fec8db543e3589751c53de96b2dc"
+      }, {
+        "name" : "27-业务指标查询-业务指标查询-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data53]",
+          "uid" : "896dcbfeb7440e6",
+          "parentUid" : "f911358a570b349c8658827652cc0197",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239910767,
+            "stop" : 1638239915532,
+            "duration" : 4765
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetMemberBusiness', 'case_model': '06-人员信息综合查询', 'case_name': '27-业务指标查询-业务指标查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/memberbusiness/GetMemberBusiness', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"company_id\":\"8637000000\",\"start_date\":\"2021-01-01\",\"end_date\":\"2021-11-25\",\"company\":[\"8637000000\"],\"district_code\":\"*\",\"name\":\"\",\"auth_type\":\"S\",\"id_number\":\"\",\"sales_channel_type\":\"\",\"contract_type\":\"\",\"date\":[],\"credit_level\":\"\",\"premium_level\":\"\",\"policy_count_level\":\"\",\"persistency_level\":\"\",\"complaint_count_level\":\"\",\"effectiveCountLevel\":\"\",\"backVisitLevel\":\"\",\"cxtbl_level\":\"\",\"cxtrtbjzb_level\":\"\",\"cxdcl_level\":\"\",\"tycylcl_level\":\"\",\"has_description\":\"\",\"status\":\"\",\"state\":\"\",\"WorkStatus\":\"\",\"year\":\"\",\"ImportStatus\":\"\",\"asOfTime\":\"2021-11-25\",\"WorkingCompanyCountLevel\":\"\",\"AllWorkingMonthLevel\":\"\",\"CompanyWorkingMonthLevel\":\"\",\"NowWorkingMonthLevel\":\"\",\"dataType\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.list[*].idType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "f911358a570b349c8658827652cc0197"
+      }, {
+        "name" : "28-业务指标查询-业务指标汇总查询-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data54]",
+          "uid" : "6093d5f94106ce92",
+          "parentUid" : "16be6e1e6d297025217e696ccccc588e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239915536,
+            "stop" : 1638239921270,
+            "duration" : 5734
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_IndicatorsSummary', 'case_model': '06-人员信息综合查询', 'case_name': '28-业务指标查询-业务指标汇总查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/memberbusiness/IndicatorsSummary', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"total\":true,\"state\":\"\",\"areatype\":\"1\",\"company\":\"\",\"districtCode\":\"\",\"date\":[\"2021-01-01\",\"2021-11-25\"],\"year\":\"\",\"importStatus\":\"\",\"dataType\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "16be6e1e6d297025217e696ccccc588e"
+      } ],
+      "uid" : "c845bc9bd33a4b570c38a2afe060d168"
+    }, {
+      "name" : "07-诚信信息综合查询",
+      "children" : [ {
+        "name" : "29-人员诚信级别分布-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data55]",
+          "uid" : "2623760dac1da2c9",
+          "parentUid" : "e3e0e11c66c91c8aefdd41ab8472a0ef",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239921275,
+            "stop" : 1638239932280,
+            "duration" : 11005
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetSincerityLevelList', 'case_model': '07-诚信信息综合查询', 'case_name': '29-人员诚信级别分布', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/statistics/GetSincerityLevelList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"level\":0,\"year\":2021,\"total\":true,\"areatype\":\"1\",\"company_id\":\"8637000000\",\"company_or_district\":\"\",\"state\":\"0\",\"time\":false,\"date_begin\":\"\",\"date_end\":\"\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "e3e0e11c66c91c8aefdd41ab8472a0ef"
+      }, {
+        "name" : "30-各类诚信行为统计-各类诚信行为汇总统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data56]",
+          "uid" : "b2aecc2d7de6f4ff",
+          "parentUid" : "33e9c34c74e6be726b0bb567fbdbbe10",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239932284,
+            "stop" : 1638239932769,
+            "duration" : 485
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetSincerityIndexDataList_01', 'case_model': '07-诚信信息综合查询', 'case_name': '30-各类诚信行为统计-各类诚信行为汇总统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/statistics/GetSincerityIndexDataList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"inst_id\":\"8637000000\",\"company_id\":\"8637000000\",\"year\":2021,\"areatype\":\"1\",\"company_or_district\":\"\",\"state\":\"0\",\"time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-25\",\"audit\":true,\"audit_begin\":\"2021-01-01\",\"audit_end\":\"2021-11-25\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "33e9c34c74e6be726b0bb567fbdbbe10"
+      }, {
+        "name" : "31-各类诚信行为统计-各类诚信行为统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data57]",
+          "uid" : "e19bb82e91976639",
+          "parentUid" : "ff365eb3156fa1f3e1f19008ea789cea",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239932774,
+            "stop" : 1638239933278,
+            "duration" : 504
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetSincerityIndexDataList_02', 'case_model': '07-诚信信息综合查询', 'case_name': '31-各类诚信行为统计-各类诚信行为统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/statistics/GetSincerityIndexDataList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"level\":0,\"state\":\"1\",\"sales_channel_type\":\"\",\"district_code\":\"*\",\"company_id\":\"8637000000\",\"time\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-25\",\"audit\":true,\"audit_begin\":\"2021-01-01\",\"audit_end\":\"2021-11-25\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "ff365eb3156fa1f3e1f19008ea789cea"
+      }, {
+        "name" : "09-诚信记录生效清单-诚信记录查询-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data58]",
+          "uid" : "31a0a3cf6b6f0774",
+          "parentUid" : "b660a438fe89c27dac3196065860447d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1638239933283,
+            "stop" : 1638239940248,
+            "duration" : 6965
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCreditLogMessage', 'case_model': '07-诚信信息综合查询', 'case_name': '09-诚信记录生效清单-诚信记录查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/GetCreditLogMessage', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"created_time\",\\n \"company_id\": \"8637000000\",\\n \"date\": true,\\n \"date_begin\": \"2021-01-01\",\\n \"date_end\": \"2021-11-26\",\\n \"moreState\": false,\\n \"summary\": true,\\n \"kw\": \"\",\\n \"state\": \"0\",\\n \"auth_type\": \"S\",\\n \"id_number\": \"\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"time\": [\"2021-01-01\", \"2021-11-26\"],\\n \"asOfTime\": \"2021-11-26\",\\n \"losser\": \"\",\\n \"type\": \"\",\\n \"is_losses\": 0,\\n \"reason_type\": \"0\",\\n \"reason_judgment\": \"0\",\\n \"credit_level\": \"\",\\n \"district_code\": \"*\"\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "b660a438fe89c27dac3196065860447d"
+      }, {
+        "name" : "33-造成经济损失人员-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data59]",
+          "uid" : "30340f0bd4196def",
+          "parentUid" : "8c06351d4597c305b39c4e02256609ce",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239940257,
+            "stop" : 1638239940572,
+            "duration" : 315
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCreditlogOnLoss', 'case_model': '07-诚信信息综合查询', 'case_name': '33-造成经济损失人员', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/GetCreditlogOnLoss', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"date\":false,\"date_begin\":\"\",\"date_end\":\"\",\"moreState\":false,\"summary\":true,\"is_total_bad\":1,\"kw\":\"\",\"state\":\"0\",\"auth_type\":\"S\",\"id_number\":\"\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"time\":[],\"losses\":\"\",\"losses_type\":0,\"is_losses\":0,\"credit_level\":\"\",\"district_code\":\"*\",\"type\":\"0\",\"judgment\":\"0\"}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "8c06351d4597c305b39c4e02256609ce"
+      }, {
+        "name" : "34-多次获评同一级别人员-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data60]",
+          "uid" : "3eb4b343636a1c0",
+          "parentUid" : "8fae83a8d67f4ea6cf3bcfe0250ab1f6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1638239940577,
+            "stop" : 1638239940859,
+            "duration" : 282
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetCreditlogOnRepetitionLevel', 'case_model': '07-诚信信息综合查询', 'case_name': '34-多次获评同一级别人员', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/GetCreditlogOnRepetitionLevel', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"date\":false,\"date_begin\":\"\",\"date_end\":\"\",\"moreState\":false,\"is_total_bad\":1,\"kw\":\"\",\"state\":\"0\",\"auth_type\":\"S\",\"id_number\":\"\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"time\":[],\"credit_level\":\"\",\"district_code\":\"*\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "8fae83a8d67f4ea6cf3bcfe0250ab1f6"
+      }, {
+        "name" : "35-连续12个月诚信行为-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data61]",
+          "uid" : "96dc80fb52af0f77",
+          "parentUid" : "96d9c56d818b9a68cf988711e7d631e5",
+          "status" : "broken",
+          "time" : {
+            "start" : 1638239940869,
+            "stop" : 1638239941231,
+            "duration" : 362
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_SpecialCreditList', 'case_model': '07-诚信信息综合查询', 'case_name': '35-连续12个月诚信行为', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/SpecialCreditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"date\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-25\",\"moreState\":false,\"name\":\"\",\"state\":\"0\",\"auth_type\":\"\",\"id_number\":\"\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"time\":[\"2021-01-01\",\"2021-11-25\"],\"asOfTime\":\"2021-11-25\",\"losser\":\"\",\"type\":1,\"reason_type\":0,\"credit_level\":\"\",\"district_code\":\"*\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "96d9c56d818b9a68cf988711e7d631e5"
+      } ],
+      "uid" : "4c166299143beb4279d0929699ef018a"
+    }, {
+      "name" : "08-逾时离职申诉统计",
+      "children" : [ {
+        "name" : "36-逾期办理离职申诉管理-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data62]",
+          "uid" : "2b8992a1a2695c20",
+          "parentUid" : "235e3b5d0c6e643139b8b5403c0d807f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239941240,
+            "stop" : 1638239941495,
+            "duration" : 255
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetList_01', 'case_model': '08-逾时离职申诉统计', 'case_name': '36-逾期办理离职申诉管理', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/overtimecomplaint/GetList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"state\":\"0\",\"company_id\":\"8637000000\",\"kw\":\"\",\"status\":\"0\",\"auth_type\":\"S\",\"id_number\":\"\",\"dealStatus\":\"\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"contract_type\":\"\",\"supervised\":\"\",\"dealSituation\":\"\",\"dealTime\":\"\",\"time\":false,\"district_code\":\"*\",\"time_begin\":\"\",\"time_end\":\"\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].auth_type\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "235e3b5d0c6e643139b8b5403c0d807f"
+      }, {
+        "name" : "37-逾时离职申诉统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data63]",
+          "uid" : "4b06eb97a5a3c71c",
+          "parentUid" : "c08d67c21f0666eae5c7af4ca8df0395",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239941500,
+            "stop" : 1638239941708,
+            "duration" : 208
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetQuitAppealIndexData', 'case_model': '08-逾时离职申诉统计', 'case_name': '37-逾时离职申诉统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/statistics/GetQuitAppealIndexData', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"level\":0,\"btime\":\"2021-01-01\",\"etime\":\"2021-12-31\",\"company_id\":\"8637000000\",\"year\":2021}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "c08d67c21f0666eae5c7af4ca8df0395"
+      } ],
+      "uid" : "dc353cfae8a3854248037665f3657a82"
+    }, {
+      "name" : "09-平台使用量统计",
+      "children" : [ {
+        "name" : "38-电子执业证使用次数-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data64]",
+          "uid" : "1e813fcf85b6200c",
+          "parentUid" : "3fd68786213a8269657e61a90dbce4cd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239941712,
+            "stop" : 1638239942827,
+            "duration" : 1115
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_StatisticsRecord_01', 'case_model': '09-平台使用量统计', 'case_name': '38-电子执业证使用次数', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/electroniclicense/StatisticsRecord', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"areatype\":\"1\",\"date\":[],\"companyOrDistrict\":\"\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "3fd68786213a8269657e61a90dbce4cd"
+      }, {
+        "name" : "39-诚信级别查询次数-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data65]",
+          "uid" : "fca8c968371ddd23",
+          "parentUid" : "ce0d8067ab3a71643a1a632122718851",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239942831,
+            "stop" : 1638239946621,
+            "duration" : 3790
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_StatisticsRecord_02', 'case_model': '09-平台使用量统计', 'case_name': '39-诚信级别查询次数', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/queryrecord/StatisticsRecord', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"source\":\"1\",\"pageNum\":1,\"pageSize\":20,\"areatype\":\"1\",\"date\":[],\"companyOrDistrict\":\"\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "ce0d8067ab3a71643a1a632122718851"
+      }, {
+        "name" : "40-个人信息查询人次-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data66]",
+          "uid" : "3bea603981e32728",
+          "parentUid" : "ed77b2c43e13afaec9fbc9de8462b78a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239946626,
+            "stop" : 1638239947123,
+            "duration" : 497
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_StatisticsRecord_03', 'case_model': '09-平台使用量统计', 'case_name': '40-个人信息查询人次', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/queryrecord/StatisticsRecord', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"source\":\"2\",\"pageNum\":1,\"pageSize\":20,\"areatype\":\"1\",\"date\":[],\"companyOrDistrict\":\"\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "ed77b2c43e13afaec9fbc9de8462b78a"
+      }, {
+        "name" : "41-账号登录次数-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data67]",
+          "uid" : "e1caca3efaf3bceb",
+          "parentUid" : "9df2b515c414b0a2fd500781ac710102",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239947128,
+            "stop" : 1638239947689,
+            "duration" : 561
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_StatisticsRecord_04', 'case_model': '09-平台使用量统计', 'case_name': '41-账号登录次数', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/queryrecord/StatisticsRecord', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"source\":\"3\",\"pageNum\":1,\"pageSize\":20,\"areatype\":\"1\",\"date\":[],\"companyOrDistrict\":\"\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "9df2b515c414b0a2fd500781ac710102"
+      } ],
+      "uid" : "d00b5690399aeba3c9296ec9643f0068"
+    }, {
+      "name" : "10-讲师管理",
+      "children" : [ {
+        "name" : "42-机构讲师-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data68]",
+          "uid" : "fd76acfd38b8457b",
+          "parentUid" : "2c7e7c35e478d58144ad563da25bcf5d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239947694,
+            "stop" : 1638239948525,
+            "duration" : 831
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetList_02', 'case_model': '10-讲师管理', 'case_name': '42-机构讲师', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/lecturermanage/GetList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"status\":\"\",\"name\":\"\",\"auth_type\":\"S\",\"id_number\":\"\",\"company_id\":\"8637000000\",\"practice_number\":\"\",\"type\":\"\",\"company\":[\"8637000000\"]}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].auth_type\": \"身份证\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "2c7e7c35e478d58144ad563da25bcf5d"
+      }, {
+        "name" : "43-讲师汇总统计-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data69]",
+          "uid" : "aac74602e440fdc4",
+          "parentUid" : "9e594f76045f2d6342764d647104c66b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239948529,
+            "stop" : 1638239949209,
+            "duration" : 680
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetSummarysInfos', 'case_model': '10-讲师管理', 'case_name': '43-讲师汇总统计', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/lecturermanage/GetSummarysInfos', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"dataType\":\"1\",\"kw\":\"\",\"pageNum\":1,\"pageSize\":20,\"total\":0}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"操作成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "9e594f76045f2d6342764d647104c66b"
+      } ],
+      "uid" : "a282ae6fdb3c4b1b65a2a885583b422a"
+    }, {
+      "name" : "11-系统管理",
+      "children" : [ {
+        "name" : "44-机构管理-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data70]",
+          "uid" : "b15ebcedc185444",
+          "parentUid" : "4035b404a5af4fefaf3e9b9afa06b850",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239949214,
+            "stop" : 1638239949647,
+            "duration" : 433
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_GetList_03', 'case_model': '11-系统管理', 'case_name': '44-机构管理', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/company/GetList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"order\":\"created_time\",\"Direction\":\"desc\",\"name\":\"\",\"association\":-1,\"companytype\":\"\",\"district_code\":\"\",\"company_id\":\"8637000000\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "4035b404a5af4fefaf3e9b9afa06b850"
+      }, {
+        "name" : "45-账号管理-\n-01-查询",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data71]",
+          "uid" : "48cc3994d93dd3de",
+          "parentUid" : "a71331c85260ac262be5bb4ee372cac7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638239949651,
+            "stop" : 1638239949813,
+            "duration" : 162
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_List', 'case_model': '11-系统管理', 'case_name': '45-账号管理', 'priority': '高', 'title': '01-查询', 'url': '/base/adminuser/List', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"order\":\"created_time\",\"direction\":\"desc\",\"kw\":\"\",\"Status\":\"\",\"companyId\":\"8637000000\",\"onLine\":\"L\",\"association\":\"\",\"company\":[\"8637000000\"],\"type\":\"S\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n\"$.data.list[*].status\": \"A\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
+        } ],
+        "uid" : "a71331c85260ac262be5bb4ee372cac7"
+      } ],
+      "uid" : "7e717ab80b5d648cf142db3a2e947da3"
     } ],
     "uid" : "ce77fdca055b2d37d75e39c96ad6ef4b"
   } ]

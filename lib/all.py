@@ -39,7 +39,7 @@ class all:
     def ParameterlessAdjustment(self):
         """所有测试用例集合"""
         body = requests.post(url=self.new_url,headers=self.header,json=self.data)
-        print(self.inData["case_id"]+"-"+self.inData["case_name"])
+        print("\n\n"+self.inData["case_id"]+"-"+self.inData["case_name"])
         print(self.inData)
         print(self.data)
         print(self.new_url)
