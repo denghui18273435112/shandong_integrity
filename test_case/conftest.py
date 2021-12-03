@@ -44,3 +44,7 @@ def token():
             break
     return token
 
+@pytest.fixture(scope="session")
+def company(token):
+    """获取当前账号登录的所属公司id"""
+    return all(token=token,inData=ExcelData("case_GetCurrentAllCompany")[0],conftest=False).ParameterlessAdjustment()[1].json()["data"][0]["id"]

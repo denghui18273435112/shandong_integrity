@@ -10,6 +10,7 @@ import requests
 from configs.conf import *
 from configs.path import test_xlsx
 from tools.update_data import update_data
+from tools.Base import time_YmdHMS
 import datetime
 from tools.allureUitl import alluer_new
 from tools.md5Uitl import get_md5
@@ -36,17 +37,43 @@ class all:
         self.data = json.loads(inData["params"])
         self.conftest=conftest
 
-    def ParameterlessAdjustment(self):
+    def ParameterlessAdjustment(self,company=None):
         """所有测试用例集合"""
+        for key in self.data.keys():
+            if key == "pageNum":
+                self.data[key] = 1
+            if key == "pageSize":
+                self.data[key] = 20
+            if key == "bdate":
+                self.data[key] = "{}-01-01".format(date_YmdHMS(5))
+            if key == "edate":
+                self.data[key] = "{}".format(date_YmdHMS(4))
+            if key == "date_begin":
+                self.data[key] = "1900-01-01"
+            if key == "date_end":
+                self.data[key] = "{}".format(date_YmdHMS(4))
+            if key == "dateRange":
+                self.data[key][0] = "{}-01-01".format(date_YmdHMS(5))
+                self.data[key][1] = "{}".format(date_YmdHMS(4))
+            if key == "company_id":
+                self.data[key] = "{}".format(company)
+            if key == "company":
+                if self.inData["case_id"] != "case_IndicatorsSummary":
+                    self.data[key][0] = company
+
+
+
+
         body = requests.post(url=self.new_url,headers=self.header,json=self.data)
-        print("\n\n"+self.inData["case_id"]+"-"+self.inData["case_name"])
-        print(self.inData)
-        print(self.data)
-        print(self.new_url)
-        print(self.header)
-        print(body.json())
-        print(self.inData)
-        print(json.loads(self.inData["response_expect_result"]))
-        print(self.conftest)
+        if self.conftest==True:
+            print("\n\n"+self.inData["case_id"]+"-"+self.inData["case_name"])
+            print(self.inData)
+            print(self.data)
+            print(self.new_url)
+            print(self.header)
+            print(body.json())
+            print(self.inData)
+            print(json.loads(self.inData["response_expect_result"]))
+            print(self.conftest)
         inData = update_data(self.inData,self.data,self.new_url,self.header,body.json(),json.loads(self.inData["response_expect_result"]),self.conftest)
         return inData,body

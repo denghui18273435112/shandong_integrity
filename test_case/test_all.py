@@ -8,7 +8,7 @@ from lib.all import all
 class Test_all(object):
 
     @pytest.mark.parametrize("Data",ExcelData("case"))
-    def test_ParameterlessAdjustment(self,token,Data):
+    def test_ParameterlessAdjustment(self,token,Data,company):
         """所有测试用例集合"""
-        res =all(token,Data).ParameterlessAdjustment()
+        res =all(token,Data).ParameterlessAdjustment(company)
         caseCheck().case_Check(res[0])
