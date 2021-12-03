@@ -37,33 +37,36 @@ class all:
         self.data = json.loads(inData["params"])
         self.conftest=conftest
 
-    def ParameterlessAdjustment(self,company=None):
+    def ParameterlessAdjustment(self,company=None,rewards_id=None):
         """所有测试用例集合"""
-        for key in self.data.keys():
-            if key == "pageNum":
-                self.data[key] = 1
-            if key == "pageSize":
-                self.data[key] = 20
-            if key == "bdate":
-                self.data[key] = "{}-01-01".format(date_YmdHMS(5))
-            if key == "edate":
-                self.data[key] = "{}".format(date_YmdHMS(4))
-            if key == "date_begin":
-                self.data[key] = "1900-01-01"
-            if key == "date_end":
-                self.data[key] = "{}".format(date_YmdHMS(4))
-            if key == "dateRange":
-                self.data[key][0] = "{}-01-01".format(date_YmdHMS(5))
-                self.data[key][1] = "{}".format(date_YmdHMS(4))
-            if key == "company_id":
-                self.data[key] = "{}".format(company)
-            if key == "company":
-                if self.inData["case_id"] != "case_IndicatorsSummary":
-                    self.data[key][0] = company
+
+        if isinstance(self.data,list):
+            pass
+        else:
+            for key in self.data.keys():
+                if key == "pageNum":
+                    self.data[key] = 1
+                if key == "pageSize":
+                    self.data[key] = 20
+                if key == "bdate":
+                    self.data[key] = "{}-01-01".format(date_YmdHMS(5))
+                if key == "edate":
+                    self.data[key] = "{}".format(date_YmdHMS(4))
+                if key == "date_begin":
+                    self.data[key] = "1900-01-01"
+                if key == "date_end" or key == "honorDate":
+                    self.data[key] = "{}".format(date_YmdHMS(4))
+                if key == "dateRange":
+                    self.data[key][0] = "{}-01-01".format(date_YmdHMS(5))
+                    self.data[key][1] = "{}".format(date_YmdHMS(4))
+                if key == "company_id":
+                    self.data[key] = "{}".format(company)
+                if key == "company":
+                    if self.inData["case_id"] != "case_IndicatorsSummary":
+                        self.data[key][0] = company
 
 
-
-
+        #请求和打印
         body = requests.post(url=self.new_url,headers=self.header,json=self.data)
         if self.conftest==True:
             print("\n\n"+self.inData["case_id"]+"-"+self.inData["case_name"])

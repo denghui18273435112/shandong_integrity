@@ -1,25 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "TypeError: 'bool' object is not iterable",
-      "children" : [ {
-        "name" : "test_ParameterlessAdjustment[Data61]",
-        "uid" : "7165e5ee46dfc864",
-        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638510229598,
-          "stop" : 1638510229737,
-          "duration" : 139
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_SpecialCreditList', 'case_model': '07-诚信信息综合查询', 'case_name': '35-连续12个月诚信行为', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/SpecialCreditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\"pageNum\":1,\"pageSize\":20,\"by\":1,\"order\":\"created_time\",\"company_id\":\"8637000000\",\"date\":true,\"date_begin\":\"2021-01-01\",\"date_end\":\"2021-11-25\",\"moreState\":false,\"name\":\"\",\"state\":\"0\",\"auth_type\":\"\",\"id_number\":\"\",\"company\":[\"8637000000\"],\"sales_channel_type\":\"\",\"time\":[\"2021-01-01\",\"2021-11-25\"],\"asOfTime\":\"2021-11-25\",\"losser\":\"\",\"type\":1,\"reason_type\":0,\"credit_level\":\"\",\"district_code\":\"*\"}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '备注信息', 'remark': ''}" ]
-      } ],
-      "uid" : "8b66e95a55762d87a7753a42cdec624d"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }
