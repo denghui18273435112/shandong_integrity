@@ -47,11 +47,11 @@ def token():
 @pytest.fixture(scope="session")
 def company(token):
     """获取当前账号登录的所属公司id"""
-    return all(token=token,inData=ExcelData("case_GetCurrentAllCompany")[0],conftest=False).ParameterlessAdjustment()[1].json()["data"][0]["id"]
+    return all(token=token,inData=ExcelData("case_1_GetCurrentAllCompany")[0],conftest=False).ParameterlessAdjustment()[1].json()["data"][0]["id"]
 
 @pytest.fixture(scope="session")
 def rewards_id(token):
     """奖惩个人详情中需要删除的id"""
-    return all(token=token,inData=ExcelData("case_lecturermanageGetAwardInfo")[0],conftest=False).ParameterlessAdjustment(company=company)[1].json()["data"][0]
+    return all(token=token,inData=ExcelData("case_1_lecturermanageGetAwardInfo")[0],conftest=False).ParameterlessAdjustment(company=company)[1].json()["data"][0]
 
 

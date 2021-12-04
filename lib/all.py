@@ -40,6 +40,7 @@ class all:
     def ParameterlessAdjustment(self,company=None,rewards_id=None):
         """所有测试用例集合"""
 
+        #替换字段值；如日期、年费、公司id
         if isinstance(self.data,list):
             pass
         else:
@@ -64,10 +65,22 @@ class all:
                 if key == "company":
                     if self.inData["case_id"] != "case_IndicatorsSummary":
                         self.data[key][0] = company
+        #需要导入表格的操作
+        request_file = None
+        if self.inData["case_id"] == "case_2_membercompanyEntryImport_01":
+            request_file = {'file': (excel_1_name,open(excel_1,"rb"), file_application)}
+        if self.inData["case_id"] == "case_2_membercompanyEntryImport_02":
+            request_file = {'file': (excel_2_name,open(excel_2,"rb"), file_application)}
+        if self.inData["case_id"] == "case_2_membercompanyEntryImport_03":
+            request_file = {'file': (excel_3_name,open(excel_3,"rb"), file_application)}
+        if self.inData["case_id"] == "case_2_membercompanyEntryImport_04":
+            request_file = {'file': (excel_4_name,open(excel_4,"rb"), file_application)}
 
-
-        #请求和打印
-        body = requests.post(url=self.new_url,headers=self.header,json=self.data)
+        #请求和打印,区分是否上传文件
+        if "case_2" in self.inData["case_id"]:
+            body = requests.post(url=self.new_url, headers=self.header, data=self.data, files=request_file)
+        else:
+            body = requests.post(url=self.new_url, headers=self.header, json=self.data)
         if self.conftest==True:
             print("\n\n"+self.inData["case_id"]+"-"+self.inData["case_name"])
             print(self.inData)

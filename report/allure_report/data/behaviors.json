@@ -4,25 +4,57 @@
   "children" : [ {
     "name" : "山东诚信系统",
     "children" : [ {
-      "name" : "10-讲师管理",
+      "name" : "12-业务流程",
       "children" : [ {
-        "name" : "42-机构讲师-\n-02-全条件查询",
+        "name" : "01-在职导入-\n-01-身份证重复导入",
         "children" : [ {
           "name" : "test_ParameterlessAdjustment[Data0]",
-          "uid" : "9ec18d3198fbb1e7",
-          "parentUid" : "90cd538d798fe01c20d2aa505acc0f51",
+          "uid" : "611fa34bdf069614",
+          "parentUid" : "c3b3278dcf3c88a2f88c0a27bacadc66",
           "status" : "passed",
           "time" : {
-            "start" : 1638526802695,
-            "stop" : 1638526803197,
-            "duration" : 502
+            "start" : 1638604927064,
+            "stop" : 1638604927326,
+            "duration" : 262
           },
           "flaky" : false,
-          "parameters" : [ "{'case_id': 'case_GetList_04', 'case_model': '10-讲师管理', 'case_name': '42-机构讲师', 'priority': '01-身份证筛选-查询', 'title': '02-全条件查询', 'url': '/manageapi/lecturermanage/GetList', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"status\": 10,\\n \"name\": \"邓辉\",\\n \"auth_type\": \"S\",\\n \"id_number\": \"431225199212061818\",\\n \"company_id\": \"8637200100\",\\n \"practice_number\": \"00008644000000002314983714\",\\n \"type\": \"2\",\\n \"company\": [\"8637000000\", \"8637200100\"]\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].auth_type\": \"身份证\",\\n \"$.data.list[*].type\": \"兼职讲师\",\\n \"$.data.list[*].status\": 10,\\n \"$.data.list[*].practice_number\": \"00008644000000002314983714\",\\n \"$.data.list[*].name\": \"邓辉\",\\n \"$.data.list[*].id_number\": \"431225199212061818\",\\n \"$.data.list[*].id\": 65689\\n}', 'actual_result': '', 'remark': ''}" ]
+          "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_01', 'case_model': '12-业务流程', 'case_name': '01-在职导入', 'priority': '高', 'title': '01-身份证重复导入', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"证件号码重复\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': ''}" ]
         } ],
-        "uid" : "90cd538d798fe01c20d2aa505acc0f51"
+        "uid" : "c3b3278dcf3c88a2f88c0a27bacadc66"
+      }, {
+        "name" : "01-在职导入-\n-02-当前账号已经在别的系统中存在",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data1]",
+          "uid" : "f3d1881eaed4527e",
+          "parentUid" : "f85bb74a732e9b8cec7323491ead30d5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638604927331,
+            "stop" : 1638604927943,
+            "duration" : 612
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_02', 'case_model': '12-业务流程', 'case_name': '01-在职导入', 'priority': '高', 'title': '02-当前账号已经在别的系统中存在', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"当前导入从业人员已在其他公司在职，请与从业人员核实信息\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': ''}" ]
+        } ],
+        "uid" : "f85bb74a732e9b8cec7323491ead30d5"
+      }, {
+        "name" : "01-在职导入-\n-03-表格中常规字段的格式校验",
+        "children" : [ {
+          "name" : "test_ParameterlessAdjustment[Data2]",
+          "uid" : "8b8b0615a0afb5e7",
+          "parentUid" : "1f22065f2fbe692528b214109b4a3460",
+          "status" : "broken",
+          "time" : {
+            "start" : 1638604927947,
+            "stop" : 1638604928623,
+            "duration" : 676
+          },
+          "flaky" : false,
+          "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_03', 'case_model': '12-业务流程', 'case_name': '01-在职导入', 'priority': '高', 'title': '03-表格中常规字段的格式校验', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"当前导入从业人员已在其他公司在职，请与从业人员核实信息\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': '当前此接口有问题'}" ]
+        } ],
+        "uid" : "1f22065f2fbe692528b214109b4a3460"
       } ],
-      "uid" : "a282ae6fdb3c4b1b65a2a885583b422a"
+      "uid" : "636c8416ec547ff8013d10fb4bf94aba"
     } ],
     "uid" : "ce77fdca055b2d37d75e39c96ad6ef4b"
   } ]

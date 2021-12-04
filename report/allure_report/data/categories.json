@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: 'bool' object is not iterable",
+      "children" : [ {
+        "name" : "test_ParameterlessAdjustment[Data2]",
+        "uid" : "8b8b0615a0afb5e7",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1638604927947,
+          "stop" : 1638604928623,
+          "duration" : 676
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_03', 'case_model': '12-业务流程', 'case_name': '01-在职导入', 'priority': '高', 'title': '03-表格中常规字段的格式校验', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"当前导入从业人员已在其他公司在职，请与从业人员核实信息\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': '当前此接口有问题'}" ]
+      } ],
+      "uid" : "8b66e95a55762d87a7753a42cdec624d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

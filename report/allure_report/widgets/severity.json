@@ -1,11 +1,31 @@
 [ {
-  "uid" : "9ec18d3198fbb1e7",
-  "name" : "test_ParameterlessAdjustment[Data0]",
+  "uid" : "f3d1881eaed4527e",
+  "name" : "test_ParameterlessAdjustment[Data1]",
   "time" : {
-    "start" : 1638526802695,
-    "stop" : 1638526803197,
-    "duration" : 502
+    "start" : 1638604927331,
+    "stop" : 1638604927943,
+    "duration" : 612
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "611fa34bdf069614",
+  "name" : "test_ParameterlessAdjustment[Data0]",
+  "time" : {
+    "start" : 1638604927064,
+    "stop" : 1638604927326,
+    "duration" : 262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b8b0615a0afb5e7",
+  "name" : "test_ParameterlessAdjustment[Data2]",
+  "time" : {
+    "start" : 1638604927947,
+    "stop" : 1638604928623,
+    "duration" : 676
+  },
+  "status" : "broken",
   "severity" : "normal"
 } ]
