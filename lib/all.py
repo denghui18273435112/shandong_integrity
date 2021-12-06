@@ -88,6 +88,8 @@ class all:
             request_file = {'file': (excel_5_name,open(excel_5,"rb"), file_application)}
         if self.inData["case_id"] == "case_3_ImportWorkBusiness_01":
             request_file = {'file': (excel_6_name,open(excel_6,"rb"), file_application)}
+        if self.inData["case_id"] == "case_2_DepartureImport_01":
+            request_file = {'file': (excel_10_name,open(excel_10,"rb"), file_application)}
 
         if self.inData["case_id"] == "case_3_creditlogAudit_01":
             #获取诚信记录id

@@ -4,106 +4,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "TypeError: 'str' object does not support item assignment",
-      "children" : [ {
-        "name" : "test_ParameterlessAdjustment[Data54]",
-        "uid" : "7ac7ee728bd6be30",
-        "parentUid" : "c9bf0f861dea69f01d62fa319a66bc5e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638776277063,
-          "stop" : 1638776277063,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_1_IndicatorsSummary', 'case_model': '06-人员信息综合查询', 'case_name': '28-业务指标查询-业务指标汇总查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/memberbusiness/IndicatorsSummary', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"total\": true,\\n \"state\": \"\",\\n \"areatype\": \"1\",\\n \"company\": \"\",\\n \"districtCode\": \"\",\\n \"date\": [\"2021-01-01\", \"2021-11-25\"],\\n \"year\": \"\",\\n \"importStatus\": \"\",\\n \"dataType\": \"\"\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '', 'remark': '备注信息', '': ''}" ]
-      } ],
-      "uid" : "c9bf0f861dea69f01d62fa319a66bc5e"
-    }, {
       "name" : "TypeError: 'bool' object is not iterable",
       "children" : [ {
-        "name" : "test_ParameterlessAdjustment[Data58]",
-        "uid" : "429f0b3767e0bbc9",
+        "name" : "test_ParameterlessAdjustment[Data2]",
+        "uid" : "431f32b9868ec828",
         "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
         "status" : "broken",
         "time" : {
-          "start" : 1638776288223,
-          "stop" : 1638776294867,
-          "duration" : 6644
+          "start" : 1638786438999,
+          "stop" : 1638786439752,
+          "duration" : 753
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_1_GetCreditLogMessage', 'case_model': '07-诚信信息综合查询', 'case_name': '09-诚信记录生效清单-诚信记录查询', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/GetCreditLogMessage', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"created_time\",\\n \"company_id\": \"8637000000\",\\n \"date\": true,\\n \"date_begin\": \"2021-01-01\",\\n \"date_end\": \"2021-11-26\",\\n \"moreState\": false,\\n \"summary\": true,\\n \"kw\": \"\",\\n \"state\": \"0\",\\n \"auth_type\": \"S\",\\n \"id_number\": \"\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"time\": [\"2021-01-01\", \"2021-11-26\"],\\n \"asOfTime\": \"2021-11-26\",\\n \"losser\": \"\",\\n \"type\": \"\",\\n \"is_losses\": 0,\\n \"reason_type\": \"0\",\\n \"reason_judgment\": \"0\",\\n \"credit_level\": \"\",\\n \"district_code\": \"*\"\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': '备注信息', '': ''}" ]
-      }, {
-        "name" : "test_ParameterlessAdjustment[Data60]",
-        "uid" : "a4260c103c6a62b6",
-        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638776295225,
-          "stop" : 1638776295591,
-          "duration" : 366
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_1_GetCreditlogOnRepetitionLevel', 'case_model': '07-诚信信息综合查询', 'case_name': '34-多次获评同一级别人员', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/GetCreditlogOnRepetitionLevel', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"created_time\",\\n \"company_id\": \"8637000000\",\\n \"date\": false,\\n \"date_begin\": \"\",\\n \"date_end\": \"\",\\n \"moreState\": false,\\n \"is_total_bad\": 1,\\n \"kw\": \"\",\\n \"state\": \"0\",\\n \"auth_type\": \"S\",\\n \"id_number\": \"\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"time\": [],\\n \"credit_level\": \"\",\\n \"district_code\": \"*\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': '备注信息', '': ''}" ]
-      }, {
-        "name" : "test_ParameterlessAdjustment[Data61]",
-        "uid" : "3982b1abc1711946",
-        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638776295602,
-          "stop" : 1638776295873,
-          "duration" : 271
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_1_SpecialCreditList', 'case_model': '07-诚信信息综合查询', 'case_name': '35-连续12个月诚信行为', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/SpecialCreditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"created_time\",\\n \"company_id\": \"8637000000\",\\n \"date\": true,\\n \"date_begin\": \"2021-01-01\",\\n \"date_end\": \"2021-11-25\",\\n \"moreState\": false,\\n \"name\": \"\",\\n \"state\": \"0\",\\n \"auth_type\": \"\",\\n \"id_number\": \"\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"time\": [\"2021-01-01\", \"2021-11-25\"],\\n \"asOfTime\": \"2021-11-25\",\\n \"losser\": \"\",\\n \"type\": 1,\\n \"reason_type\": 0,\\n \"credit_level\": \"\",\\n \"district_code\": \"*\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': '接口尚未调整；还有问题', '': ''}" ]
-      }, {
-        "name" : "test_ParameterlessAdjustment[Data79]",
-        "uid" : "26f2b26cd670daa8",
-        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638776308427,
-          "stop" : 1638776308966,
-          "duration" : 539
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_03', 'case_model': '12-异常报错', 'case_name': '01-在职导入', 'priority': '高', 'title': '03-表格中常规字段的格式校验', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"当前导入从业人员已在其他公司在职，请与从业人员核实信息\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': '当前此接口有问题', '': ''}" ]
-      }, {
-        "name" : "test_ParameterlessAdjustment[Data80]",
-        "uid" : "c06c10bcd13b7247",
-        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638776308978,
-          "stop" : 1638776313598,
-          "duration" : 4620
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_04', 'case_model': '12-异常报错', 'case_name': '01-在职导入', 'priority': '高', 'title': '03-正常-导入4人数据', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"当前导入从业人员已在其他公司在职，请与从业人员核实信息\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': '', '': ''}" ]
+        "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_03', 'case_model': '12-异常处理', 'case_name': '01-在职导入', 'priority': '高', 'title': '03-表格中常规字段的格式校验', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"当前导入从业人员已在其他公司在职，请与从业人员核实信息\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': '当前此接口有问题', '': ''}" ]
       } ],
       "uid" : "8b66e95a55762d87a7753a42cdec624d"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: 此用例校验失败.....;实际和预期结果未存在包含",
-      "children" : [ {
-        "name" : "test_ParameterlessAdjustment[Data73]",
-        "uid" : "c0fa3803bd27961c",
-        "parentUid" : "c36ca1ae20e9f9109f17300072670597",
-        "status" : "failed",
-        "time" : {
-          "start" : 1638776304478,
-          "stop" : 1638776304823,
-          "duration" : 345
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'case_1_lecturermanageDelAwardInfo', 'case_model': '10-讲师管理', 'case_name': '42-机构讲师', 'priority': '', 'title': '05-奖惩详情-删除操作', 'url': '/manageapi/lecturermanage/DelAwardInfo', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\\n \"id\": 1\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"操作成功\"\\n}', 'actual_result': '', 'remark': '删除操作，尚未处理完', '': ''}" ]
-      } ],
-      "uid" : "c36ca1ae20e9f9109f17300072670597"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }
