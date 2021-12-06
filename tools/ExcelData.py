@@ -41,7 +41,7 @@ def ExcelData(beginColumn=None,file_name="山东诚信系统用例.xls"):
 
 
 if __name__ == "__main__":
-    print(ExcelData("case_lecturermanageGetAwardInfo")[0])
+    print(ExcelData("case_3_creditlogGetAuditList_01")[0])
 
 
 
