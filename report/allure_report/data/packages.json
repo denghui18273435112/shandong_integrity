@@ -5,16 +5,64 @@
     "name" : "test_case.test_all",
     "children" : [ {
       "name" : "test_ParameterlessAdjustment[Data0]",
-      "uid" : "edd76b4699dac05d",
+      "uid" : "b56a89bf5658282f",
       "parentUid" : "66f01b888808e0506b4f9be1059998f1",
       "status" : "passed",
       "time" : {
-        "start" : 1638861508227,
-        "stop" : 1638861509200,
-        "duration" : 973
+        "start" : 1638870668425,
+        "stop" : 1638870668730,
+        "duration" : 305
       },
       "flaky" : false,
-      "parameters" : [ "{'case_id': 'case_3_adminuserDelete_01', 'case_model': '13-业务流程', 'case_name': '06-账号管理', 'priority': '', 'title': '03 删除账号', 'url': '/base/adminuser/Delete', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{\\n \"ids\": []\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\"\\n}', 'actual_result': '', 'remark': '', '': ''}" ]
+      "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_01', 'case_model': '12-异常处理', 'case_name': '01-在职导入', 'priority': '高', 'title': '01-身份证重复导入', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"证件号码重复\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': '', '': ''}" ]
+    }, {
+      "name" : "test_ParameterlessAdjustment[Data1]",
+      "uid" : "71850e22ed97a7bb",
+      "parentUid" : "66f01b888808e0506b4f9be1059998f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638870668735,
+        "stop" : 1638870669340,
+        "duration" : 605
+      },
+      "flaky" : false,
+      "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_02', 'case_model': '12-异常处理', 'case_name': '01-在职导入', 'priority': '高', 'title': '02-当前账号已经在别的系统中存在', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[*].errors.idNumber\": \"当前导入从业人员已在其他公司在职，请与从业人员核实信息\",\\n \"$.data.failure[*].msg\": \"数据校验失败，请核对\"\\n}', 'actual_result': '', 'remark': '', '': ''}" ]
+    }, {
+      "name" : "test_ParameterlessAdjustment[Data2]",
+      "uid" : "1d90ecdc27a84cf7",
+      "parentUid" : "66f01b888808e0506b4f9be1059998f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638870669345,
+        "stop" : 1638870670009,
+        "duration" : 664
+      },
+      "flaky" : false,
+      "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_03', 'case_model': '12-异常处理', 'case_name': '01-在职导入', 'priority': '高', 'title': '03-表格中常规字段的格式校验', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[0].errors.memberName\": \"姓名值不能为空\",\\n \"$.data.failure[1].errors.contractType\": \"合同类型值不在允许的范围内\",\\n \"$.data.failure[2].errors.authType\": \"证件种类值不能为空；证件种类值不在允许的范围内\",\\n \"$.data.failure[3].errors.education\": \"学历填写错误\",\\n \"$.data.failure[4].errors.companyName\": \"所属机构全称值不能为空\",\\n \"$.data.failure[5].errors.salesChannelType\": \"销售渠道类型值不能为空；销售渠道类型值不在允许的范围内\",\\n \"$.data.failure[6].errors.contractType\": \"合同类型值不能为空；合同类型值不在允许的范围内\",\\n \"$.data.failure[7].errors.practiceNumber\": \"执业证编号值不能为空\",\\n \"$.data.failure[8].errors.practiceNumber\": \"执业证编号格式错误\",\\n \"$.data.failure[9].errors.practiceNumber\": \"执业证编号格式错误\",\\n \"$.data.failure[10].errors.workNumber\": \"公司工号填写错误\",\\n \"$.data.failure[11].errors.shanDongEffectiveTime\": \"登记日期格式错误；登记日期不能小于用户成年期\",\\n \"$.data.failure[12].errors.salesChannelType\": \"销售渠道类型值不在允许的范围内\",\\n \"$.data.failure[13].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[14].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[15].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[16].errors.shanDongEffectiveTime\": \"登记日期不能大于今天\",\\n \"$.data.failure[17].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[18].errors.practiceArea\": \"执业区域填写错误\",\\n \"$.data.failure[19].errors.effectiveTime\": \"不能小于上一家公司的入职时间、离职时间\"\\n}\\n\\n', 'actual_result': '', 'remark': '', '': ''}" ]
+    }, {
+      "name" : "test_ParameterlessAdjustment[Data3]",
+      "uid" : "82cc87a33fc8e7bc",
+      "parentUid" : "66f01b888808e0506b4f9be1059998f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638870670014,
+        "stop" : 1638870670696,
+        "duration" : 682
+      },
+      "flaky" : false,
+      "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_04', 'case_model': '12-异常处理', 'case_name': '01-在职导入', 'priority': '高', 'title': '04-正常-导入4人数据', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.success[*].msg\": \"覆盖更新\"\\n}', 'actual_result': '', 'remark': '', '': ''}" ]
+    }, {
+      "name" : "test_ParameterlessAdjustment[Data4]",
+      "uid" : "8439e52cb52ac579",
+      "parentUid" : "66f01b888808e0506b4f9be1059998f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638870670701,
+        "stop" : 1638870671088,
+        "duration" : 387
+      },
+      "flaky" : false,
+      "parameters" : [ "{'case_id': 'case_2_DepartureImport_01', 'case_model': '12-异常处理', 'case_name': '02-离职导入', 'priority': '', 'title': '01- 离职异常数据导入', 'url': '/manageapi/membercompany/DepartureImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[0].errors.memberName\": \"姓名值不能为空\",\\n \"$.data.failure[1].errors.authType\": \"证件种类值不能为空；证件种类值不在允许的范围内\",\\n \"$.data.failure[2].errors.authType\": \"证件种类值不在允许的范围内\",\\n \"$.data.failure[3].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[4].errors.idNumber\": \"证件号码值不能为空\",\\n \"$.data.failure[5].errors.practiceNumber\": \"执业证编号值不能为空\",\\n \"$.data.failure[6].errors.practiceNumber\": \"执业证编号值不能为空\",\\n \"$.data.failure[7].errors.salesChannelType\": \"销售渠道错误\",\\n \"$.data.failure[8].errors.salesChannelType\": \"销售渠道错误\",\\n \"$.data.failure[9].errors.departureDate\": \"注销日期格式错误\",\\n \"$.data.failure[10].errors.departureDate\": \"注销日期格式错误\",\\n \"$.data.failure[11].errors.departureDate\": \"注销日期不能大于今天\",\\n \"$.data.failure[12].errors.premium\": \"当年新单保费数据格式错误\",\\n \"$.data.failure[13].errors.premium\": \"当年新单保费数据格式错误\",\\n \"$.data.failure[14].errors.policyCount\": \"当年新单件数错误\",\\n \"$.data.failure[15].errors.policyCount\": \"当年新单件数错误\",\\n \"$.data.failure[16].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”不可空白\",\\n \"$.data.failure[17].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[18].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[19].errors.complaintCount\": \"累计投诉件数错误\",\\n \"$.data.failure[20].errors.complaintCount\": \"累计投诉件数错误\",\\n \"$.data.failure[21].errors.complaintCount\": \"累计投诉件数错误\",\\n \"$.data.failure[22].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[23].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[24].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[25].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[26].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[27].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[28].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[29].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[30].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[31].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[32].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[33].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[34].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[35].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[36].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[37].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[38].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[39].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[40].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[41].errors.persistency\": \"13个月保单继续率数据格式错误；“13个月保单继续率”格式错误\",\\n \"$.data.failure[42].errors.status\": \"操作状态错误\",\\n \"$.data.failure[43].errors.status\": \"操作状态错误\",\\n \"$.data.failure[44].errors.status\": \"操作状态错误\",\\n \"$.data.failure[45].errors.memberName\": \"此人员姓名信息与系统不一致，请核实\",\\n \"$.data.failure[46].errors.idNumber\": \"证件号码错误或执业证编号错误\",\\n \"$.data.failure[47].errors.idNumber\": \"证件号码错误或执业证编号错误\",\\n \"$.data.failure[48].errors.salesChannelType\": \"当前人员销售渠道不一致，请核实\",\\n \"$.data.failure[49].errors.idNumber\": \"此人员的离职时间不能小于入职时间，请核实\",\\n \"$.data.failure[50].errors.idNumber\": \"本从业人员已被太平人寿保险有限公司济南中心支公司离职\",\\n \"$.data.failure[51].errors.idNumber\": \"本从业人员已被中国太平洋人寿保险股份有限公司山东分公司济南市中心支公司离职\"\\n}\\n', 'actual_result': '', 'remark': '', '': ''}" ]
     } ],
     "uid" : "test_case.test_all"
   } ]
