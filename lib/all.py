@@ -109,6 +109,15 @@ class all:
             id = requests_zzl("case_1_lecturermanageGetAwardInfo",self.token)["data"][0]["id"]
             self.data["id"]=id
 
+        if self.inData["case_id"] == "case_3_adminuserDelete_01":
+            id = ""
+            while True:
+                body = requests_zzl("case_3_adminuserList_01",self.token)
+                if  body["msg"] == "请求成功":
+                    id = body["data"]["list"][0]["id"]
+                    break
+            self.data["ids"].append(id)
+
 
         #需要导入表格的操作
         request_file = None
@@ -138,6 +147,7 @@ class all:
                 body = requests.post(url=self.new_url, headers=self.header, data=self.data, files=request_file,proxies=self.proxies)
         else:
             body = requests.post(url=self.new_url, headers=self.header, json=self.data,proxies=self.proxies)
+
 
         #打印,生成报告
         if self.conftest==True:
