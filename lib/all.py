@@ -22,19 +22,27 @@ import win32con
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from tools.ExcelData import ExcelData
-
+from tools.commonly_method import *
 from tools.Base import *
 class all:
     """
     所有模块
     """
     def __init__(self,inData,token=None,token_province=None,token_city=None,conftest=True):
-        if "case_3_SubmitImport_01" == inData["case_id"]:
+        self.token = token
+        self.token_province = token_province
+        self.token_city = token_city
+        if "case_3_SubmitImport_01" in inData["case_id"]\
+                or "case_3_DepartureImport_01" in inData["case_id"] :
             self.header = {"Cookie":"{0}".format(token_city)}
-        if "case_3_creditlogAudit_01" == inData["case_id"]:
+            print("地市")
+        elif "case_3_creditlogAudit_01" in inData["case_id"]\
+                or "case_3_Finish_01" in inData["case_id"]:
             self.header = {"Cookie":"{0}".format(token_province)}
+            print("省公司")
         else:
             self.header = {"Cookie":"{0}".format(token)}
+            print("省协会")
         self.proxies = {"https":"http://127.0.0.1:8888"}
         self.inData = inData
         self.new_url= url+inData["url"]
@@ -70,10 +78,38 @@ class all:
                     else:
                         self.data[key] = "{}".format(company)
                 if key == "company":
-                    if self.inData["case_id"] != "case_IndicatorsSummary":
-                        self.data[key][0] = company
-                    if self.inData["case_id"] == "case_3_SubmitImport_01":
-                        self.data[key][0] = company_city
+                    if self.inData["case_id"] == "case_3_overtimecomplaintGetList_01"\
+                            or self.inData["case_id"] == "case_1_IndicatorsSummary":
+                        pass
+                    else:
+                        if self.inData["case_id"] != "case_IndicatorsSummary":
+                            self.data[key][0] = company
+                        if self.inData["case_id"] == "case_3_SubmitImport_01":
+                            self.data[key][0] = company_city
+
+
+        #接口操作具有依耐性
+        if self.inData["case_id"] == "case_3_creditlogAudit_01" or  self.inData["case_id"] == "case_3_creditlogAudit_02":
+            id = requests_zzl("case_3_creditlogGetAuditList_01",self.token)["data"]["list"][0]["id"]
+            self.data["ids"].append(id)
+
+        if self.inData["case_id"] == "case_3_overtimecomplaintAdd_01":
+            body = requests_zzl("case_3_overtimecomplaintQuery_01",self.token)
+            job_record_id = body["data"]["id"]
+            complaint_company_id = body["data"]["company_id"]
+            self.data["complaint_company_id"]=complaint_company_id
+            self.data["job_record_id"]=job_record_id
+
+        if self.inData["case_id"] == "case_3_Acceptance_01"\
+            or self.inData["case_id"] == "case_3_Finish_01":
+            id = requests_zzl("case_3_overtimecomplaintGetList_01",self.token)["data"]["list"][0]["id"]
+            self.data["id"]=id
+
+        if self.inData["case_id"] == "case_1_lecturermanageDelAwardInfo":
+            id = requests_zzl("case_1_lecturermanageGetAwardInfo",self.token)["data"][0]["id"]
+            self.data["id"]=id
+
+
         #需要导入表格的操作
         request_file = None
         if self.inData["case_id"] == "case_2_membercompanyEntryImport_01":
@@ -90,22 +126,20 @@ class all:
             request_file = {'file': (excel_6_name,open(excel_6,"rb"), file_application)}
         if self.inData["case_id"] == "case_2_DepartureImport_01":
             request_file = {'file': (excel_10_name,open(excel_10,"rb"), file_application)}
+        if self.inData["case_id"] == "case_3_DepartureImport_01":
+            request_file = {'file': (excel_21_name,open(excel_21,"rb"), file_application)}
 
-        if self.inData["case_id"] == "case_3_creditlogAudit_01":
-            #获取诚信记录id
-            table_data = ExcelData("case_3_creditlogGetAuditList_01")[0]
-            url_new = url+table_data["url"]
-            data_new = json.loads(table_data["params"])
-            id = requests.post(url=url_new, headers=self.header, json=data_new).json()["data"]["list"][0]["id"]
-            self.data["ids"].append(id)
 
-        #请求和打印,区分是否上传文件
+        #区分是否上传文件；请求
         if "case_2" in self.inData["case_id"]\
            or "case_3_EntryImport_01" in self.inData["case_id"]\
-           or "case_3_ImportWorkBusiness_01" in self.inData["case_id"]:
+           or "case_3_ImportWorkBusiness_01" in self.inData["case_id"]\
+           or "case_3_DepartureImport_01" in self.inData["case_id"]:
                 body = requests.post(url=self.new_url, headers=self.header, data=self.data, files=request_file,proxies=self.proxies)
         else:
             body = requests.post(url=self.new_url, headers=self.header, json=self.data,proxies=self.proxies)
+
+        #打印,生成报告
         if self.conftest==True:
             print("\n\n"+self.inData["case_id"]+"-"+self.inData["case_name"])
             print(self.inData)

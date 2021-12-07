@@ -55,3 +55,6 @@ excel_5 = file_data_path_1 +os.sep+excel_5_name
 
 excel_6_name = "2 山东在职人员业务指标导入模板.xlsx"
 excel_6 = file_data_path_1 +os.sep+excel_6_name
+
+excel_21_name = "3山东离职人员导入模板.xlsx"
+excel_21 = file_data_path_1 +os.sep+excel_21_name
