@@ -7,5 +7,6 @@ cookie_name = "sd-siccms-token"
 vcode_name= "vcode"
 
 #表格中的身份证和执业证
-
+id_card="431225198903107614"
+licensed="00008644000000002020012065"
 

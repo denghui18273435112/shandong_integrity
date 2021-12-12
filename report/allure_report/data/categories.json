@@ -1,5 +1,81 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: 'bool' object is not iterable",
+      "children" : [ {
+        "name" : "test_ParameterlessAdjustment[Data60]",
+        "uid" : "5b300a86b99a4a9b",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639295944454,
+          "stop" : 1639295944578,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_1_GetCreditlogOnRepetitionLevel', 'case_model': '07-诚信信息综合查询', 'case_name': '34-多次获评同一级别人员', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/GetCreditlogOnRepetitionLevel', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"created_time\",\\n \"company_id\": \"8637000000\",\\n \"date\": false,\\n \"date_begin\": \"\",\\n \"date_end\": \"\",\\n \"moreState\": false,\\n \"is_total_bad\": 1,\\n \"kw\": \"\",\\n \"state\": \"0\",\\n \"auth_type\": \"S\",\\n \"id_number\": \"\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"time\": [],\\n \"credit_level\": \"\",\\n \"district_code\": \"*\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': '备注信息', '': ''}" ]
+      }, {
+        "name" : "test_ParameterlessAdjustment[Data61]",
+        "uid" : "a8bd38076503c4ea",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639295944641,
+          "stop" : 1639295944758,
+          "duration" : 117
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_1_SpecialCreditList', 'case_model': '07-诚信信息综合查询', 'case_name': '35-连续12个月诚信行为', 'priority': '高', 'title': '01-查询', 'url': '/manageapi/creditlog/SpecialCreditList', 'pre_exec': '无', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"created_time\",\\n \"company_id\": \"8637000000\",\\n \"date\": true,\\n \"date_begin\": \"2021-01-01\",\\n \"date_end\": \"2021-11-25\",\\n \"moreState\": false,\\n \"name\": \"\",\\n \"state\": \"0\",\\n \"auth_type\": \"\",\\n \"id_number\": \"\",\\n \"company\": [\"8637000000\"],\\n \"sales_channel_type\": \"\",\\n \"time\": [\"2021-01-01\", \"2021-11-25\"],\\n \"asOfTime\": \"2021-11-25\",\\n \"losser\": \"\",\\n \"type\": 1,\\n \"reason_type\": 0,\\n \"credit_level\": \"\",\\n \"district_code\": \"*\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list[*].authType\": \"S\"\\n}', 'actual_result': '', 'remark': '接口尚未调整；还有问题', '': ''}" ]
+      }, {
+        "name" : "test_ParameterlessAdjustment[Data79]",
+        "uid" : "499edea374a5d4a2",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639295951805,
+          "stop" : 1639295952437,
+          "duration" : 632
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_2_membercompanyEntryImport_03', 'case_model': '12-异常处理', 'case_name': '01-在职导入', 'priority': '高', 'title': '03-表格中常规字段的格式校验', 'url': '/manageapi/membercompany/EntryImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.failure[0].errors.memberName\": \"姓名值不能为空\",\\n \"$.data.failure[1].errors.contractType\": \"合同类型值不在允许的范围内\",\\n \"$.data.failure[2].errors.authType\": \"证件种类值不能为空；证件种类值不在允许的范围内\",\\n \"$.data.failure[3].errors.education\": \"学历填写错误\",\\n \"$.data.failure[4].errors.companyName\": \"所属机构全称值不能为空\",\\n \"$.data.failure[5].errors.salesChannelType\": \"销售渠道类型值不能为空；销售渠道类型值不在允许的范围内\",\\n \"$.data.failure[6].errors.contractType\": \"合同类型值不能为空；合同类型值不在允许的范围内\",\\n \"$.data.failure[7].errors.practiceNumber\": \"执业证编号值不能为空\",\\n \"$.data.failure[8].errors.practiceNumber\": \"执业证编号格式错误\",\\n \"$.data.failure[9].errors.practiceNumber\": \"执业证编号格式错误\",\\n \"$.data.failure[10].errors.workNumber\": \"公司工号填写错误\",\\n \"$.data.failure[11].errors.shanDongEffectiveTime\": \"登记日期格式错误；登记日期不能小于用户成年期\",\\n \"$.data.failure[12].errors.salesChannelType\": \"销售渠道类型值不在允许的范围内\",\\n \"$.data.failure[13].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[14].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[15].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[16].errors.shanDongEffectiveTime\": \"登记日期不能大于今天\",\\n \"$.data.failure[17].errors.authType\": \"证件类型填写错误\",\\n \"$.data.failure[18].errors.practiceArea\": \"执业区域填写错误\",\\n \"$.data.failure[19].errors.effectiveTime\": \"不能小于上一家公司的入职时间、离职时间\"\\n}\\n\\n', 'actual_result': '', 'remark': '', '': ''}" ]
+      }, {
+        "name" : "test_ParameterlessAdjustment[Data93]",
+        "uid" : "7aaf0699f916a649",
+        "parentUid" : "8b66e95a55762d87a7753a42cdec624d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639295957137,
+          "stop" : 1639295957413,
+          "duration" : 276
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_3_DepartureImport_01', 'case_model': '13-业务流程', 'case_name': '05-离职人员操作', 'priority': '', 'title': '01 离职人员导入', 'url': '/manageapi/membercompany/DepartureImport', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n \"$.data.success[0].msg\": \"权限校验通过\"\\n}', 'actual_result': '', 'remark': '', '': ''}" ]
+      } ],
+      "uid" : "8b66e95a55762d87a7753a42cdec624d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 此用例校验失败.....;实际和预期结果未存在包含",
+      "children" : [ {
+        "name" : "test_ParameterlessAdjustment[Data82]",
+        "uid" : "f7f660172d84aa66",
+        "parentUid" : "c36ca1ae20e9f9109f17300072670597",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639295953793,
+          "stop" : 1639295954421,
+          "duration" : 628
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'case_3_ImportWorkBusiness_01', 'case_model': '13-业务流程', 'case_name': '02-在职业务指标导入', 'priority': '', 'title': '导入在职人员业务指标', 'url': '/manageapi/memberbusiness/ImportWorkBusiness', 'pre_exec': '', 'method': '', 'params_type': '', 'params': '{}', 'expect_result': '', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"请求成功\",\\n  \"$.data.successCount\":1,\\n\"$.data.errorCount\":0\\n}', 'actual_result': '', 'remark': '', '': ' \\n\\n'}" ]
+      } ],
+      "uid" : "c36ca1ae20e9f9109f17300072670597"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

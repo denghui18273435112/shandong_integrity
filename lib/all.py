@@ -48,6 +48,7 @@ class all:
         self.new_url= url+inData["url"]
         self.data = json.loads(inData["params"])
         self.conftest = conftest
+        self.actual_result = inData["actual_result"]
 
     def ParameterlessAdjustment(self,company=None,company_province=None,company_city=None,rewards_id=None):
         """所有测试用例集合"""
@@ -86,7 +87,6 @@ class all:
                             self.data[key][0] = company
                         if self.inData["case_id"] == "case_3_SubmitImport_01":
                             self.data[key][0] = company_city
-
 
         #接口操作具有依耐性
         if self.inData["case_id"] == "case_3_creditlogAudit_01" or  self.inData["case_id"] == "case_3_creditlogAudit_02":
