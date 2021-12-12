@@ -6,3 +6,6 @@ cookie_name = "sd-siccms-token"
 #验证码在cookies中的名称
 vcode_name= "vcode"
 
+#表格中的身份证和执业证
+
+
