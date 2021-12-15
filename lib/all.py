@@ -144,9 +144,9 @@ class all:
            or "case_3_EntryImport_01" in self.inData["case_id"]\
            or "case_3_ImportWorkBusiness_01" in self.inData["case_id"]\
            or "case_3_DepartureImport_01" in self.inData["case_id"]:
-                body = requests.post(url=self.new_url, headers=self.header, data=self.data, files=request_file,proxies=self.proxies)
+                body = requests.post(url=self.new_url, headers=self.header, data=self.data, files=request_file)
         else:
-            body = requests.post(url=self.new_url, headers=self.header, json=self.data,proxies=self.proxies)
+            body = requests.post(url=self.new_url, headers=self.header, json=self.data)
 
 
         #打印,生成报告

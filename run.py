@@ -8,7 +8,7 @@ if __name__ == '__main__':
     compute_name = socket.getfqdn(socket.gethostname())
     if os.path.dirname(os.path.abspath(__file__))=="G:\pycharm\script\shandong_integrity":
         os.system("allure generate {0} -o {1} --clean".format(result_path, allure_reportt_path))
-        os.system("allure serve {}".format(result_path))
+        #os.system("allure serve {}".format(result_path))
 
 
 
