@@ -10,7 +10,6 @@ import requests
 from configs.conf import *
 from configs.path import test_xlsx
 from tools.update_data import update_data
-from tools.Base import time_YmdHMS
 import datetime
 from tools.allureUitl import alluer_new
 from tools.md5Uitl import get_md5
@@ -23,142 +22,143 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from tools.ExcelData import ExcelData
 from tools.commonly_method import *
+import traceback
 from tools.Base import *
+
+#分页所需
+pageNum= 1
+pageSize= 5
+count=0
 class all:
-    """
-    所有模块
-    """
-    def __init__(self,inData,token=None,token_province=None,token_city=None,conftest=True):
-        self.token = token
-        self.token_province = token_province
-        self.token_city = token_city
-        if "case_3_SubmitImport_01" in inData["case_id"]\
-                or "case_3_DepartureImport_01" in inData["case_id"] :
-            self.header = {"Cookie":"{0}".format(token_city)}
-            print("地市")
-        elif "case_3_creditlogAudit_01" in inData["case_id"]\
-                or "case_3_Finish_01" in inData["case_id"]:
-            self.header = {"Cookie":"{0}".format(token_province)}
-            print("省公司")
-        else:
-            self.header = {"Cookie":"{0}".format(token)}
-            print("省协会")
-        self.proxies = {"https":"http://127.0.0.1:8888"}
+    def __init__(self):
+        pass
+    def case_ALL(self,all_token, inData,data_storage=None,conftest=True):
+        self.token_XH = all_token["integrity_association_token"]
+        self.token_SGS = all_token["integrity_province_token"]
+        self.token_DSGS = all_token["integrity_prefectureLevel_token"]
+        self.conftest =conftest
+        self.data = json.loads(inData["params"])
         self.inData = inData
         self.new_url= url+inData["url"]
-        self.data = json.loads(inData["params"])
-        self.conftest = conftest
-        self.actual_result = inData["actual_result"]
-
-    def ParameterlessAdjustment(self,company=None,company_province=None,company_city=None,rewards_id=None):
-        """所有测试用例集合"""
-
-        #替换字段值；如日期、年费、公司id
-        if isinstance(self.data,list):
-            pass
-        else:
-            for key in self.data.keys():
-                if key == "pageNum":
-                    self.data[key] = 1
-                if key == "pageSize":
-                    self.data[key] = 20
-                if key == "bdate":
-                    self.data[key] = "{}-01-01".format(date_YmdHMS(5))
-                if key == "edate":
-                    self.data[key] = "{}".format(date_YmdHMS(4))
-                if key == "date_begin":
-                    self.data[key] = "1900-01-01"
-                if key == "date_end" or key == "honorDate":
-                    self.data[key] = "{}".format(date_YmdHMS(4))
-                if key == "dateRange":
-                    self.data[key][0] = "{}-01-01".format(date_YmdHMS(5))
-                    self.data[key][1] = "{}".format(date_YmdHMS(4))
-                if key == "company_id":
-                    if self.inData["case_id"] == "case_3_SubmitImport_01":
-                        self.data[key] = "{}".format(company_city)
-                    else:
-                        self.data[key] = "{}".format(company)
-                if key == "company":
-                    if self.inData["case_id"] == "case_3_overtimecomplaintGetList_01"\
-                            or self.inData["case_id"] == "case_1_IndicatorsSummary":
-                        pass
-                    else:
-                        if self.inData["case_id"] != "case_IndicatorsSummary":
-                            self.data[key][0] = company
-                        if self.inData["case_id"] == "case_3_SubmitImport_01":
-                            self.data[key][0] = company_city
-
-        #接口操作具有依耐性
-        if self.inData["case_id"] == "case_3_creditlogAudit_01" or  self.inData["case_id"] == "case_3_creditlogAudit_02":
-            id = requests_zzl("case_3_creditlogGetAuditList_01",self.token)["data"]["list"][0]["id"]
-            self.data["ids"].append(id)
-
-        if self.inData["case_id"] == "case_3_overtimecomplaintAdd_01":
-            body = requests_zzl("case_3_overtimecomplaintQuery_01",self.token)
-            job_record_id = body["data"]["id"]
-            complaint_company_id = body["data"]["company_id"]
-            self.data["complaint_company_id"]=complaint_company_id
-            self.data["job_record_id"]=job_record_id
-
-        if self.inData["case_id"] == "case_3_Acceptance_01"\
-            or self.inData["case_id"] == "case_3_Finish_01":
-            id = requests_zzl("case_3_overtimecomplaintGetList_01",self.token)["data"]["list"][0]["id"]
-            self.data["id"]=id
-
-        if self.inData["case_id"] == "case_1_lecturermanageDelAwardInfo":
-            id = requests_zzl("case_1_lecturermanageGetAwardInfo",self.token)["data"][0]["id"]
-            self.data["id"]=id
-
-        if self.inData["case_id"] == "case_3_adminuserDelete_01":
-            id = ""
-            while True:
-                body = requests_zzl("case_3_adminuserList_01",self.token)
-                if  body["msg"] == "请求成功":
-                    id = body["data"]["list"][0]["id"]
-                    break
-            self.data["ids"].append(id)
-
-
-        #需要导入表格的操作
-        request_file = None
-        if self.inData["case_id"] == "case_2_membercompanyEntryImport_01":
-            request_file = {'file': (excel_1_name,open(excel_1,"rb"), file_application)}
-        if self.inData["case_id"] == "case_2_membercompanyEntryImport_02":
-            request_file = {'file': (excel_2_name,open(excel_2,"rb"), file_application)}
-        if self.inData["case_id"] == "case_2_membercompanyEntryImport_03":
-            request_file = {'file': (excel_3_name,open(excel_3,"rb"), file_application)}
-        if self.inData["case_id"] == "case_2_membercompanyEntryImport_04":
-            request_file = {'file': (excel_4_name,open(excel_4,"rb"), file_application)}
-        if self.inData["case_id"] == "case_3_EntryImport_01":
-            request_file = {'file': (excel_5_name,open(excel_5,"rb"), file_application)}
-        if self.inData["case_id"] == "case_3_ImportWorkBusiness_01":
-            request_file = {'file': (excel_6_name,open(excel_6,"rb"), file_application)}
-        if self.inData["case_id"] == "case_2_DepartureImport_01":
-            request_file = {'file': (excel_10_name,open(excel_10,"rb"), file_application)}
-        if self.inData["case_id"] == "case_3_DepartureImport_01":
-            request_file = {'file': (excel_21_name,open(excel_21,"rb"), file_application)}
-
-
-        #区分是否上传文件；请求
-        if "case_2" in self.inData["case_id"]\
-           or "case_3_EntryImport_01" in self.inData["case_id"]\
-           or "case_3_ImportWorkBusiness_01" in self.inData["case_id"]\
-           or "case_3_DepartureImport_01" in self.inData["case_id"]:
-                body = requests.post(url=self.new_url, headers=self.header, data=self.data, files=request_file)
-        else:
-            body = requests.post(url=self.new_url, headers=self.header, json=self.data)
-
-
-        #打印,生成报告
-        if self.conftest==True:
-            print("\n\n"+self.inData["case_id"]+"-"+self.inData["case_name"])
-            print(self.inData)
-            print(self.data)
-            print(self.new_url)
-            print(self.header)
-            print(body.json())
-            print(self.inData)
-            print(json.loads(self.inData["response_expect_result"]))
-            print(self.conftest)
-        inData = update_data(self.inData,self.data,self.new_url,self.header,body.json(),json.loads(self.inData["response_expect_result"]),self.conftest)
-        return inData,body
+        case_id = self.inData["case_id"]
+        try:
+        ##############################根据接口不同选择不同的token##############
+            if "PD_01" in inData["case_id"]:
+                self.header = {"Cookie":"{0}".format(self.token_DSGS)}
+            elif "PD_02" in inData["case_id"]:
+                self.header = {"cookie":"{0}".format(self.token_SGS)}
+            elif "case0C_03" in case_id:
+                self.header = {"Cookie":"{0}".format(self.token_DSGS)}
+            elif "case0C_05" in case_id:
+                self.header = {"Cookie":"{0}".format(self.token_SGS)}
+            elif "case0C_06" in case_id:
+                self.header = {"Cookie":"{0}".format(self.token_XH)}
+            else:
+                self.header = {"Cookie":"{0}".format(self.token_XH)}
+        ##############################重新调整接口参数##############################
+            if "case005" in case_id:
+                self.data["id"] = data_storage["case001"]["data"]["list"][0]["member_id"]
+            elif "case010" in case_id:
+                self.data["id"] = data_storage["case001"]["data"]["list"][0]["id"]
+                self.data["member_id"] = data_storage["case001"]["data"]["list"][0]["member_id"]
+                self.data["photo"] = data_storage["case009"]["data"]["url"]
+            elif "case011" in case_id:
+                self.data["id"] = data_storage["case001"]["data"]["list"][0]["id"]
+                self.data["member_id"] = data_storage["case001"]["data"]["list"][0]["member_id"]
+                self.data["photo"] = data_storage["case009"]["data"]["url"]
+            elif "case012" in case_id:
+                self.data["id"] = data_storage["case002_1"]["data"]["list"][0]["id"]
+                self.data["member_id"] = data_storage["case002_1"]["data"]["list"][0]["member_id"]
+                self.data["photo"] = data_storage["case009"]["data"]["url"]
+            elif "case013" in case_id:
+                self.data["id"] = data_storage["case002_2"]["data"]["list"][0]["id"]
+                self.data["member_id"] = data_storage["case002_2"]["data"]["list"][0]["member_id"]
+                self.data["photo"] = data_storage["case009"]["data"]["url"]
+            elif "case014" in case_id or "case015" in case_id:
+                self.data["date_end"] = date_YmdHMS(4)
+                self.data["company_id"] = data_storage["ED_02"]["data"][0]["id"]
+                self.data["company"][0] = data_storage["ED_02"]["data"][0]["id"]
+            elif "case016" in case_id or "case017" in case_id:
+                self.data["date_begin"] = "{}-01-01".format(date_YmdHMS(5))
+                self.data["date_end"] = date_YmdHMS(4)
+                self.data["dateRange"][0] = "{}-01-01".format(date_YmdHMS(5))
+                self.data["dateRange"][1] = date_YmdHMS(4)
+                self.data["company_id"] = data_storage["ED_02"]["data"][0]["id"]
+                self.data["company"][0] = data_storage["ED_02"]["data"][0]["id"]
+            elif "case018" in case_id or "case019" in case_id:
+                self.data["bdate"] = "{}-01-01".format(date_YmdHMS(5))
+                self.data["edate"] = date_YmdHMS(4)
+            elif "case020" in case_id:
+                self.data["company_id"] = data_storage["ED_02"]["data"][0]["id"]
+                self.data["company"][0] = data_storage["ED_02"]["data"][0]["id"]
+            elif "case021" in case_id:
+                self.data["date_begin"] = "{}-01-01".format(date_YmdHMS(5))
+                self.data["date_end"] = date_YmdHMS(4)
+            elif "caseA_03" in case_id or "caseA_04" in case_id:
+                self.data["member_ids"][0] = data_storage["case001"]["data"]["list"][0]["member_id"]
+            elif "caseA_05" in case_id:
+                self.data["idNumbers"][0] = data_storage["case001"]["data"]["list"][0]["id_number"]
+            elif "caseA_07" in case_id:
+                self.data["photo_array"][0]["photo"] = data_storage["caseA_06"]["data"]["url"]
+            elif "caseA_08" in case_id:
+                self.data["id"] = data_storage["case001"]["data"]["list"][0]["member_id"]
+            elif "caseA_09" in case_id:
+                self.data["id"] = data_storage["case001"]["data"]["list"][0]["id"]
+                self.data["member_id"] = data_storage["case001"]["data"]["list"][0]["member_id"]
+                self.data["photo"] = data_storage["case009"]["data"]["url"]
+            elif "caseA_10" in case_id:
+                self.data["id"] = data_storage["case002_1"]["data"]["list"][0]["id"]
+                self.data["member_id"] = data_storage["case002_1"]["data"]["list"][0]["member_id"]
+                self.data["photo"] = data_storage["case009"]["data"]["url"]
+            elif "caseB_01" in case_id:
+                self.data["id"] = data_storage["case002"]["data"]["list"][0]["id"]
+            elif "case0C_05" in case_id or "case0C_06" in case_id:
+                self.data["ids"][0] = data_storage["case0C_04"]["data"]["list"][0]["id"]
+            elif "case0C_03" in case_id:
+                self.data["reward_company"] = "测试数据01-{}".format(date_YmdHMS(2))
+                self.data["file_code_name"] = "测试数据01-{}".format(date_YmdHMS(2))
+            elif "caseD_03" in case_id:
+                self.data["ids"][0] = data_storage["caseD_02"]["data"]["list"][0]["id"]
+                self.data["honorDate"] = "{}".format(date_YmdHMS(7))
+            elif "caseD_04" in case_id:
+                self.data["id"] = data_storage["caseD_02"]["data"]["list"][0]["id"]
+            elif "caseD_05" in case_id:
+                self.data[0] = data_storage["caseD_02"]["data"]["list"][0]["id"]
+            elif "caseD_06" in case_id:
+                self.data["id"] = data_storage["caseD_02"]["data"]["list"][0]["id"]
+            elif "caseZ_006" in case_id or "caseZ_007" in case_id:
+                self.data["id"] = data_storage["caseZ_003"]["data"]["list"][0]["id"]
+            elif "caseZ_008" in case_id or "caseZ_009" in case_id or "caseZ_011" in case_id:
+                self.data["ids"][0] = data_storage["caseZ_003"]["data"]["list"][0]["id"]
+            elif "caseZ_010" in case_id:
+                self.data["ids"][0] = data_storage["caseZ_003"]["data"]["list"][0]["id"]
+                self.data["BTime"] = "{}-01-01 01:01:01".format(int(date_YmdHMS(5))-2)
+                self.data["ETime"] = "{}-01-01 01:01:01".format(int(date_YmdHMS(5))+2)
+            elif "caseZ_012" in case_id:
+                self.data["ids"][0] = data_storage["caseZ_004"]["data"]["list"][0]["id"]
+        ##################################需要传入表格用来##############################
+            if "PD_01" in case_id:
+                self.request_file = {'file':('01-山东在职人员导入模板.xlsx',open(file_path_02,"rb"),file_type)}
+            elif "PD_02" in case_id:
+                self.request_file = {'file':('02-山东离职人员导入模板.xlsx',open(file_path_03,"rb"),file_type)}
+            elif "case004" in case_id:
+                self.request_file = {'file':('03-入职前诚信级别批量查询模板.xlsx',open(file_path_04,"rb"),file_type)}
+            elif "case009" in case_id:
+                self.request_file = {'file':('99-图片.jpg',open(file_path_05,"rb"),file_type)}
+            elif "caseA_06" in case_id:
+                self.request_file = {'file':('111_431226199407030014.jpg',open(file_path_06,"rb"),file_type)}
+            elif "caseA_11" in case_id:
+                self.request_file = {'file':('04-山东在职人员业务指标导入模板.xlsx',open(file_path_07,"rb"),file_type)}
+            elif "caseD_01" in case_id:
+                self.request_file = {'file':('05-山东讲师资质导入模板.xlsx',open(file_path_08,"rb"),file_type)}
+            else:
+                self.request_file = {}
+            body = requests.post(url=self.new_url,headers=self.header,json=self.data,files=self.request_file)
+        except BaseException:
+            traceback.print_exc()
+            self.data["actual_result"] = traceback.format_exc()
+        finally:
+            print(self.inData["case_id"])
+            data_storage[case_id] = body.json()
+            inData = update_data(self.inData,self.data,self.new_url,self.header,body.json(),json.loads(self.inData["response_expect_result"]),self.conftest)
+            return inData,body

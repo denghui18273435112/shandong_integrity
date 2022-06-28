@@ -1,9 +1,8 @@
 import xlrd
 from configs.path import *
 import json
-from xlutils.copy import copy
 
-def ExcelData(beginColumn=None,file_name="山东诚信系统用例.xls"):
+def ExcelData(beginColumn=None,file_name="00-山东诚信系统用例.xls"):
     """
     读取表格中的用例信息
     :param beginColumn:第一列的名称，支持模糊
@@ -24,9 +23,10 @@ def ExcelData(beginColumn=None,file_name="山东诚信系统用例.xls"):
     response_expect_result = "响应预期结果"
     actual_result = "实际结果"
     """
-    excel_file=data_path+os.sep+file_name
+    # excel_file=data_path+os.sep+file_name
     _data=[]
-    workbook = xlrd.open_workbook(excel_file,formatting_info=True)
+    #print(file_path_01)
+    workbook = xlrd.open_workbook(file_path_01,formatting_info=True)
     sheets = workbook.sheet_names()
     for i in range(workbook.nsheets):
         sheet = workbook.sheet_by_name(sheets[i])
@@ -40,28 +40,9 @@ def ExcelData(beginColumn=None,file_name="山东诚信系统用例.xls"):
                     _data.append(dict(zip(title, col_value)))
     return _data
 
-def dayin(beginColumn=None,file_name="1在职-正常-导入1人数据.xlsx"):
-
-    excel_file=file_data_path_1+os.sep+file_name
-    workbook = xlrd.open_workbook(excel_file)
-    wb = copy(workbook)
-    ws = wb.get_sheet(0)
-    ws.write(5,4,"123456")
-    wb.save(excel_file)
-    #sheet = workbook.sheet_by_index(0)
-
-
-
-
-    #return sheet.cell_value(5,4)
-    return 1
-
-
-
 
 if __name__ == "__main__":
-    #print(ExcelData("case_3_creditlogGetAuditList_01")[0])
-    print(dayin())
+    print(ExcelData("PD_01"))
 
 
 
