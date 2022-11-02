@@ -21,25 +21,58 @@ def login(case_id="login-classify-001"):
     广东分类登录
     :return:
     """
-    token = ""
-    while True:
-        #付费的
-        res=requests.get("{}/base/home/VerificationCode?".format(url))
-        if res.status_code==200:
-            imgname  = data_path+os.sep+'code.jpg'
-            with open(imgname,"wb") as fd:
-                fd.write(res.content)
-        vcode = res.cookies[vcode_name]
-        headers= {"Cookie":"{0}={1}".format(vcode_name,vcode)}
-        data = json.loads(ExcelData(case_id)[0]["params"])
-        data["Vcode"] = verification_code("code.jpg")
-        body = requests.post(url="{}/base/home/Login".format(url),json=data,headers=headers)
-        if body.json()["msg"]=="登录成功":
-            token = "{0}={1};{2}={3}".format(cookie_name,body.cookies[cookie_name],vcode_name,vcode)
-            break
-        else:
-            print("登录失败")
-    return token
+    if environment=="line":
+        token = ""
+        while True:
+            #付费的
+            res=requests.get("{0}{1}".format(url,code_url))
+            if res.status_code==200:
+                imgname  = data_path+os.sep+'code.jpg'
+                with open(imgname,"wb") as fd:
+                    fd.write(res.content)
+            vcode = res.cookies[vcode_name]
+            headers= {"Cookie":"{0}={1}".format(vcode_name,vcode)}
+            data = json.loads(ExcelData(case_id)[0]["params"])
+            data[V_code_name] = verification_code("code.jpg")
+            body = requests.post(url="{0}{1}".format(url,Login_api),json=data,headers=headers)
+            #print(body.json())
+            if body.json()["msg"]=="登录成功":
+                # print(cookie_name)
+                # print(body.cookies[cookie_name])
+                # print(vcode_name)
+                # print(vcode)
+                token = "{0}={1};{2}={3}".format(cookie_name,body.cookies[cookie_name],vcode_name,vcode)
+                break
+            else:
+                print("登录失败")
+        return token
+    if environment=="TP":
+        token = ""
+        while True:
+            #付费的
+            res=requests.get("{0}{1}".format(url,code_url))
+            if res.status_code==200:
+                imgname  = data_path+os.sep+'code.jpg'
+                with open(imgname,"wb") as fd:
+                    fd.write(res.content)
+            vcode = res.cookies[vcode_name]
+            headers= {"{0}".format(headers_cookie):"{0}={1}".format(vcode_name,vcode)}
+            data = json.loads(ExcelData(case_id)[0]["params"])
+            data[V_code_name] = verification_code("code.jpg")
+            body = requests.post(url="{0}{1}".format(url,Login_api),json=data,headers=headers)
+            # print(body.json())
+            if body.json()["msg"]=="登录成功":
+                # print(cookie_name)
+                # print(body.cookies[Cookies_name])
+                # print(vcode_name)
+                # print(vcode)
+                print("登录成功")
+                token = "{0}={1};{2}={3}".format(Cookies_name,body.cookies[Cookies_name],vcode_name,vcode)
+                break
+            else:
+                print("登录失败")
+        return token
+
 
 def  requests_zzl(case_id,token_1=None,company_id_1=None,year=None,file=None):
     """

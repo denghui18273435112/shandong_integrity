@@ -1,5 +1,125 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 对比类型数字;系统呈现:0>=表格获取:1;接口校验失败",
+      "children" : [ {
+        "name" : "test_HP[inData50]",
+        "uid" : "8bb4a3e27ec051fb",
+        "parentUid" : "9cbeae10604506726f729a4314ecc33b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1660628206298,
+          "stop" : 1660628206563,
+          "duration" : 265
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseG07', 'case_model': '211-从业时长汇总统计', 'case_name': '', 'priority': '中', 'title': '01默认查询', 'url': '/manageapi/membercompanystats/getmemberworkingmonth', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': 'token-002', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"FilterType\": \"1\",\\n \"CompanyId\": \"\",\\n \"DistrictCode\": \"\",\\n \"Status\": -1,\\n \"Date\": [\"2022-01-01\", \"2022-07-27\"]\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"code\": 0,\\n \"msg\": \"请求成功\",\\n \"$.data.count\": 50,\\n \"$.data.list[0].companyWorkingLevel1\": 1,\\n \"$.data.list[0].companyWorkingLevel2\": 1,\\n \"$.data.list[0].companyWorkingLevel3\": 1,\\n \"$.data.list[0].companyWorkingLevel4\": 1,\\n \"$.data.list[0].allWorkingLevel1\": 1,\\n \"$.data.list[0].allWorkingLevel2\": 1,\\n \"$.data.list[0].allWorkingLevel3\": 1,\\n \"$.data.list[0].allWorkingLevel4\": 1\\n}', 'actual_result': '', 'remark': '备注'}" ]
+      }, {
+        "name" : "test_HP[inData72]",
+        "uid" : "8b9decc9487228b",
+        "parentUid" : "9cbeae10604506726f729a4314ecc33b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1660628278261,
+          "stop" : 1660628282790,
+          "duration" : 4529
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseH02', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '02讲师资质导入', 'url': '/manageapi/lecturermanage/Import', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{}', 'expect_result': 'ture', 'response_expect_result': '{\"$.code\":0,\"$.msg\":\"请求成功\",\"$.data.success\":1}', 'actual_result': '', 'remark': '备注'}" ]
+      } ],
+      "uid" : "9cbeae10604506726f729a4314ecc33b"
+    }, {
+      "name" : "AssertionError: 对比类型列表;系统呈现:0>=表格获取:1;接口校验失败",
+      "children" : [ {
+        "name" : "test_HP[inData73]",
+        "uid" : "ae462053fc9a98f2",
+        "parentUid" : "99773e538ed0e83843becbb22bf33a59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1660628282802,
+          "stop" : 1660628282910,
+          "duration" : 108
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseH03', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '03单个查询', 'url': '/manageapi/lecturermanage/GetList', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"status\":\"\",\"name\":\"\",\"auth_type\":\"\",\"id_number\":\"431226199407030030\",\"company_id\":\"8637000000\",\"practice_number\":\"\",\"type\":\"\",\"company\":[\"8637000000\"]}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"成功\",\"$.data.list\":1}', 'actual_result': '', 'remark': '备注'}" ]
+      } ],
+      "uid" : "99773e538ed0e83843becbb22bf33a59"
+    }, {
+      "name" : "AssertionError: 对比类型列表;系统呈现:0>=表格获取:20;接口校验失败",
+      "children" : [ {
+        "name" : "test_HP[inData100]",
+        "uid" : "3b57752022ce8c85",
+        "parentUid" : "39e129053ae66770cfcf1260b81c1749",
+        "status" : "failed",
+        "time" : {
+          "start" : 1660628309713,
+          "stop" : 1660628309877,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseQ02', 'case_model': '226-历史数据查询', 'case_name': '02-明细数据', 'priority': '', 'title': '01默认条件查询', 'url': '/manageapi/membercompanystats/gethistorydatadetails', 'pre_exec': '', 'method': '', 'params_type': '', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"dateBegin\": \"2022-06-30\",\\n \"dateEnd\": \"2022-06-30\",\\n \"total\": true,\\n \"name\": \"\",\\n \"authType\": \"\",\\n \"status\": 1,\\n \"company\": [\"8637000000\"],\\n \"companyId\": \"8637000000\",\\n \"idNumber\": \"\",\\n \"practiceNumber\": \"\"\\n}', 'expect_result': '', 'response_expect_result': '{\"code\":0,\"msg\":\"成功\",\"$.data.list\":20}', 'actual_result': '', 'remark': ''}" ]
+      } ],
+      "uid" : "39e129053ae66770cfcf1260b81c1749"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "UnboundLocalError: local variable 'body' referenced before assignment",
+      "children" : [ {
+        "name" : "test_HP[inData74]",
+        "uid" : "63a6a11dcc3f031",
+        "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1660628282923,
+          "stop" : 1660628282941,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseH04', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '05奖惩导入', 'url': '/manageapi/lecturermanage/AddAwardInfo', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"ids\":[77198],\"type\":\"1\",\"honorDate\":\"2022/06/27\",\"filePath\":\"http://employee.sdbx.org:10252/upload/file/52b24adc9bb94c96aa0dfa5ee32b6fff.jpg\",\"fileList\":[{\"name\":\"111_431225198107300499.jpg\",\"url\":\"http://employee.sdbx.org:10252/upload/file/52b24adc9bb94c96aa0dfa5ee32b6fff.jpg\",\"type\":\"image/jpeg\",\"uid\":1656325240235,\"status\":\"success\"}],\"fileName\":\"111_431225198107300499.jpg\"}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\"}', 'actual_result': '', 'remark': '备注'}" ]
+      }, {
+        "name" : "test_HP[inData75]",
+        "uid" : "9dee115d90807f7",
+        "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1660628282978,
+          "stop" : 1660628282978,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseH05', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '06奖惩记录详情', 'url': '/manageapi/lecturermanage/GetAwardInfo', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"id\":77198}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\",\"$.data\":1}', 'actual_result': '', 'remark': '备注'}" ]
+      }, {
+        "name" : "test_HP[inData76]",
+        "uid" : "48b9cba0ad5cfaf5",
+        "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1660628283005,
+          "stop" : 1660628283005,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseH06', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '07取消资质', 'url': '/manageapi/lecturermanage/Cancel', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '[77199]', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\"}', 'actual_result': '', 'remark': '备注'}" ]
+      }, {
+        "name" : "test_HP[inData77]",
+        "uid" : "ebda5a37cf43d678",
+        "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1660628283058,
+          "stop" : 1660628283059,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseH07', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '08删除操作', 'url': '/manageapi/lecturermanage/DelCompanyInfo', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"id\":77199}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\"}', 'actual_result': '', 'remark': '备注'}" ]
+      } ],
+      "uid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

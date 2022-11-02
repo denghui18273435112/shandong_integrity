@@ -11,25 +11,14 @@ def empty_report_file():
         pass
 
 @pytest.fixture(scope="session")
-def integrity_association_token():
-    """省协会，返回token"""
-    return login("login-integrity-003")
+def token():
+    """所有账号登录，返回token"""
+    return login("login-integrity-001"),login("login-integrity-002"),login("login-integrity-003"),login("login-integrity-004"),login("login-integrity-005"),login("login-integrity-006"),login("login-integrity-007")
 
 @pytest.fixture(scope="session")
-def integrity_province_token():
-    """省公司，返回token"""
-    return login("login-integrity-004")
-
-@pytest.fixture(scope="session")
-def integrity_prefectureLevel_token():
-    """地市公司公司，返回token"""
-    return login("login-integrity-005")
-
-@pytest.fixture(scope="session")
-def all_token(integrity_association_token,integrity_province_token,integrity_prefectureLevel_token):
+def all_token(token):
     """把所有的token存放到字典中"""
     new_token ={}
-    new_token["integrity_association_token"] = integrity_association_token
-    new_token["integrity_province_token"] = integrity_province_token
-    new_token["integrity_prefectureLevel_token"] = integrity_prefectureLevel_token
+    for x in range(len(token)):
+        new_token["token-00{}".format(x+1)] = token[x]
     return new_token

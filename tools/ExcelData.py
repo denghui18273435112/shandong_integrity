@@ -23,9 +23,7 @@ def ExcelData(beginColumn=None,file_name="00-山东诚信系统用例.xls"):
     response_expect_result = "响应预期结果"
     actual_result = "实际结果"
     """
-    # excel_file=data_path+os.sep+file_name
     _data=[]
-    #print(file_path_01)
     workbook = xlrd.open_workbook(file_path_01,formatting_info=True)
     sheets = workbook.sheet_names()
     for i in range(workbook.nsheets):
@@ -34,12 +32,17 @@ def ExcelData(beginColumn=None,file_name="00-山东诚信系统用例.xls"):
         for col in range(1,sheet.nrows):
             col_value = sheet.row_values(col)
             if beginColumn !=None:
-                if beginColumn in sheet.cell(col,0).value:
-                    _data.append(dict(zip(title, col_value)))
+                tt = beginColumn.split(",")
+                if len(tt) >=2:
+                    for x in tt:
+                        if x in sheet.cell(col,0).value:
+                            _data.append(dict(zip(title, col_value)))
+                else:
+                    if beginColumn in sheet.cell(col,0).value:
+                        _data.append(dict(zip(title, col_value)))
             else:
                     _data.append(dict(zip(title, col_value)))
     return _data
-
 
 if __name__ == "__main__":
     print(ExcelData("PD_01"))

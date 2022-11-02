@@ -11,7 +11,8 @@ import  re
 import subprocess
 from configs.path import  report_path
 from tools.YamlUtil import YamlReaber
-
+import datetime
+import calendar
 """
 常用的方式
 """
@@ -51,6 +52,10 @@ def date_YmdHMS(type=1):
         current_time = now_time.strftime("%Y-%m")
     if type == 7:
         current_time = now_time.strftime("%Y/%m/%d")
+    if type == 8:
+        """上一个月的最后一天"""
+        datetime_now = datetime.datetime.strptime( now_time.strftime("%Y-%m-%d"),'%Y-%m-%d').date()
+        current_time=calendar.monthrange(datetime_now.year, datetime_now.month-1)[1]
     return current_time
 
 
@@ -277,4 +282,4 @@ def dict_turn_JSON(dict):
 
 
 if __name__ == '__main__':
-    print(read_yamlFile("testlogin.yaml","data","password",filePath="data"))
+    print(date_YmdHMS(8))

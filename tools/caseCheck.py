@@ -13,26 +13,31 @@ class caseCheck:
             actual_result = res["actual_result"] #接口响应数据
             for key in response_expect_result:
                 for values in jsonpath.jsonpath(actual_result,key):
-                    #列表长度比较
-                    if  isinstance(values,list):
-                        if len(values) < response_expect_result[key]:
-                            assert  True==False,"对比类型列表;系统呈现:{0}>=表格获取:{1};接口校验失败".format(len(values),response_expect_result[key])
-                        allure.attach(body="对比类型列表;系统呈现:{0}>=表格获取:{1};".format(len(values),response_expect_result[key]), name="数据对比情况", attachment_type=allure.attachment_type.TEXT)
-                    #浮点大小比较
-                    elif isinstance(values, float):
-                        if values < response_expect_result[key]:
-                            assert  True==False,"对比类型浮点;系统呈现:{0}>=表格获取:{1};接口校验失败".format(values,response_expect_result[key])
-                        allure.attach(body="对比类型数字;系统呈现:{0}>=表格获取:{1};".format(values,response_expect_result[key]), name="数据对比情况", attachment_type=allure.attachment_type.TEXT)
-                    #数字大小比较
-                    elif isinstance(values, int):
-                        if values < response_expect_result[key]:
-                            assert  True==False,"对比类型数字;系统呈现:{0}>=表格获取:{1};接口校验失败".format(values,response_expect_result[key])
-                        allure.attach(body="对比类型数字;系统呈现:{0}>=表格获取:{1};".format(values,response_expect_result[key]), name="数据对比情况", attachment_type=allure.attachment_type.TEXT)
-                    #字符串相同比较
+                    if response_expect_result[key] == "null_not":
+                        if values == "None" or values == "null"or values == "" or values ==None:
+                            assert  True==False,"判断系统字段不能为空;系统呈现:{0};表格获取:{1};接口校验失败".format(values,response_expect_result[key])
+                        allure.attach(body="判断系统字段不能为空;系统呈现:{0};表格获取:{1};".format(values,response_expect_result[key]), name="判断是否不为空", attachment_type=allure.attachment_type.TEXT)
                     else:
-                        if values != response_expect_result[key]:
-                            assert  True==False,"对比类型字符串;系统呈现:{0}!=表格获取:{1};接口校验失败".format(values,response_expect_result[key])
-                        allure.attach(body="对比类型字符串;系统呈现:{0}==表格获取:{1};".format(values,response_expect_result[key]), name="数据对比情况", attachment_type=allure.attachment_type.TEXT)
+                        #列表长度比较
+                        if  isinstance(values,list):
+                            if len(values) < response_expect_result[key]:
+                                assert  True==False,"对比类型列表;系统呈现:{0}>=表格获取:{1};接口校验失败".format(len(values),response_expect_result[key])
+                            allure.attach(body="对比类型列表;系统呈现:{0}>=表格获取:{1};".format(len(values),response_expect_result[key]), name="判断列表长度是否大于等于", attachment_type=allure.attachment_type.TEXT)
+                        #浮点大小比较
+                        elif isinstance(values, float):
+                            if values < response_expect_result[key]:
+                                assert  True==False,"对比类型浮点;系统呈现:{0}>=表格获取:{1};接口校验失败".format(values,response_expect_result[key])
+                            allure.attach(body="对比类型数字;系统呈现:{0}>=表格获取:{1};".format(values,response_expect_result[key]), name="判断浮点是否大于等于", attachment_type=allure.attachment_type.TEXT)
+                        #数字大小比较
+                        elif isinstance(values, int):
+                            if values < response_expect_result[key]:
+                                assert  True==False,"对比类型数字;系统呈现:{0}>=表格获取:{1};接口校验失败".format(values,response_expect_result[key])
+                            allure.attach(body="对比类型数字;系统呈现:{0}>=表格获取:{1};".format(values,response_expect_result[key]), name="判断数字是否大于等于", attachment_type=allure.attachment_type.TEXT)
+                        #字符串相同比较
+                        else:
+                            if values != response_expect_result[key]:
+                                assert  True==False,"对比类型字符串;系统呈现:{0}!=表格获取:{1};接口校验失败".format(values,response_expect_result[key])
+                            allure.attach(body="对比类型字符串;系统呈现:{0}==表格获取:{1};".format(values,response_expect_result[key]), name="判断字符串是否相同", attachment_type=allure.attachment_type.TEXT)
         except Exception as ERROR_NEW:
             traceback.print_exc()
             raise  ERROR_NEW
