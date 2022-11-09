@@ -149,10 +149,13 @@ class all:
                 self.data["dateEnd"]= date_YmdHMS(4)
             elif "caseQ08" in case_id:
                 self.data["dateBegin"]= "{0}-{1}".format(str(date_YmdHMS(6)),str(date_YmdHMS(8)))
-                self.data["dateBegin"]= "{0}-{1}".format(str(date_YmdHMS(6)),str(date_YmdHMS(8)))
+                self.data["dateEnd"]= "{0}-{1}".format(str(date_YmdHMS(6)),str(date_YmdHMS(8)))
             elif "caseG07" in case_id:
                 self.data["Date"][0]= "{}-01-01".format(date_YmdHMS(5))
                 self.data["Date"][1]= "{}".format(date_YmdHMS(4))
+            elif "caseQ02" in case_id:
+                self.data["dateBegin"]= "{0}".format(str(date_YmdHMS(6)))
+                self.data["dateEnd"]= "{0}".format(str(date_YmdHMS(6)))
         ##################################需要传入表格用来##############################
             if "PD_01" in case_id:
                 self.request_file = {'file':('01-山东在职人员导入模板.xlsx',open(file_path_02,"rb"),file_type)}

@@ -56,6 +56,10 @@ def date_YmdHMS(type=1):
         """上一个月的最后一天"""
         datetime_now = datetime.datetime.strptime( now_time.strftime("%Y-%m-%d"),'%Y-%m-%d').date()
         current_time=calendar.monthrange(datetime_now.year, datetime_now.month-1)[1]
+    if type == 9:
+        """当前月份的最后一天"""
+        datetime_now = datetime.datetime.strptime( now_time.strftime("%Y-%m-%d"),'%Y-%m-%d').date()
+        current_time=calendar.monthrange(datetime_now.year, datetime_now.month-1)[1]
     return current_time
 
 

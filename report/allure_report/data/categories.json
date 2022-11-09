@@ -4,65 +4,89 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: 对比类型数字;系统呈现:0>=表格获取:1;接口校验失败",
-      "children" : [ {
-        "name" : "test_HP[inData50]",
-        "uid" : "8bb4a3e27ec051fb",
-        "parentUid" : "9cbeae10604506726f729a4314ecc33b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1660628206298,
-          "stop" : 1660628206563,
-          "duration" : 265
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseG07', 'case_model': '211-从业时长汇总统计', 'case_name': '', 'priority': '中', 'title': '01默认查询', 'url': '/manageapi/membercompanystats/getmemberworkingmonth', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': 'token-002', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"FilterType\": \"1\",\\n \"CompanyId\": \"\",\\n \"DistrictCode\": \"\",\\n \"Status\": -1,\\n \"Date\": [\"2022-01-01\", \"2022-07-27\"]\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"code\": 0,\\n \"msg\": \"请求成功\",\\n \"$.data.count\": 50,\\n \"$.data.list[0].companyWorkingLevel1\": 1,\\n \"$.data.list[0].companyWorkingLevel2\": 1,\\n \"$.data.list[0].companyWorkingLevel3\": 1,\\n \"$.data.list[0].companyWorkingLevel4\": 1,\\n \"$.data.list[0].allWorkingLevel1\": 1,\\n \"$.data.list[0].allWorkingLevel2\": 1,\\n \"$.data.list[0].allWorkingLevel3\": 1,\\n \"$.data.list[0].allWorkingLevel4\": 1\\n}', 'actual_result': '', 'remark': '备注'}" ]
-      }, {
-        "name" : "test_HP[inData72]",
-        "uid" : "8b9decc9487228b",
-        "parentUid" : "9cbeae10604506726f729a4314ecc33b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1660628278261,
-          "stop" : 1660628282790,
-          "duration" : 4529
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseH02', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '02讲师资质导入', 'url': '/manageapi/lecturermanage/Import', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{}', 'expect_result': 'ture', 'response_expect_result': '{\"$.code\":0,\"$.msg\":\"请求成功\",\"$.data.success\":1}', 'actual_result': '', 'remark': '备注'}" ]
-      } ],
-      "uid" : "9cbeae10604506726f729a4314ecc33b"
-    }, {
       "name" : "AssertionError: 对比类型列表;系统呈现:0>=表格获取:1;接口校验失败",
       "children" : [ {
-        "name" : "test_HP[inData73]",
-        "uid" : "ae462053fc9a98f2",
+        "name" : "test_precondition[inData7]",
+        "uid" : "bc3ebcfcaed0b22b",
         "parentUid" : "99773e538ed0e83843becbb22bf33a59",
         "status" : "failed",
         "time" : {
-          "start" : 1660628282802,
-          "stop" : 1660628282910,
-          "duration" : 108
+          "start" : 1667907722124,
+          "stop" : 1667907722310,
+          "duration" : 186
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseH03', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '03单个查询', 'url': '/manageapi/lecturermanage/GetList', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"pageNum\":1,\"pageSize\":20,\"status\":\"\",\"name\":\"\",\"auth_type\":\"\",\"id_number\":\"431226199407030030\",\"company_id\":\"8637000000\",\"practice_number\":\"\",\"type\":\"\",\"company\":[\"8637000000\"]}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"成功\",\"$.data.list\":1}', 'actual_result': '', 'remark': '备注'}" ]
+        "parameters" : [ "{'case_id': 'AA03', 'case_model': '200-个人信息查询', 'case_name': '1个人信息查询', 'priority': '中', 'title': '03单个查询-在职-其它', 'url': '/manageapi/membercompany/List', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"\",\\n \"name\": \"测试数据-08\",\\n \"auth_type\": \"O\",\\n \"id_number\": \"43122617030153\",\\n \"id_number_array\": [],\\n \"practice_numbers\": []\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list\": 1,\\n \"$.data.count\": 1\\n}', 'actual_result': '', 'remark': '备注'}" ]
+      }, {
+        "name" : "test_precondition[inData8]",
+        "uid" : "d19a7e3f6b792445",
+        "parentUid" : "99773e538ed0e83843becbb22bf33a59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667907722387,
+          "stop" : 1667907722510,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'AA04', 'case_model': '200-个人信息查询', 'case_name': '1个人信息查询', 'priority': '中', 'title': '04单个查询-离职-其它', 'url': '/manageapi/membercompany/List', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"by\": 1,\\n \"order\": \"\",\\n \"name\": \"测试数据-06\",\\n \"auth_type\": \"O\",\\n \"id_number\": \"436199407030110\",\\n \"id_number_array\": [],\\n \"practice_numbers\": []\\n}', 'expect_result': 'ture', 'response_expect_result': '{\\n \"$.code\": 0,\\n \"$.msg\": \"成功\",\\n \"$.data.list\": 1,\\n \"$.data.count\": 1\\n}', 'actual_result': '', 'remark': '备注'}" ]
       } ],
       "uid" : "99773e538ed0e83843becbb22bf33a59"
     }, {
-      "name" : "AssertionError: 对比类型列表;系统呈现:0>=表格获取:20;接口校验失败",
+      "name" : "AssertionError: 对比类型数字;系统呈现:469>=表格获取:470;接口校验失败",
       "children" : [ {
-        "name" : "test_HP[inData100]",
-        "uid" : "3b57752022ce8c85",
-        "parentUid" : "39e129053ae66770cfcf1260b81c1749",
+        "name" : "test_HP[inData93]",
+        "uid" : "5a77d72a2322ebe3",
+        "parentUid" : "28a9c5b14f21d5d5aa051ae8328717eb",
         "status" : "failed",
         "time" : {
-          "start" : 1660628309713,
-          "stop" : 1660628309877,
-          "duration" : 164
+          "start" : 1667908014761,
+          "stop" : 1667908020411,
+          "duration" : 5650
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseQ02', 'case_model': '226-历史数据查询', 'case_name': '02-明细数据', 'priority': '', 'title': '01默认条件查询', 'url': '/manageapi/membercompanystats/gethistorydatadetails', 'pre_exec': '', 'method': '', 'params_type': '', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"dateBegin\": \"2022-06-30\",\\n \"dateEnd\": \"2022-06-30\",\\n \"total\": true,\\n \"name\": \"\",\\n \"authType\": \"\",\\n \"status\": 1,\\n \"company\": [\"8637000000\"],\\n \"companyId\": \"8637000000\",\\n \"idNumber\": \"\",\\n \"practiceNumber\": \"\"\\n}', 'expect_result': '', 'response_expect_result': '{\"code\":0,\"msg\":\"成功\",\"$.data.list\":20}', 'actual_result': '', 'remark': ''}" ]
+        "parameters" : [ "{'case_id': 'caseQ01', 'case_model': '226-历史数据查询', 'case_name': '01-汇总数据', 'priority': '', 'title': '01默认条件查询(在职时间)', 'url': '/manageapi/membercompanystats/gethistorydatasummary', 'pre_exec': '', 'method': '', 'params_type': '', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"status\": 1,\\n \"dateBegin\": \"2022-06-30\",\\n \"dateEnd\": \"2022-06-30\",\\n \"total\": true,\\n \"areatype\": \"1\",\\n \"companyOrDistrict\": \"\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"code\": 0,\\n \"msg\": \"成功\",\\n \"data.count\": 470,\\n \"data.list\": 20,\\n \"data.statistics.personTimes\": \"null_not\",\\n \"data.statistics.companyAbbreviation\": \"null_not\",\\n \"data.statistics.name\": \"null_not\",\\n \"data.list[*].companyAbbreviation\": \"null_not\",\\n \"data.list[*].personTimes\": \"null_not\"\\n}', 'actual_result': '', 'remark': ''}" ]
+      }, {
+        "name" : "test_HP[inData94]",
+        "uid" : "82a57e880fcf6acf",
+        "parentUid" : "28a9c5b14f21d5d5aa051ae8328717eb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667908020423,
+          "stop" : 1667908023707,
+          "duration" : 3284
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseQ03', 'case_model': '226-历史数据查询', 'case_name': '01-汇总数据', 'priority': '', 'title': '02在职状态：离职', 'url': '/manageapi/membercompanystats/gethistorydatasummary', 'pre_exec': '', 'method': '', 'params_type': '', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"status\": 2,\\n \"dateBegin\": \"2022-01-01\",\\n \"dateEnd\": \"2022-07-26\",\\n \"total\": true,\\n \"areatype\": \"1\",\\n \"companyOrDistrict\": \"\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"code\": 0,\\n \"msg\": \"成功\",\\n \"data.count\": 470,\\n \"data.list\": 20,\\n \"data.statistics.personTimes\": \"null_not\",\\n \"data.statistics.companyAbbreviation\": \"null_not\",\\n \"data.statistics.name\": \"null_not\",\\n \"data.list[*].companyAbbreviation\": \"null_not\",\\n \"data.list[*].personTimes\": \"null_not\"\\n}', 'actual_result': '', 'remark': ''}" ]
+      }, {
+        "name" : "test_HP[inData95]",
+        "uid" : "d1ca795683b8e883",
+        "parentUid" : "28a9c5b14f21d5d5aa051ae8328717eb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667908023720,
+          "stop" : 1667908025664,
+          "duration" : 1944
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseQ04', 'case_model': '226-历史数据查询', 'case_name': '01-汇总数据', 'priority': '', 'title': '03在职状态：入职', 'url': '/manageapi/membercompanystats/gethistorydatasummary', 'pre_exec': '', 'method': '', 'params_type': '', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"status\": 3,\\n \"dateBegin\": \"2022-01-01\",\\n \"dateEnd\": \"2022-07-26\",\\n \"total\": true,\\n \"areatype\": \"1\",\\n \"companyOrDistrict\": \"\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"code\": 0,\\n \"msg\": \"成功\",\\n \"data.count\": 470,\\n \"data.list\": 20,\\n \"data.statistics.personTimes\": \"null_not\",\\n \"data.statistics.companyAbbreviation\": \"null_not\",\\n \"data.statistics.name\": \"null_not\",\\n \"data.list[*].companyAbbreviation\": \"null_not\",\\n \"data.list[*].personTimes\": \"null_not\"\\n}', 'actual_result': '', 'remark': ''}" ]
       } ],
-      "uid" : "39e129053ae66770cfcf1260b81c1749"
+      "uid" : "28a9c5b14f21d5d5aa051ae8328717eb"
+    }, {
+      "name" : "AssertionError: 对比类型字符串;系统呈现:dateEnd Could not convert string to DateTime: 2022-11-31. Path 'dateEnd', line 1, position 94.,dateBegin Could not convert string to DateTime: 2022-11-31. Path 'dateBegin', line 1, position 69.!=表格获取:成功;接口校验失败",
+      "children" : [ {
+        "name" : "test_HP[inData99]",
+        "uid" : "bad5095d56c1679e",
+        "parentUid" : "8b02ce94b95e03f24f08e33fe9b55266",
+        "status" : "failed",
+        "time" : {
+          "start" : 1667908034074,
+          "stop" : 1667908034197,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 'caseQ08', 'case_model': '226-历史数据查询', 'case_name': '01-汇总数据', 'priority': '', 'title': '06时间：月末查询', 'url': '/manageapi/membercompanystats/gethistorydatasummary', 'pre_exec': '', 'method': '', 'params_type': '', 'token': '', 'params': '{\\n \"pageNum\": 1,\\n \"pageSize\": 20,\\n \"status\": 1,\\n \"dateBegin\": \"2022-06-26\",\\n \"dateEnd\": \"2022-06-26\",\\n \"total\": true,\\n \"areatype\": \"4\",\\n \"companyOrDistrict\": \"8637000100\"\\n}', 'expect_result': '', 'response_expect_result': '{\\n \"code\": 0,\\n \"msg\": \"成功\",\\n \"data.count\": 16,\\n \"data.list\": 16,\\n \"data.statistics.personTimes\": \"null_not\",\\n \"data.statistics.companyAbbreviation\": \"null_not\",\\n \"data.statistics.name\": \"null_not\",\\n \"data.list[*].companyAbbreviation\": \"null_not\",\\n \"data.list[*].personTimes\": \"null_not\"\\n}', 'actual_result': '', 'remark': ''}" ]
+      } ],
+      "uid" : "8b02ce94b95e03f24f08e33fe9b55266"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   }, {
@@ -70,53 +94,29 @@
     "children" : [ {
       "name" : "UnboundLocalError: local variable 'body' referenced before assignment",
       "children" : [ {
-        "name" : "test_HP[inData74]",
-        "uid" : "63a6a11dcc3f031",
+        "name" : "test_HP[inData10]",
+        "uid" : "b8d5f32005c1fd9f",
         "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
         "status" : "broken",
         "time" : {
-          "start" : 1660628282923,
-          "stop" : 1660628282941,
-          "duration" : 18
+          "start" : 1667907724109,
+          "stop" : 1667907724122,
+          "duration" : 13
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseH04', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '05奖惩导入', 'url': '/manageapi/lecturermanage/AddAwardInfo', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"ids\":[77198],\"type\":\"1\",\"honorDate\":\"2022/06/27\",\"filePath\":\"http://employee.sdbx.org:10252/upload/file/52b24adc9bb94c96aa0dfa5ee32b6fff.jpg\",\"fileList\":[{\"name\":\"111_431225198107300499.jpg\",\"url\":\"http://employee.sdbx.org:10252/upload/file/52b24adc9bb94c96aa0dfa5ee32b6fff.jpg\",\"type\":\"image/jpeg\",\"uid\":1656325240235,\"status\":\"success\"}],\"fileName\":\"111_431225198107300499.jpg\"}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\"}', 'actual_result': '', 'remark': '备注'}" ]
+        "parameters" : [ "{'case_id': 'caseA011', 'case_model': '200-个人信息查询', 'case_name': '2个人信息修正', 'priority': '中', 'title': '08修改信息-修改离职人员-其它', 'url': '/manageapi/membercompany/UpdateAll', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\\n \"id\": 2047883,\\n \"member_id\": 10624024,\\n \"member_name\": \"测试数据-08\",\\n \"credit_real_score\": 60,\\n \"auth_type\": \"O\",\\n \"id_number\": \"43122617030153\",\\n \"photo\": \"\",\\n \"sex\": \"M\",\\n \"real_age\": 29,\\n \"birthday\": \"1991-11-09\",\\n \"native_place\": \"广西\",\\n \"education\": \"初中以下学历\",\\n \"practice_area\": \"山东省济南市\",\\n \"company_id\": \"863701000100\",\\n \"company_name\": \"中国人寿保险股份有限公司济南市分公司\",\\n \"abbreviation\": \"中国人寿\",\\n \"company_abbreviation\": \"中国人寿济南市分公司\",\\n \"company_parents\": [\"8637000100\", \"863701000100\"],\\n \"full_location\": \"山东省济南市\",\\n \"state\": 1,\\n \"work_number\": \"00008644000000000000280159\",\\n \"contract_type\": \"4\",\\n \"sales_channel_type\": \"4\",\\n \"companytype\": \"SX\",\\n \"entry_date\": \"2022-01-01\",\\n \"departure_date\": \"\",\\n \"created_user\": \"39281\",\\n \"created_name\": \"DSGS-SX-011\",\\n \"created_time\": \"2022-06-25\",\\n \"business_scope\": [],\\n \"position\": \"在职\",\\n \"practice_code\": \"SXZS\",\\n \"practice_number\": \"00008644000000000000280159\",\\n \"name\": \"测试数据-08\"\\n}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"成功\"}', 'actual_result': '', 'remark': '备注'}" ]
       }, {
-        "name" : "test_HP[inData75]",
-        "uid" : "9dee115d90807f7",
+        "name" : "test_HP[inData22]",
+        "uid" : "9243c3227a051b4e",
         "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
         "status" : "broken",
         "time" : {
-          "start" : 1660628282978,
-          "stop" : 1660628282978,
+          "start" : 1667907748775,
+          "stop" : 1667907748775,
           "duration" : 0
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseH05', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '06奖惩记录详情', 'url': '/manageapi/lecturermanage/GetAwardInfo', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"id\":77198}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\",\"$.data\":1}', 'actual_result': '', 'remark': '备注'}" ]
-      }, {
-        "name" : "test_HP[inData76]",
-        "uid" : "48b9cba0ad5cfaf5",
-        "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
-        "status" : "broken",
-        "time" : {
-          "start" : 1660628283005,
-          "stop" : 1660628283005,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseH06', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '07取消资质', 'url': '/manageapi/lecturermanage/Cancel', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '[77199]', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\"}', 'actual_result': '', 'remark': '备注'}" ]
-      }, {
-        "name" : "test_HP[inData77]",
-        "uid" : "ebda5a37cf43d678",
-        "parentUid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4",
-        "status" : "broken",
-        "time" : {
-          "start" : 1660628283058,
-          "stop" : 1660628283059,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 'caseH07', 'case_model': '223-讲师管理', 'case_name': '1机构讲师', 'priority': '中', 'title': '08删除操作', 'url': '/manageapi/lecturermanage/DelCompanyInfo', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\"id\":77199}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"操作成功\"}', 'actual_result': '', 'remark': '备注'}" ]
+        "parameters" : [ "{'case_id': 'caseB012', 'case_model': '202-在职人员管理', 'case_name': '', 'priority': '中', 'title': '11修改其它类型', 'url': '/manageapi/membercompany/UpdateAll', 'pre_exec': '无前置条件', 'method': 'post', 'params_type': '{\"Cookie\":\"\"}', 'token': '', 'params': '{\\n \"id\": 204782276,\\n \"member_id\": 1062401227,\\n \"member_name\": \"测试数据-01\",\\n \"credit_real_score\": 60,\\n \"auth_type\": \"S\",\\n \"id_number\": \"431226199407030014\",\\n \"photo\": \"\",\\n \"sex\": \"M\",\\n \"real_age\": 28,\\n \"birthday\": \"1994-07-03\",\\n \"native_place\": \"湖南\",\\n \"education\": \"初中以下学历\",\\n \"practice_area\": \"山东省\",\\n \"company_id\": \"863701000100\",\\n \"company_name\": \"中国人寿保险股份有限公司济南市分公司\",\\n \"abbreviation\": \"中国人寿\",\\n \"company_abbreviation\": \"中国人寿济南市分公司\",\\n \"company_parents\": [\"8637000100\", \"863701000100\"],\\n \"full_location\": \"山东省济南市\",\\n \"state\": 1,\\n \"work_number\": \"00008644000000000000629688\",\\n \"contract_type\": \"3\",\\n \"sales_channel_type\": \"1\",\\n \"companytype\": \"SX\",\\n \"entry_date\": \"2022-01-01\",\\n \"departure_date\": \"\",\\n \"created_user\": \"39281\",\\n \"created_name\": \"DSGS-SX-011\",\\n \"created_time\": \"2022-06-25\",\\n \"business_scope\": [],\\n \"position\": \"在职\",\\n \"practice_code\": \"SXZS\",\\n \"practice_number\": \"00008644000000000000629688\",\\n \"name\": \"测试数据-01\"\\n}', 'expect_result': 'ture', 'response_expect_result': '{\"code\":0,\"msg\":\"成功\"}', 'actual_result': '', 'remark': '备注'}" ]
       } ],
       "uid" : "11ae8c2f5fcd356f6e5c9aebc87fb3a4"
     } ],

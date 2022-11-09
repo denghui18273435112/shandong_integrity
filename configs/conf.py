@@ -1,4 +1,4 @@
-environment = "TP"
+environment = "line"
 if  environment == "line":
     #山东诚信;url;cookie_name存在cookies中token名称;vcode_name验证码在cookies中的名称;code验证码的请求路径
     url="http://employee.sdbx.org:10252"
