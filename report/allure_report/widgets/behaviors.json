@@ -4,12 +4,12 @@
     "uid" : "ce77fdca055b2d37d75e39c96ad6ef4b",
     "name" : "山东诚信系统",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 2,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 26,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 30
+      "total" : 3
     }
   } ]
 }

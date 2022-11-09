@@ -42,7 +42,7 @@ class Test_all(object):
         res =all().case_ALL(all_token,inData,data_storage)
         caseCheck().case_Check(res[0])
 
-    @pytest.mark.test
+    @pytest.mark.test1
     @pytest.mark.run(order=1003)
     @pytest.mark.parametrize("inData",ExcelData("case"))
     def test_HP(self,all_token,inData):

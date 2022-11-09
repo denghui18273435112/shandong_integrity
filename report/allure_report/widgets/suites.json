@@ -4,12 +4,12 @@
     "uid" : "1728cf86bfcee2ea016524de2b997927",
     "name" : "test_case.role_association",
     "statistic" : {
-      "failed" : 6,
-      "broken" : 2,
+      "failed" : 2,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 102,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 110
+      "total" : 9
     }
   } ]
 }
